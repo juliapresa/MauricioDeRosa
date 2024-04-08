@@ -311,22 +311,21 @@ body{
 
     .divTituloEnseñanza{
         height: fit-content;
-        margin-top: 20%;
-        margin-bottom: 20%;
+        height: 100vh;
        }
     .tituloEnseñanza{
         font-family: 'Times New Roman', Times, serif;
         font-size: 2.5rem;
         font-weight: bolder;
         font-variant: small-caps;
-        color: #071928;  
+        color: #071928; 
+        margin-top: 50%; 
     }
     .subtituloEnseñanzaUno{
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 2.4rem;
         font-weight: bolder;
         color: #071928;
-        margin-top: 7%;
         margin-bottom: 7%;
         font-style: italic;
     }
@@ -381,28 +380,27 @@ body{
         margin-top: 5%;
     }
     .divParrafoEnseñanzaUno{
-        width: 90%;
+        width: 99%;
         margin: 0%;
     }
     .divSubtituloEnseñanzaUno{
         width: 90%;
-        margin-top: 2%;
     }
     .divParrafoEnseñanzaDos{
-        width: 90%;
+        width: 99%;
         margin-right: 2%;
         margin: 0%;
     }
     .divSubtituloEnseñanzaDos{
-        width: 90%;
+        width: 99%;
     }
     .divParrafoEnseñanzaTres{
-        width: 90%;
+        width: 99%;
         margin: 0%;
         margin-top: 2%;
     }
     .divSubtituloEnseñanzaTres{
-        width: 90%;
+        width: 99%;
     }
     .parrafoEnseñanzaUno{
         font-family: 'Poppins', sans-serif;
