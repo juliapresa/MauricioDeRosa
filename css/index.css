@@ -254,6 +254,13 @@ justify-content: center;
     }
 
 @media screen and (min-width: 0px) and (max-width: 768px){
+    body{
+        width: 100vw;
+        height: fit-content;
+        margin: 0%;
+        padding: 0%;
+        overflow-x: hidden;
+    }
     .divTitulo{
         width: 100%;
         height: 140vh;
@@ -272,7 +279,7 @@ justify-content: center;
         height: 10vh;
     }
     .divTitleDos{
-        width: 80vw;
+        width: 99vw;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -281,7 +288,7 @@ justify-content: center;
         margin-top: 10%;
         font-family: "Poppins", sans-serif;
         font-size: x-large;
-        line-height: 2;
+        line-height: 3;
     }
     
 
@@ -295,6 +302,7 @@ justify-content: center;
     
     .contenedorIcono {
         margin: 0%;
+        margin-top: 3%;
         padding: 0%;
         width: 50%;
     }
@@ -354,8 +362,8 @@ justify-content: center;
         align-items: center;
     }
     #cardU{
-        width: 30rem;
-        height: 22rem;
+        width: 90%;
+        height: 70%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -364,12 +372,12 @@ justify-content: center;
         margin-bottom: 4%;
     }
     #cardT{
-        font-size: 1.8rem;
+        font-size: 30px;
         margin-top: 3%;
         margin-bottom: 0%;
     }
     #cardTDos{
-        font-size: 1.8rem;
+        font-size: 30px;
         margin-top: 2%;
     }
     #cardTTres{
@@ -377,10 +385,10 @@ justify-content: center;
        font-size: large;
     }
     #cardS{
-        height: 3rem;
+        height: 25%;
     }
     #cardSDos{
-        height: 2rem;
+        height: 20%;
     }
     #divCardS{
         height: 40%;

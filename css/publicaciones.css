@@ -354,6 +354,7 @@ body{
     
     .contenedorIcono {
         margin: 0%;
+        margin-top: 3%;
         padding: 0%;
         width: 50%;
     }
@@ -402,14 +403,14 @@ body{
 
 
     #tituloFooter{
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
     #tituloDosFooter{
-        font-size: 1.9rem;
+        font-size: 1.5rem;
         margin-bottom: 1%;
     }
     .iconoMail{
-        font-size: 2.2rem;
+        font-size: 2rem;
         margin-right: 1%;
     }
     .row {
@@ -430,6 +431,11 @@ body{
         height: fit-content;
         width: 100vw;
         overflow-x: hidden;
+    }
+    .linkPubli{
+        text-decoration: none;
+        width: 99%;
+        height: 30vh;
     }
     .divTituloPublicaciones{
         display: flex;
@@ -473,6 +479,7 @@ body{
         justify-content: center;
         align-items: center;
         text-align: center;
+        width: 100%;
         height: fit-content;
     }
     .divPublicacionesDos{
@@ -492,45 +499,52 @@ body{
         text-align: center;
         margin: 0%;
     }
-
+    #cuerpoCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 99%;
+        height: 30vh;
+    }
 
     .cardPublicacionesUno{
-        width: 35rem;
-        height: 23rem;
+        width: 99%;
+        height: 100%;
     }
     .cardPublicacionesTres{
-        width: 35rem;
-        height: 27rem;
+        width: 99%;
+        height: 100%;
     }
 
     .tituloCardUno{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
         font-size: 1.9rem;
-        width: 34rem;
-        height: 10rem;
+        width: 99%;
+        height: 20vh;
     }
     .textoCardUno{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
         font-size: 1.5rem;
-        width: 34rem;
-        height: 6rem;
+        width: 99%;
+        height: fit-content;
     }
 
     .tituloCardDos{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
         font-size: 2rem;
-        width: 34rem;
-        height: 7rem;
+        width: 99%;
+        height:fit-content;
     }
     .textoCardDos{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
         font-size: 1.5rem;
-        width: 34rem;
-        height: 9rem;
+        width: 99%;
+        height:fit-content;
     }
 
 
@@ -538,23 +552,23 @@ body{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
         font-size: 1.8rem;
-        width: 34rem;
-        height: 15rem;
+        width: 99%;
+        height: 20vh;
     }
     .textoCardTres{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
         font-size: 1.5rem;
-        width: 34rem;
-        height: 5rem;
+        width: 99%;
+        height: fit-content;
     }
 
     .tituloCardCuatro{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
         font-size: 1.8rem;
-        width: 34rem;
-        height: 8rem;
+        width: 99%;
+        height: 20vh;
     }
     .textoCardCuatro{
         font-family: Georgia,'Times New Roman', Times, serif;
@@ -567,19 +581,19 @@ body{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
         font-size: 1.8rem;
-        width: 34rem;
-        height: 10rem;
+        width: 99%;
+        height: 20vh;
     }
     .textoCardCinco{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
         font-size: 1.4rem;
-        width: 34rem;
-        height: 10rem;
+        width: 99%;
+        height: fit-content;
     }
 
     .divTarjetaPublicaciones{
-        width: 33%;
+        width: 95%;
         display: flex;
         justify-content: center;
         margin-bottom: 15%;
@@ -590,7 +604,7 @@ body{
     }
 
     .divLibroPublicacion{
-        width: 90%;
+        width: 99%;
         display: flex;
         flex-direction: column;
         align-items: center;
