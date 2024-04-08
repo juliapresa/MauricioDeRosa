@@ -355,7 +355,7 @@ body{
     }
     .subtituloChicoEnseñanzaTres{
         font-family: 'Poppins', sans-serif;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-style: italic;
         margin-bottom: 7%;
     }
@@ -430,7 +430,7 @@ body{
         margin-bottom: 1%;
     }
     .iconoMail{
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-right: 1%;
     }
 

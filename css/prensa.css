@@ -334,13 +334,10 @@ body{
         align-items: center;
     }
     .divTituloPrensa{
-        height: fit-content;
-        margin-top: 40%;
-        margin-bottom: 10%;
+       height: 100vh;
     }
     .divSubtituloPrensa{
         height: fit-content;
-        margin-top: 28%;
         margin-bottom: 10%;
     }
     .tituloPrensa{
@@ -349,6 +346,7 @@ body{
     font-weight: bolder;
     font-variant: small-caps;
     color: #071928;
+    margin-top: 50%;
 }
     .subtituloPrensa{
         font-family: Georgia,'Times New Roman', Times, serif;

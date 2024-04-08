@@ -317,9 +317,7 @@ body{
         margin-bottom: 10%;
     }
     .divTituloArticulos{
-        height: fit-content;
-        margin-top: 40%;
-        margin-bottom: 40%;
+        height: 100vh;
        }
     .tituloArticulo{
         font-family: 'Times New Roman', Times, serif;
@@ -327,6 +325,7 @@ body{
         font-weight: bolder;
         font-variant: small-caps;
         color: #071928;
+        margin-top: 50%;
     }
     .subtituloArticulos{
         font-size: large;
@@ -338,7 +337,6 @@ body{
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-top: 15%;
         margin-bottom: 35%;
     }
     .divArticulosDos{
