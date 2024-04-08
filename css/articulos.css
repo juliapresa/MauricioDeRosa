@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    width: 100vw;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+.navbar{
+    height: 10vh;
+}
+.sectionNav {
+    width: 100%;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+    flex-direction: row;
+}
+
+.contenedorIcono {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+}
+
+.contenedorNav {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+    
+}
+#navBarra{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+}
+#navL{
+    font-family: 'Poppins', sans-serif;
+}
+#navL:hover{
+    text-decoration: underline;
+}
+#iconoT{
+   width: 2rem;
+   height: 2rem;
+}
+#iconoT:hover{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+#ancla{
+    text-decoration-line: none;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+
+.footer{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.footerDos {
+    width: 100%;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+    flex-direction: row;
+    margin-bottom: 2%;
+
+}
+#tituloFooter{
+    font-size: 1.7rem;
+}
+#tituloDosFooter{
+    font-size: 1.7rem;
+    margin-bottom: 0%;
+}
+
+.contenedorIcono {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+}
+
+.contenedorNav {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+}
+.divTituloDosFooter{
+    margin-top: 2%;
+}
+#navLF{
+    display: flex;
+    margin-left: 3%;
+    font-family: 'Poppins', sans-serif;
+}
+#navLF:hover{
+    text-decoration: underline;
+}
+#iconoT{
+   width: 2rem;
+   height: 2rem;
+}
+#iconoT:hover{
+    width: 2.5rem;
+   height: 2.5rem;
+}
+#ancla{
+    text-decoration-line: none;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.iconoMail{
+    font-size: x-large;
+    margin-right: 1%;
+}
+.linkArticulo{
+    text-decoration: none;
+    width: fit-content;
+}
+#articulos{
+    height: fit-content;
+    width: 100vw;
+}
+.divTituloArticulos{
+    height: fit-content;
+    margin-top: 10%;
+    margin-bottom: 7%;
+   }
+.tituloArticulo{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    font-variant: small-caps;
+    color: #071928;
+}
+
+
+.divArticulosUno{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+}
+.divArticulosDos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.divTarjetaArticulos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    height: 70%;
+}
+.cardArticulos{
+    width: 40rem;
+    height: 18rem;
+    border-radius: 1rem;
+    border-color: rgb(223, 219, 219);
+}
+.parrafoCardArticulos{
+    color: #4d70a5;
+}
+.tituloCardArticulos{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    font-size: 1.4rem;
+    margin-top: 3%;
+    width: 40rem;
+    height: 6rem;
+    text-align: center;
+}
+.tituloCardArticulosDos{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    margin-top: 3%;
+    font-size: 1.3rem;
+    width: 40rem;
+    height: 6rem;
+}
+.tituloCardArticulosTres{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    font-size: 1.3rem;
+    margin-top: 3%;
+    width: 40rem;
+    height: 6rem;
+}
+.textoCardArticulos{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    font-size: 1.2rem;
+    width: 40rem;
+    height: 6rem;
+}
+.textoCardArticulosDos{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    font-size: 1.2rem;
+    width: 40rem;
+    height: 6rem;
+}
+#button:hover{
+    background-color: #071928;
+    color: #95999f;
+}
+@media screen and (min-width: 0px) and (max-width: 768px){
+    .row {
+        width: 100%;
+        height: fit-content;
+        margin: 0%;
+        padding: 0%;
+        flex-direction: row;
+    }
+    
+    .contenedorIcono {
+        margin: 0%;
+        padding: 0%;
+        width: 50%;
+    }
+    
+    .contenedorNav {
+        margin: 0%;
+        padding: 0%;
+        width: 50%;
+    }
+    #navBarra{
+        width: fit-content;
+        margin-right: 5%;
+    }
+    #navL{
+        display: flex;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+    }
+    #containerNav{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #navL:hover{
+        text-decoration: underline;
+    }
+    #iconoT{
+       width: 2rem;
+       height: 2rem;
+       margin-top: 3%;
+       margin-left: 5%;
+    }
+    #iconoT:hover{
+        width: 2.5rem;
+       height: 2.5rem;
+    }
+    #ancla{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+
+
+
+    #tituloFooter{
+        font-size: 1.9rem;
+    }
+    #tituloDosFooter{
+        font-size: 1.9rem;
+        margin-bottom: 1%;
+    }
+    .iconoMail{
+        font-size: 2.2rem;
+        margin-right: 1%;
+    }
+    .row {
+        width: 100%;
+        height: fit-content;
+        margin: 0%;
+        padding: 0%;
+        flex-direction: row;
+    }
+    #navL:hover{
+        text-decoration: underline;
+    }
+    #ancla{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    .footer{
+        visibility: hidden;
+    }
+
+    #articulos{
+        height: fit-content;
+        width: 100vw;
+        overflow-x: hidden;
+        margin-bottom: 10%;
+    }
+    .divTituloArticulos{
+        height: fit-content;
+        margin-top: 40%;
+        margin-bottom: 40%;
+       }
+    .tituloArticulo{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        font-variant: small-caps;
+        color: #071928;
+    }
+    .subtituloArticulos{
+        font-size: large;
+    }
+    
+    .divArticulosUno{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 15%;
+        margin-bottom: 35%;
+    }
+    .divArticulosDos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .divTarjetaArticulos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+        height: 70%;
+    }
+    .cardArticulos{
+        width: 30rem;
+        height: 21rem;
+    }
+    .tituloCardArticulos{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        color: #071928;
+        font-size: 1.9rem;
+        width: 30rem;
+        height: 9rem;
+    }
+    .tituloCardArticulosDos{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        color: #071928;
+        font-size: 1.7rem;
+        width: 30rem;
+        height: 9rem;
+       margin-bottom: 10%;
+    }
+    .tituloCardArticulosTres{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        color: #071928;
+        font-size: 1.6rem;
+       margin-bottom: 10%;
+       width: 30rem;
+       height: 9rem;
+    }
+    .textoCardArticulos{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        color: #071928;
+        font-size: 1.5rem;
+        width: 30rem;
+        margin-bottom: 2%;
+    }
+    .textoCardArticulosDos{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        color: #071928;
+        font-size: 1.3rem;
+        width: 30rem;
+        margin-bottom: 2%;
+    }
+    #button{
+        color: #071928;
+        background-color: #ffffff;
+        margin-top: 2%;
+        border-color: #071928;
+    }
+    #button:hover{
+        background-color: #071928;
+        color: #95999f;
+    }
+}

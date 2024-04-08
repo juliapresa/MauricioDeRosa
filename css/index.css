@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+
+.sectionNav {
+    width: 100%;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+    flex-direction: row;
+}
+
+.contenedorIcono {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+}
+
+.contenedorNav {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+    
+}
+#navBarra{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+}
+#navL{
+    font-family: 'Poppins', sans-serif;
+}
+#navL:hover{
+    text-decoration: underline;
+}
+#iconoT{
+   width: 2rem;
+   height: 2rem;
+}
+#iconoT:hover{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+#ancla{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+
+
+
+.divTitulo{
+    width: 100%;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    background-image: url(../assets/img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.divImgTitulo{
+    width: 50%;
+}
+.imgTitulo{
+    width: fit-content;
+    height: 450px;
+    margin-top: 15%;
+}
+.divTitle{
+    display: flex;
+    justify-content: center;
+}
+.divTitleDos{
+width: 65vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+}
+.parrafoTitulo{
+    margin-top: 6%;
+    font-family: "Poppins", sans-serif;
+    font-size: xx-large;
+    line-height: 2;
+    color:#071928;
+}
+
+.navbar{
+    height: 10vh;
+}
+
+
+
+
+.fondoFormacion{
+    background-color:#071928;
+    height: 100vh;
+}
+.formacion{
+    width: 99vw;
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: space-around;
+    background-color:#071928;
+}
+.divTituloFormacion{
+    height: fit-content;
+    margin-bottom: 5%;
+    background-color:#071928;
+   }
+.tituloFormacion{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #d3d5d7de;
+    margin-top: 3%;
+}
+    #cardU{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        width:20rem;
+        height:29rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #cardT{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        height: 2rem;
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
+    #cardTDos{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        height: 2rem;
+        margin-top: 10%;
+    }
+    #cardTTres{
+        font-family: Georgia,'Times New Roman', Times, serif;
+       margin-bottom:17px;
+       font-size: large;
+    }
+    #cardS{
+        height: 3rem;
+    }
+    #cardSDos{
+        height: 3rem;
+    }
+    #divCardS{
+        height: 8rem;
+        margin-top: 2%;
+    }
+    #divCardP{
+        height: 12rem;
+    }
+    #cardP{
+        height: 8rem;
+        margin-bottom: 5%;
+    }
+    #cardR{
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
+
+
+
+
+
+    #tituloFooter{
+        font-family: 'Poppins', sans-serif;
+        font-size: x-large;
+        padding: 0%;
+        color: #071928;
+    }
+    #tituloDosFooter{
+        font-family: 'Poppins', sans-serif;
+        font-size: x-large;
+        padding: 0%;
+        color: #071928;
+    }
+    #divTituloFooter{
+        padding: 0%;
+        margin: 0%;
+    }
+    .footer{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .footerDos {
+        width: 100%;
+        height: fit-content;
+        margin: 0%;
+        padding: 0%;
+        flex-direction: row;
+        margin-bottom: 2%;
+    
+    }
+    
+    .contenedorIcono {
+        margin: 0%;
+        padding: 0%;
+        width: 50%;
+    }
+    
+    .contenedorNav {
+        margin: 0%;
+        padding: 0%;
+        width: 50%;
+    }
+    .divTituloDosFooter{
+        margin-top: 2%;
+    }
+    #navLF{
+        display: flex;
+        margin-left: 3%;
+        font-family: 'Poppins', sans-serif;
+    }
+    #navLF:hover{
+        text-decoration: underline;
+    }
+    #iconoT{
+        width: 2rem;
+        height: 2rem;
+    }
+    #iconoT:hover{
+        width: 2.5rem;
+       height: 2.5rem;
+    }
+    #ancla{
+        text-decoration-line: none;
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 3%;
+        margin-left: 3%;
+    }
+    .iconoMail{
+        font-size: x-large;
+        margin-right: 1%;
+    }
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+    .divTitulo{
+        width: 100%;
+        height: 140vh;
+        margin: 0%;
+        padding: 0%;
+        overflow-x: hidden;
+        background-image: url(../assets/img/bannerCel.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        background-attachment: local;
+    } 
+    .navbar{
+        height: 10vh;
+    }
+    .divTitleDos{
+        width: 80vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        }
+    .parrafoTitulo{
+        margin-top: 10%;
+        font-family: "Poppins", sans-serif;
+        font-size: x-large;
+        line-height: 2;
+    }
+    
+
+    .row {
+        width: 100%;
+        height: fit-content;
+        margin: 0%;
+        padding: 0%;
+        flex-direction: row;
+    }
+    
+    .contenedorIcono {
+        margin: 0%;
+        padding: 0%;
+        width: 50%;
+    }
+    
+    .contenedorNav {
+        margin: 0%;
+        padding: 0%;
+        width: 50%;
+    }
+    #navBarra{
+        width: fit-content;
+        margin-right: 5%;
+    }
+    #navL{
+        display: flex;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+    }
+    #containerNav{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #navL:hover{
+        text-decoration: underline;
+    }
+    #iconoT{
+       width: 2rem;
+       height: 2rem;
+       margin-top: 3%;
+       margin-left: 5%;
+    }
+    #iconoT:hover{
+        width: 2.5rem;
+       height: 2.5rem;
+    }
+    #ancla{
+        text-decoration-line: none;
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+
+
+
+
+
+
+    .formacion{
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #cardU{
+        width: 30rem;
+        height: 22rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 4%;
+    }
+    #cardT{
+        font-size: 1.8rem;
+        margin-top: 3%;
+        margin-bottom: 0%;
+    }
+    #cardTDos{
+        font-size: 1.8rem;
+        margin-top: 2%;
+    }
+    #cardTTres{
+       margin-bottom: 2%;
+       font-size: large;
+    }
+    #cardS{
+        height: 3rem;
+    }
+    #cardSDos{
+        height: 2rem;
+    }
+    #divCardS{
+        height: 40%;
+        margin-top: 3%;
+        margin-bottom: 0%;
+    }
+    #divCardP{
+        height: 50%;
+    }
+    #cardP{
+        height: 5rem;
+        margin-bottom: 5%;
+    }
+    #cardR{
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+    .divSuprRef{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #tituloFooter{
+        font-size: 1.9rem;
+    }
+    #tituloDosFooter{
+        font-size: 1.9rem;
+        margin-bottom: 1%;
+    }
+    .iconoMail{
+        font-size: 2.2rem;
+        margin-right: 1%;
+    }
+    .row {
+        width: 100%;
+        height: fit-content;
+        margin: 0%;
+        padding: 0%;
+        flex-direction: row;
+    }
+    #navL:hover{
+        text-decoration: underline;
+    }
+    #ancla{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    .footer{
+        visibility: hidden;
+    }
+}

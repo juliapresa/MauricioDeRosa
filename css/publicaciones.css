@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+.navbar{
+    height: 10vh;
+}
+.sectionNav {
+    width: 100%;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+    flex-direction: row;
+}
+
+.contenedorIcono {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+}
+
+.contenedorNav {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+    
+}
+#navBarra{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+}
+#navL{
+    font-family: 'Poppins', sans-serif;
+}
+#navL:hover{
+    text-decoration: underline;
+}
+#iconoT{
+   width: 2rem;
+   height: 2rem;
+}
+#iconoT:hover{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.footer{
+    margin-bottom: 2%;
+}
+.footerDos {
+    width: 100%;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+    flex-direction: row;
+    margin-bottom: 2%;
+
+}
+
+#tituloFooter{
+    font-size: 1.7rem;
+}
+#tituloDosFooter{
+    font-size: 1.7rem;
+    margin-bottom: 0%;
+}
+
+.contenedorIcono {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+}
+
+.contenedorNav {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+}
+.divTituloDosFooter{
+    margin-top: 2%;
+}
+#navLF{
+    display: flex;
+    margin-left: 3%;
+    font-family: 'Poppins', sans-serif;
+}
+#navLF:hover{
+    text-decoration: underline;
+}
+#iconoT{
+   width: 2rem;
+   height: 2rem;
+}
+#iconoT:hover{
+    width: 2.5rem;
+   height: 2.5rem;
+}
+#ancla{
+    text-decoration-line: none;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.iconoMail{
+    font-size: x-large;
+    margin-right: 1%;
+}
+
+#publicaciones{
+    height: fit-content;
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divTituloPublicaciones{
+    height: fit-content;
+    margin-top: 10%;
+    margin-bottom: 7%;
+   }
+   .divSubtituloPublicaciones{
+    height: fit-content;
+    margin-bottom: 5%;
+   }
+.tituloPublicacion{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    font-variant: small-caps;
+    color: #071928;
+}
+.subtituloPublicacion{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #071928;
+    margin-bottom: 2%;
+}
+
+
+.divPublicacionesUno{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 20rem;
+    margin: 0%;
+    padding: 0%;
+    margin-bottom: 5%;
+}
+.divPublicacionesDos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+.divPublicacionesTres{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.divTarjetaPublicaciones{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+.cardPublicacionesUno{
+    width: 25rem;
+    height: 19rem;
+    border-radius: 1rem;
+    border-color: rgb(223, 219, 219);
+    
+}
+.cardPublicacionesDos{
+    width: 25rem;
+    height: 19rem;
+    border-radius: 1rem;
+    border-color: rgb(223, 219, 219);
+}
+.cardPublicacionesTres{
+    width: 25rem;
+    height: 19rem;
+    border-radius: 1rem;
+    border-color: rgb(223, 219, 219);
+}
+
+
+.divLibroPublicacion{
+    width: 60%;
+    height: 70vh;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.libroPublicacionTitulo{
+    color: #071928;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+.libroPublicacion{
+    color: #071928;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+.libroPublicacionDos{
+    color: #071928;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+#cuerpoCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.parrafoCard{
+    color: #4d70a5;
+}
+.tituloCardUno{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    font-size: 1.2rem;
+    margin-top: 3%;
+    width: 24rem;
+    height: 7rem;
+}
+.textoCardUno{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    font-size: 1rem;
+    width: 24rem;
+    height: 6rem;
+}
+.linkPubli{
+    text-decoration: none;
+}
+.textoUno{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    margin-top: 5%;
+    font-size: 1rem;
+    width: 24rem;
+    height: 6rem;
+}
+
+.tituloCardDos{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    font-size: 1.2rem;
+    margin-top: 3%;
+    width: 24rem;
+    height: 7rem;
+}
+.textoCardDos{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    font-size: 1rem;
+    width: 24rem;
+    height: 6rem;
+}
+
+.tituloCardTres{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    font-size: 1.2rem;
+    margin-top: 3%;
+    width: 24rem;
+    height: 7rem;
+}
+.textoCardTres{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    margin-top: 5%;
+    font-size: 1rem;
+    width: 24rem;
+    height: 6rem;
+}
+
+.tituloCardCuatro{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    font-size: 1.2rem;
+    margin-top: 3%;
+    width: 24rem;
+    height: 7rem;
+}
+.textoCardCuatro{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    font-size: 1rem;
+    margin-top: 5%;
+    width: 24rem;
+    height: 6rem;
+}
+.tituloCardCinco{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    font-size: 1.2rem;
+    margin-top: 3%;
+    width: 24rem;
+    height: 7rem;
+}
+.textoCardCinco{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    font-size: 1rem;
+    width: 24rem;
+    height: 6rem;
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+    .row {
+        width: 100vw;
+        height: fit-content;
+        margin: 0%;
+        padding: 0%;
+        flex-direction: row;
+    }
+    
+    .contenedorIcono {
+        margin: 0%;
+        padding: 0%;
+        width: 50%;
+    }
+    
+    .contenedorNav {
+        margin: 0%;
+        padding: 0%;
+        width: 50%;
+    }
+    #navBarra{
+        width: fit-content;
+        margin-right: 5%;
+    }
+    #navL{
+        display: flex;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+    }
+    #containerNav{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #navL:hover{
+        text-decoration: underline;
+    }
+    #iconoT{
+       width: 2rem;
+       height: 2rem;
+       margin-top: 3%;
+       margin-left: 5%;
+    }
+    #iconoT:hover{
+        width: 2.5rem;
+       height: 2.5rem;
+    }
+    #ancla{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+
+
+
+    #tituloFooter{
+        font-size: 1.9rem;
+    }
+    #tituloDosFooter{
+        font-size: 1.9rem;
+        margin-bottom: 1%;
+    }
+    .iconoMail{
+        font-size: 2.2rem;
+        margin-right: 1%;
+    }
+    .row {
+        width: 100%;
+        height: fit-content;
+        margin: 0%;
+        padding: 0%;
+        flex-direction: row;
+    }
+    #navL:hover{
+        text-decoration: underline;
+    }
+
+    .footer{
+        visibility: hidden;
+    }
+    #publicaciones{
+        height: fit-content;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .divTituloPublicaciones{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        height: fit-content;
+        margin-top: 40%;
+        margin-bottom: 10%;
+       }
+       .divSubtituloPublicaciones{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        height: fit-content;
+        margin-top: 38%;
+        margin-bottom: 10%;
+       }
+    .tituloPublicaciones{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        font-variant: small-caps;
+        color: #071928;
+    }
+
+    .subtituloPublicacion{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        font-size: 2rem;
+        font-weight: bolder;
+        color: #071928;
+        margin-bottom: 2%;
+    }
+    
+
+
+    .divPublicacionesUno{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: fit-content;
+    }
+    .divPublicacionesDos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0%;
+        height: fit-content;
+    }
+    .divPublicacionesTres{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0%;
+    }
+
+
+    .cardPublicacionesUno{
+        width: 35rem;
+        height: 23rem;
+    }
+    .cardPublicacionesTres{
+        width: 35rem;
+        height: 27rem;
+    }
+
+    .tituloCardUno{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        color: #071928;
+        font-size: 1.9rem;
+        width: 34rem;
+        height: 10rem;
+    }
+    .textoCardUno{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        color: #071928;
+        font-size: 1.5rem;
+        width: 34rem;
+        height: 6rem;
+    }
+
+    .tituloCardDos{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        color: #071928;
+        font-size: 2rem;
+        width: 34rem;
+        height: 7rem;
+    }
+    .textoCardDos{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        color: #071928;
+        font-size: 1.5rem;
+        width: 34rem;
+        height: 9rem;
+    }
+
+
+    .tituloCardTres{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        color: #071928;
+        font-size: 1.8rem;
+        width: 34rem;
+        height: 15rem;
+    }
+    .textoCardTres{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        color: #071928;
+        font-size: 1.5rem;
+        width: 34rem;
+        height: 5rem;
+    }
+
+    .tituloCardCuatro{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        color: #071928;
+        font-size: 1.8rem;
+        width: 34rem;
+        height: 8rem;
+    }
+    .textoCardCuatro{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        color: #071928;
+        font-size: 1.4rem;
+        width: 34rem;
+        height: 10rem;
+    }
+    .tituloCardCinco{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        color: #071928;
+        font-size: 1.8rem;
+        width: 34rem;
+        height: 10rem;
+    }
+    .textoCardCinco{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        color: #071928;
+        font-size: 1.4rem;
+        width: 34rem;
+        height: 10rem;
+    }
+
+    .divTarjetaPublicaciones{
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15%;
+    }
+    
+    .parrafoCard{
+        color: #4d70a5;
+    }
+
+    .divLibroPublicacion{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .libroPublicacionTitulo{
+        color: #071928;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    
+    }
+    .libroPublicacion{
+        color: #071928;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.6rem;
+        font-style: italic;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    
+    }
+    .libroPublicacionDos{
+        color: #071928;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.3rem;
+        font-style: italic;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        
+    }
+}

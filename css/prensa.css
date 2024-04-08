@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+.navbar{
+    height: 10vh;
+}
+.sectionNav {
+    width: 100%;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+    flex-direction: row;
+}
+
+.contenedorIcono {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+}
+
+.contenedorNav {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+    
+}
+#navBarra{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+}
+#navL{
+    font-family: 'Poppins', sans-serif;
+}
+#navL:hover{
+    text-decoration: underline;
+}
+#iconoT{
+   width: 2rem;
+   height: 2rem;
+}
+#iconoT:hover{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+#ancla{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+
+.footer{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.footerDos {
+    width: 100%;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+    flex-direction: row;
+    margin-bottom: 2%;
+
+}
+
+#tituloFooter{
+    font-size: 1.7rem;
+}
+#tituloDosFooter{
+    font-size: 1.7rem;
+    margin-bottom: 0%;
+}
+
+.contenedorIcono {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+}
+
+.contenedorNav {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+}
+.divTituloDosFooter{
+    margin-top: 2%;
+}
+#navLF{
+    display: flex;
+    margin-left: 3%;
+    font-family: 'Poppins', sans-serif;
+}
+#navLF:hover{
+    text-decoration: underline;
+}
+#iconoT{
+   width: 2rem;
+   height: 2rem;
+}
+#iconoT:hover{
+    width: 2.5rem;
+   height: 2.5rem;
+}
+#ancla{
+    text-decoration-line: none;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.iconoMail{
+    font-size: x-large;
+    margin-right: 1%;
+}
+
+#prensa{
+    height: fit-content;
+    width: 100vw;
+    margin-bottom: 5%;
+}
+.divTituloPrensa{
+    height: fit-content;
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+.divSubtituloPrensa{
+    height: fit-content;
+    margin-bottom: 5%;
+}
+.tituloPrensa{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    font-variant: small-caps;
+    color: #071928;
+}
+.subtituloPrensa{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #071928;
+    margin-bottom: 5%;
+}
+.linkPrensa{
+    text-decoration: none;
+    width: fit-content;
+}
+.divPrensaUno{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    height: fit-content;
+    margin-bottom: 10%;
+}
+.divPrensaDos{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    height: fit-content;
+    margin-bottom: 10%;
+}
+.divTarjetaPrensa{
+    width: 33%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardPrensa{
+    width: 25rem;
+    height: 15rem;
+}
+.tituloCardPrensa{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    margin-top: 3%;
+    font-size: 1.9rem;
+    margin-bottom: 10%;
+    height: 5rem;
+  
+}
+.parrafoCardPrensa{
+    color: #4d70a5;
+}
+.CardPrensa{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    font-size: 1.8rem;
+    width: 24rem;
+    margin: 0%;
+    margin-top: 3%;
+    height: 6rem;
+}
+.textoCardPrensa{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    font-size: 1.2rem;
+    width: 24rem;
+    height: 3rem;
+}
+.divVideo{
+    width: 33%;
+    height: 290px;
+}
+.divVideoUltimo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    height: 250px;
+}
+.videoPrensa{
+    width: 400px;
+    height: 270px;
+}
+.videoPrensa:hover{
+    width: 410px;
+    height: 280px;
+}
+
+#button{
+    color: #071928;
+    background-color: #ffffff;
+    margin-top: 2%;
+    border-color: #071928;
+    width: 25rem;
+    height: 3rem;
+}
+#button:hover{
+    background-color: #4d70a5;
+    color: #071928;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+    .row {
+        width: 100%;
+        height: fit-content;
+        margin: 0%;
+        padding: 0%;
+        flex-direction: row;
+    }
+    
+    .contenedorIcono {
+        margin: 0%;
+        padding: 0%;
+        width: 50%;
+    }
+    
+    .contenedorNav {
+        margin: 0%;
+        padding: 0%;
+        width: 50%;
+    }
+    #navBarra{
+        width: fit-content;
+        margin-right: 5%;
+    }
+    #navL{
+        display: flex;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+    }
+    #containerNav{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #navL:hover{
+        text-decoration: underline;
+    }
+    #iconoT{
+       width: 2rem;
+       height: 2rem;
+       margin-top: 3%;
+       margin-left: 5%;
+    }
+    #iconoT:hover{
+        width: 2.5rem;
+       height: 2.5rem;
+    }
+    #ancla{
+        text-decoration-line: none;
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+
+
+
+    #tituloFooter{
+        font-size: 1.9rem;
+    }
+    #tituloDosFooter{
+        font-size: 1.9rem;
+        margin-bottom: 1%;
+    }
+    .iconoMail{
+        font-size: 2.2rem;
+        margin-right: 1%;
+    }
+    .row {
+        width: 100%;
+        height: fit-content;
+        margin: 0%;
+        padding: 0%;
+        flex-direction: row;
+    }
+    #navL:hover{
+        text-decoration: underline;
+    }
+    #ancla{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    .footer{
+        visibility: hidden;
+    }
+
+    #prensa{
+        height: fit-content;
+        width: 100vw;
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .divTituloPrensa{
+        height: fit-content;
+        margin-top: 40%;
+        margin-bottom: 10%;
+    }
+    .divSubtituloPrensa{
+        height: fit-content;
+        margin-top: 28%;
+        margin-bottom: 10%;
+    }
+    .tituloPrensa{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-variant: small-caps;
+    color: #071928;
+}
+    .subtituloPrensa{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        font-size: 2.4rem;
+        font-weight: bolder;
+        color: #071928;
+        margin-bottom: 2%;
+    }
+    
+    .divPrensaUno{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0%;
+        padding: 0%;
+        margin-bottom: 2%;
+    }
+    .divPrensaDos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0%;
+        padding: 0%;
+        margin-bottom: 2%;
+    }
+    .divVideo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: fit-content;
+        margin-bottom: 15%;
+    }
+    .divVideoUltimo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: fit-content;
+        margin-bottom: 0%;
+    }
+    .divTarjetaPrensa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: fit-content;
+        margin-bottom: 2%;
+    }
+    .cardPrensa{
+        width: 25rem;
+        height: 15rem;
+        margin-bottom: 20%;
+    }
+    .parrafoCardPrensa{
+        color: #4d70a5;
+    }
+    .tituloCardPrensa{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        color: #071928;
+        font-size: 1.9rem;
+        margin-bottom: 10%;
+      
+    }
+    .textoCardPrensa{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        color: #1c1e1f;
+        font-size: 1.6rem;
+       margin-bottom: 10%;
+    }
+    .videoPrensa{
+        width: 405px;
+        height: 240px;
+    }
+}

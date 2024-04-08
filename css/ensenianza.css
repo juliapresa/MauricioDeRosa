@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    width: 100vw;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+.navbar{
+    height: 10vh;
+}
+.sectionNav {
+    width: 100%;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+    flex-direction: row;
+}
+
+.contenedorIcono {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+}
+
+.contenedorNav {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+    
+}
+#navBarra{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+}
+#navL{
+    font-family: 'Poppins', sans-serif;
+}
+#navL:hover{
+    text-decoration: underline;
+}
+#iconoT{
+   width: 2rem;
+   height: 2rem;
+}
+#iconoT:hover{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+#ancla{
+    text-decoration-line: none;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+
+
+.divTituloEnseñanza{
+    height: fit-content;
+    margin-top: 7%;
+    margin-bottom: 7%;
+   }
+.tituloEnseñanza{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    font-variant: small-caps;
+    color: #071928;
+    
+}
+.subtituloEnseñanzaUno{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #071928;
+    margin-top: 7%;
+    font-style: italic;
+}
+.subtituloEnseñanzaDos{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #071928;
+    margin-top: 4%;
+    font-style: italic;
+}
+.subtituloEnseñanzaDosDos{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #071928;
+    font-style: italic;
+}
+.subtituloEnseñanzaTres{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #071928;
+    margin-top: 3%;
+    font-style: italic;
+}
+
+.contenidoUno{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+.contenidoDos{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+.contenidoTres{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.divParrafoEnseñanzaUno{
+    width: 60%;
+    margin-right: 5%;
+}
+.divSubtituloEnseñanzaUno{
+    width: 40%;
+    margin-top: 7%;
+}
+.divParrafoEnseñanzaDos{
+    width: 60%;
+    margin-right: 5%;
+}
+.divSubtituloEnseñanzaDos{
+    width: 40%;
+}
+.divParrafoEnseñanzaTres{
+    width: 60%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+.divSubtituloEnseñanzaTres{
+    width: 40%;
+}
+.parrafoEnseñanzaUno{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: left;
+}
+.parrafoEnseñanzaDos{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 5%;
+}
+.parrafoEnseñanzaDosDos{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 5%3
+}
+.parrafoEnseñanzaTres{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    text-align: left;
+}
+.subtituloChicoEnseñanzaTres{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+
+
+
+.footer{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.footerDos {
+    width: 100%;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+    flex-direction: row;
+    margin-bottom: 2%;
+
+}
+
+.contenedorIcono {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+}
+
+.contenedorNav {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+}
+.divTituloDosFooter{
+    margin-top: 2%;
+}
+#tituloFooter{
+    font-size: 1.7rem;
+}
+#tituloDosFooter{
+    font-size: 1.7rem;
+    margin: 0%;
+}
+#navLF{
+    display: flex;
+    margin-left: 3%;
+    font-family: 'Poppins', sans-serif;
+}
+#navLF:hover{
+    text-decoration: underline;
+}
+#iconoT{
+   width: 2rem;
+   height: 2rem;
+}
+#iconoT:hover{
+    width: 2.5rem;
+   height: 2.5rem;
+}
+#ancla{
+    text-decoration-line: none;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.iconoMail{
+    font-size: x-large;
+    margin-right: 1%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+ 
+    .contenedorIcono {
+        margin: 0%;
+        padding: 0%;
+        width: 50%;
+    }
+    
+    .contenedorNav {
+        margin: 0%;
+        padding: 0%;
+        width: 50%;
+    }
+    #navBarra{
+        width: fit-content;
+        margin-right: 5%;
+    }
+    #navL{
+        display: flex;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+    }
+    #containerNav{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #navL:hover{
+        text-decoration: underline;
+    }
+    #iconoT{
+       width: 2rem;
+       height: 2rem;
+       margin-top: 3%;
+       margin-left: 5%;
+    }
+    #iconoT:hover{
+        width: 2.5rem;
+       height: 2.5rem;
+    }
+    #ancla{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+
+
+    .divTituloEnseñanza{
+        height: fit-content;
+        margin-top: 20%;
+        margin-bottom: 20%;
+       }
+    .tituloEnseñanza{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        font-variant: small-caps;
+        color: #071928;  
+    }
+    .subtituloEnseñanzaUno{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2.4rem;
+        font-weight: bolder;
+        color: #071928;
+        margin-top: 7%;
+        margin-bottom: 7%;
+        font-style: italic;
+    }
+    .subtituloEnseñanzaDos{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2.4rem;
+        font-weight: bolder;
+        color: #071928;
+        margin-top: 7%;
+        font-style: italic;
+    }
+    .subtituloEnseñanzaDosDos{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2.4rem;
+        font-weight: bolder;
+        color: #071928;
+        font-style: italic;
+        margin-bottom: 7%;
+    }
+    .subtituloEnseñanzaTres{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2.4rem;
+        font-weight: bolder;
+        color: #071928;
+        margin-top: 7%;
+        font-style: italic;
+    }
+    .subtituloChicoEnseñanzaTres{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.8rem;
+        font-style: italic;
+        margin-bottom: 7%;
+    }
+    .contenidoUno{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenidoDos{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+    }
+    .contenidoTres{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+    }
+    .divParrafoEnseñanzaUno{
+        width: 90%;
+        margin: 0%;
+    }
+    .divSubtituloEnseñanzaUno{
+        width: 90%;
+        margin-top: 2%;
+    }
+    .divParrafoEnseñanzaDos{
+        width: 90%;
+        margin-right: 2%;
+        margin: 0%;
+    }
+    .divSubtituloEnseñanzaDos{
+        width: 90%;
+    }
+    .divParrafoEnseñanzaTres{
+        width: 90%;
+        margin: 0%;
+        margin-top: 2%;
+    }
+    .divSubtituloEnseñanzaTres{
+        width: 90%;
+    }
+    .parrafoEnseñanzaUno{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.7rem;
+        font-style: italic;
+        text-align: center;
+    }
+    .parrafoEnseñanzaDos{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.7rem;
+        font-style: italic;
+        text-align: center;
+    }
+    .parrafoEnseñanzaTres{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.7rem;
+        font-style: italic;
+        text-align: center;
+    }
+    
+    #tituloFooter{
+        font-size: 1.9rem;
+    }
+    #tituloDosFooter{
+        font-size: 1.9rem;
+        margin-bottom: 1%;
+    }
+    .iconoMail{
+        font-size: 2.2rem;
+        margin-right: 1%;
+    }
+
+    #navL:hover{
+        text-decoration: underline;
+    }
+    #ancla{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    .footer{
+        visibility: hidden;
+    }
+
+}
