@@ -404,20 +404,20 @@ body{
     }
     .parrafoEnseñanzaUno{
         font-family: 'Poppins', sans-serif;
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-style: italic;
         text-align: center;
-        margin-bottom: 5%;
+        margin-bottom: 15%;
     }
     .parrafoEnseñanzaDos{
         font-family: 'Poppins', sans-serif;
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-style: italic;
         text-align: center;
     }
     .parrafoEnseñanzaTres{
         font-family: 'Poppins', sans-serif;
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-style: italic;
         text-align: center;
     }
