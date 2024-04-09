@@ -266,7 +266,7 @@ justify-content: center;
         overflow-x: hidden;
     }
     .divTitulo{
-        width: 100%;
+        width: 100vw;
         height: 140vh;
         margin: 0%;
         padding: 0%;
