@@ -351,7 +351,11 @@ body{
         padding: 0%;
         flex-direction: row;
     }
-    
+    .mainPubli{
+        overflow-x: hidden;
+        width: 100vw;
+        height: fit-content;
+    }
     .contenedorIcono {
         margin: 0%;
         margin-top: 3%;
@@ -435,14 +439,12 @@ body{
     .linkPubli{
         text-decoration: none;
         width: 99%;
-        height: 30vh;
     }
     .divTituloPublicaciones{
         display: flex;
         flex-direction: row;
         justify-content: center;
         text-align: center;
-        height: fit-content;
         height: 100vh;
     }
        .divSubtituloPublicaciones{
@@ -470,8 +472,6 @@ body{
         margin-bottom: 2%;
     }
     
-
-
     .divPublicacionesUno{
         display: flex;
         flex-direction: column;
@@ -492,6 +492,8 @@ body{
         height: fit-content;
     }
     .divPublicacionesTres{
+        width: 100vw;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -605,7 +607,7 @@ body{
     }
 
     .divLibroPublicacion{
-        width: 99%;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -618,7 +620,7 @@ body{
     .libroPublicacionTitulo{
         color: #071928;
         font-family: 'Poppins', sans-serif;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -627,7 +629,7 @@ body{
     .libroPublicacion{
         color: #071928;
         font-family: 'Poppins', sans-serif;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         font-style: italic;
         display: flex;
         flex-direction: column;
@@ -637,7 +639,7 @@ body{
     .libroPublicacionDos{
         color: #071928;
         font-family: 'Poppins', sans-serif;
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-style: italic;
         display: flex;
         flex-direction: column;
