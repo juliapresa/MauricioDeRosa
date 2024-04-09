@@ -226,11 +226,13 @@ body{
 }
 
 #button{
+    font-family: 'Poppins', sans-serif;
+    border-color: #071928;
+    font-size: 0.9rem;
     color: #071928;
     background-color: #ffffff;
     margin-top: 2%;
-    border-color: #a7a9ab;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     width: 150px;
     height: 2rem;
 }

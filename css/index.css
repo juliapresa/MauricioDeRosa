@@ -110,6 +110,7 @@ justify-content: center;
 .fondoFormacion{
     background-color:#071928;
     height: 100vh;
+    width: 100vw;
 }
 .formacion{
     width: 99vw;
@@ -281,14 +282,17 @@ justify-content: center;
     .navbar{
         height: 10vh;
     }
-    .divTitleDos{
-        width: 99vw;
+    .divTitle{
+        width: 100vw;
         height: 100vh;
+    }
+    .divTitleDos{
+        width: 99%;
+        height: 70%;
         display: flex;
         justify-content: center;
         }
     .parrafoTitulo{
-        margin-top: 10%;
         font-family: "Poppins", sans-serif;
         font-size: x-large;
         line-height: 3;
@@ -363,10 +367,11 @@ justify-content: center;
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow-x: hidden;
     }
     #cardU{
-        width: 90%;
-        height: 70%;
+        width: 99%;
+        height: 20rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -391,7 +396,7 @@ justify-content: center;
         height: 25%;
     }
     #cardSDos{
-        height: 20%;
+        height: 3rem;
     }
     #divCardS{
         height: 40%;
