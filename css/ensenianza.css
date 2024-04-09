@@ -267,6 +267,7 @@ body{
         overflow-x: hidden;
     }
     .fondo{
+        width: 100vw;
         overflow-x: hidden;
     }
     .contenedorIcono {
