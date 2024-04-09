@@ -334,6 +334,8 @@ justify-content: center;
        width: 2rem;
        height: 2rem;
        margin-left: 5%;
+       display: table-cell;
+       vertical-align: middle;
     }
     #iconoT:hover{
         width: 2.5rem;
@@ -437,8 +439,10 @@ justify-content: center;
         text-decoration-line: none;
         display: flex;
         width: fit-content;
-        height: 50%;
-        margin-top: 9%;
+        height: 100%;
+        margin: 0%;
+        margin-left: 2%;
+        display: table;
     }
     .divTituloDosFooter{
         width: 100vw;
