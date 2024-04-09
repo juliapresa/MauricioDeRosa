@@ -505,16 +505,16 @@ body{
         align-items: center;
         text-align: center;
         width: 99%;
-        height: 25rem;
+        height: 30rem;
     }
 
     .cardPublicacionesUno{
         width: 99%;
-        height: 25rem;
+        height: 30rem;
     }
     .cardPublicacionesTres{
         width: 99%;
-        height: 25rem;
+        height: 30rem;
     }
 
     .tituloCardUno{
@@ -574,7 +574,7 @@ body{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
         font-size: 1.2rem;
-        width: 99%rem;
+        width: 99%;
         height: 10rem;
     }
     .tituloCardCinco{
