@@ -263,7 +263,10 @@ body{
         padding: 0%;
         overflow-x: hidden;
     }
-    
+    .sectionEnseñanza{
+        width: 100vw;
+        overflow-y: hidden;
+    }
     .mainEnseñanza{
         width: 100vw;
         overflow-x: hidden;
@@ -323,14 +326,18 @@ body{
 
     .divTituloEnseñanza{
         height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
        }
     .tituloEnseñanza{
+        width: 100vw;
         font-family: 'Times New Roman', Times, serif;
         font-size: 2.5rem;
         font-weight: bolder;
         font-variant: small-caps;
         color: #071928; 
         margin-top: 50%; 
+        overflow-x: hidden;
     }
     .subtituloEnseñanzaUno{
         font-family: Georgia, 'Times New Roman', Times, serif;
