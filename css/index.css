@@ -283,6 +283,7 @@ justify-content: center;
         height: 10vh;
     }
     .divTitle{
+        overflow-x: hidden;
         width: 100vw;
         height: 100vh;
     }
