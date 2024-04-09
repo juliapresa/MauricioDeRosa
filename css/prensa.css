@@ -243,6 +243,7 @@ body{
         overflow-x: hidden;
     }
     .mainPrensa{
+        width: 100vw;
         overflow-x: hidden;
     }
     .row {
@@ -304,14 +305,14 @@ body{
 
 
     #tituloFooter{
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
     #tituloDosFooter{
-        font-size: 1.9rem;
+        font-size: 1.5rem;
         margin-bottom: 1%;
     }
     .iconoMail{
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-right: 1%;
     }
     .row {
@@ -344,9 +345,11 @@ body{
         align-items: center;
     }
     .divTituloPrensa{
+        width: 100vw;
        height: 100vh;
     }
     .divSubtituloPrensa{
+        width: 100vw;
         height: fit-content;
         margin-bottom: 10%;
     }
@@ -367,6 +370,8 @@ body{
     }
     
     .divPrensaUno{
+        width: 100vw;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -375,6 +380,8 @@ body{
         margin-bottom: 2%;
     }
     .divPrensaDos{
+        width: 100vw;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -386,7 +393,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 90%;
+        width: 99%;
         height: fit-content;
         margin-bottom: 15%;
     }
@@ -394,7 +401,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 90%;
+        width: 99%;
         height: fit-content;
         margin-bottom: 0%;
     }
@@ -402,12 +409,12 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 90%;
+        width: 99%;
         height: fit-content;
         margin-bottom: 2%;
     }
     .cardPrensa{
-        width: 25rem;
+        width: 99%;
         height: 15rem;
         margin-bottom: 20%;
     }
