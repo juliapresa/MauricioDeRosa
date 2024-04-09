@@ -267,13 +267,13 @@ justify-content: center;
     }
     .divTitulo{
         width: 100vw;
-        height: 140vh;
+        height: 100vh;
         margin: 0%;
         padding: 0%;
         overflow-x: hidden;
         background-image: url(../assets/img/bannerCel.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         display: flex;
         flex-direction: column;
