@@ -261,13 +261,13 @@ body{
         height: fit-content;
         margin: 0%;
         padding: 0%;
-        overflow-y: hidden;
+        overflow-x: hidden;
     }
     .mainEnseñanza{
-        overflow-y: hidden;
+        overflow-x: hidden;
     }
     .fondo{
-        overflow-y: hidden;
+        overflow-x: hidden;
     }
     .contenedorIcono {
         margin: 0%;
