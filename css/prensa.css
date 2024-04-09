@@ -229,13 +229,14 @@ body{
     color: #071928;
     background-color: #ffffff;
     margin-top: 2%;
-    border-color: #071928;
-    width: 25rem;
-    height: 3rem;
+    border-color: #a7a9ab;
+    border-radius: 0.5rem;
+    width: 150px;
+    height: 2rem;
 }
 #button:hover{
-    background-color: #4d70a5;
-    color: #071928;
+    width: 153px;
+    height: 2.09rem;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px){
@@ -272,6 +273,7 @@ body{
     #navBarra{
         width: fit-content;
         margin-right: 5%;
+        background-color: white;
     }
     #navL{
         display: flex;
