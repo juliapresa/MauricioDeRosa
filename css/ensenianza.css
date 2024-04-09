@@ -190,7 +190,8 @@ body{
     font-size: 1.3rem;
     font-style: italic;
     text-align: left;
-    margin-bottom: 5%;
+    margin-bottom: 0%;
+    margin-top: 5%;
 }
 .parrafoEnseñanzaTres{
     font-family: 'Poppins', sans-serif;
@@ -442,7 +443,6 @@ body{
     }
     .divParrafoEnseñanzaDos{
         width: 99%;
-        margin-right: 2%;
         margin: 0%;
     }
     .divSubtituloEnseñanzaDos{
@@ -468,6 +468,14 @@ body{
         font-size: 1rem;
         font-style: italic;
         text-align: center;
+        margin-top: 5%;
+    }
+    .parrafoEnseñanzaDosDos{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        font-style: italic;
+        text-align: center;
+        margin-top: 0;
     }
     .parrafoEnseñanzaTres{
         font-family: 'Poppins', sans-serif;
