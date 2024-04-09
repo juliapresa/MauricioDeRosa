@@ -6,6 +6,9 @@ body{
     padding: 0%;
     overflow-x: hidden;
 }
+.mainPrensa{
+    width: 100vw;
+}
 .navbar{
     height: 10vh;
 }
@@ -174,7 +177,7 @@ body{
     margin-bottom: 10%;
 }
 .divTarjetaPrensa{
-    width: 30%;
+    width: 33%;
     height: 70%;
     display: flex;
     justify-content: center;
@@ -209,16 +212,16 @@ body{
 .divVideoUltimo{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     width: 35%;
     height: 250px;
 }
 .videoPrensa{
-    width: 445px;
+    width: 390px;
     height: 240px;
 }
 .videoPrensa:hover{
-    width: 455px;
+    width: 400px;
     height: 250px;
 }
 
