@@ -82,16 +82,23 @@ body{
     font-size: 2rem;
     font-weight: bolder;
     color: #071928;
-    margin-top: 7%;
     font-style: italic;
+    height: fit-content;
+    display: table-cell;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: center;
 }
 .subtituloEnseñanzaDos{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2rem;
     font-weight: bolder;
     color: #071928;
-    margin-top: 4%;
     font-style: italic;
+    display: table-cell;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: center;
 }
 .subtituloEnseñanzaDosDos{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -99,14 +106,21 @@ body{
     font-weight: bolder;
     color: #071928;
     font-style: italic;
+    display: table-cell;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: center;
 }
 .subtituloEnseñanzaTres{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2rem;
     font-weight: bolder;
     color: #071928;
-    margin-top: 3%;
     font-style: italic;
+    display: table-cell;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: center;
 }
 
 .contenidoUno{
@@ -130,7 +144,7 @@ body{
 }
 .divParrafoEnseñanzaUno{
     width: 60%;
-    margin-right: 5%;
+    margin-right: 3%;
 }
 .sectionEnseñanza{
     width: 100vw;
@@ -138,21 +152,25 @@ body{
 }
 .divSubtituloEnseñanzaUno{
     width: 40%;
+    display: table;
 }
 .divParrafoEnseñanzaDos{
     width: 60%;
-    margin-right: 5%;
+    margin-right: 3%;
 }
 .divSubtituloEnseñanzaDos{
     width: 40%;
+    display: table;
+    
 }
 .divParrafoEnseñanzaTres{
     width: 60%;
-    margin-right: 5%;
+    margin-right: 3%;
     margin-top: 2%;
 }
 .divSubtituloEnseñanzaTres{
     width: 40%;
+    display: table;
 }
 .parrafoEnseñanzaUno{
     font-family: 'Poppins', sans-serif;
@@ -172,7 +190,7 @@ body{
     font-size: 1.3rem;
     font-style: italic;
     text-align: left;
-    margin-bottom: 5%3
+    margin-bottom: 5%;
 }
 .parrafoEnseñanzaTres{
     font-family: 'Poppins', sans-serif;
@@ -184,6 +202,9 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 1.3rem;
     font-style: italic;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 
 
