@@ -525,7 +525,7 @@ body{
     }
     .cardPublicacionesTres{
         width: 99%;
-        height: 17rem;
+        height: 19rem;
     }
 
     .tituloCardUno{
@@ -548,7 +548,7 @@ body{
         color: #071928;
         font-size: 1.4rem;
         width: 99%;
-        height:fit-content;
+        height: 13rem;
     }
     .textoCardDos{
         font-family: Georgia,'Times New Roman', Times, serif;
