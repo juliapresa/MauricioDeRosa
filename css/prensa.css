@@ -261,6 +261,7 @@ body{
         margin: 0%;
         padding: 0%;
         width: 50%;
+        margin-top: 3%;
     }
     
     .contenedorNav {
@@ -289,7 +290,6 @@ body{
     #iconoT{
        width: 2rem;
        height: 2rem;
-       margin-top: 3%;
        margin-left: 5%;
     }
     #iconoT:hover{
@@ -306,13 +306,17 @@ body{
     }
 
 
-
+    .divTituloDosFooter{
+        margin-top: 2%;
+        margin-bottom: 1%;
+    }
     #tituloFooter{
+        margin: 0%;
         font-size: 1.5rem;
     }
     #tituloDosFooter{
         font-size: 1.5rem;
-        margin-bottom: 1%;
+        margin: 0%;
     }
     .iconoMail{
         font-size: 1rem;
@@ -406,7 +410,7 @@ body{
         align-items: center;
         width: 99%;
         height: fit-content;
-        margin-bottom: 0%;
+        margin-bottom: 20%;
     }
     .divTarjetaPrensa{
         display: flex;
