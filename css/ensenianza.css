@@ -132,9 +132,12 @@ body{
     width: 60%;
     margin-right: 5%;
 }
+.sectionEnseñanza{
+    height: 100vh;
+    overflow-y: hidden;
+}
 .divSubtituloEnseñanzaUno{
     width: 40%;
-    margin-top: 7%;
 }
 .divParrafoEnseñanzaDos{
     width: 60%;
@@ -260,6 +263,9 @@ body{
         padding: 0%;
         overflow-x: hidden;
     }
+    .mainEnseñanza{
+        overflow-x: hidden;
+    }
     .contenedorIcono {
         margin: 0%;
         margin-top: 3%;
@@ -326,6 +332,7 @@ body{
         font-size: 2.4rem;
         font-weight: bolder;
         color: #071928;
+        margin: 0%;
         margin-bottom: 7%;
         font-style: italic;
     }

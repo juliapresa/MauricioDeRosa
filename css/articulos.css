@@ -286,7 +286,7 @@ body{
         margin-bottom: 1%;
     }
     .iconoMail{
-        font-size: 2.2rem;
+        font-size: 1.5rem;
         margin-right: 1%;
     }
     .row {
@@ -313,7 +313,7 @@ body{
     #articulos{
         height: fit-content;
         width: 100vw;
-        overflow-x: hidden;
+        overflow-y: hiddens;
         margin-bottom: 10%;
     }
     .divTituloArticulos{
