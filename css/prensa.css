@@ -61,6 +61,13 @@ body{
     margin-top: 2%;
     margin-left: 2%;
 }
+#anclaNav{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 2%;
+    margin-left: 2%;
+}
 
 
 .footer{
@@ -264,7 +271,6 @@ body{
         margin: 0%;
         padding: 0%;
         width: 50%;
-        margin-top: 3%;
     }
     
     .contenedorNav {
@@ -292,9 +298,10 @@ body{
         text-decoration: underline;
     }
     #iconoT{
-       width: 2rem;
-       height: 2rem;
-       margin-left: 5%;
+        width: 2rem;
+        height: 2rem;     
+        display: table-cell;
+        vertical-align: middle;
     }
     #iconoT:hover{
         width: 2.5rem;
@@ -307,6 +314,15 @@ body{
         height: fit-content;
         margin-top: 5%;
         margin-left: 10%;
+    }
+    #anclaNav{
+        text-decoration-line: none;
+        display: flex;
+        width: fit-content;
+        height: 100%;
+        margin: 0%;
+        margin-left: 10%;
+        display: table;
     }
 
 
