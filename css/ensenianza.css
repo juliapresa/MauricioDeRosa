@@ -264,7 +264,10 @@ body{
         overflow-y: hidden;
     }
     .mainEnseñanza{
-        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .fondo{
+        overflow-y: hidden;
     }
     .contenedorIcono {
         margin: 0%;
