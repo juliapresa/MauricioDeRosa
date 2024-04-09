@@ -505,29 +505,29 @@ body{
         align-items: center;
         text-align: center;
         width: 99%;
-        height: 20rem;
+        height: 25rem;
     }
 
     .cardPublicacionesUno{
         width: 99%;
-        height: 20rem;
+        height: 25rem;
     }
     .cardPublicacionesTres{
         width: 99%;
-        height: 20rem;
+        height: 25rem;
     }
 
     .tituloCardUno{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
-        font-size: 1.9rem;
+        font-size: 1.4rem;
         width: 99%;
         height: 12rem;
     }
     .textoCardUno{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         width: 99%;
         height: fit-content;
     }
@@ -535,14 +535,14 @@ body{
     .tituloCardDos{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
-        font-size: 2rem;
+        font-size: 1.4rem;
         width: 99%;
         height:fit-content;
     }
     .textoCardDos{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         width: 99%;
         height:12rem;
     }
@@ -551,14 +551,14 @@ body{
     .tituloCardTres{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         width: 99%;
         height: 12rem;
     }
     .textoCardTres{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         width: 99%;
         height: fit-content;
     }
@@ -566,28 +566,28 @@ body{
     .tituloCardCuatro{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         width: 99%;
         height: 12rem;
     }
     .textoCardCuatro{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
-        font-size: 1.4rem;
-        width: 34rem;
+        font-size: 1.2rem;
+        width: 99%rem;
         height: 10rem;
     }
     .tituloCardCinco{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         width: 99%;
         height: 12rem;
     }
     .textoCardCinco{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         width: 99%;
         height: fit-content;
     }
