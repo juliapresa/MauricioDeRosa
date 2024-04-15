@@ -223,9 +223,10 @@ body{
 .divTituloCardArticulosTres{
     width: 70%;
 }
-.divTituloCardArticulosTres{
+.divTituloCardArticulos{
     width: 70%;
 }
+.div
 .tituloCardArticulosTres{
     font-family: Georgia,'Times New Roman', Times, serif;
     color: #071928;
@@ -446,8 +447,9 @@ body{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
         font-size: 1.3rem;
-        width: 99%;
+        width: 70%;
         margin-bottom: 2%;
+        
     }
     #button{
         color: #071928;
