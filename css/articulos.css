@@ -126,6 +126,8 @@ body{
     text-decoration: none;
     width: fit-content;
 }
+
+
 #articulos{
     height: fit-content;
     width: 100vw;
@@ -162,55 +164,73 @@ body{
     flex-direction: row;
     justify-content: center;
     width: 50%;
-    height: 70%;
+    height: 70vh;
+    margin: 0%;
+    padding: 0%;
 }
-.cardArticulos{
-    width: 40rem;
-    height: 18rem;
-    border-radius: 1rem;
-    border-color: rgb(223, 219, 219);
+#cuerpoCard{
+    height: 100%;
+}
+.imgArticulo{
+    width: 500px;
+    height: 300px;
+}
+.imgArticulo:hover{
+    width: 520px;
+    height: 320px;
+}
+.imgArticuloDos{
+    width: 600px;
+    height: 300px;
+}
+.imgArticuloDos:hover{
+    width: 620px;
+    height: 320px;
+}
+.imgArticuloTres{
+    width: 500px;
+    height: 300px;
+}
+.imgArticuloTres:hover{
+    width: 520px;
+    height: 320px;
+}
+.imgArticuloCuatro{
+    width: 500px;
+    height: 300px;
+}
+.imgArticuloCuatro:hover{
+    width: 520px;
+    height: 320px;
 }
 .parrafoCardArticulos{
     color: #4d70a5;
 }
-.tituloCardArticulos{
+.tituloCardArticulo{
     font-family: Georgia,'Times New Roman', Times, serif;
     color: #071928;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-top: 3%;
-    width: 40rem;
-    height: 6rem;
-    text-align: center;
 }
 .tituloCardArticulosDos{
     font-family: Georgia,'Times New Roman', Times, serif;
     color: #071928;
-    margin-top: 3%;
-    font-size: 1.3rem;
-    width: 40rem;
-    height: 6rem;
-}
-.tituloCardArticulosTres{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    color: #071928;
     font-size: 1.3rem;
     margin-top: 3%;
-    width: 40rem;
-    height: 6rem;
 }
 .textoCardArticulos{
     font-family: Georgia,'Times New Roman', Times, serif;
     color: #071928;
     font-size: 1.2rem;
-    width: 40rem;
-    height: 6rem;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 .textoCardArticulosDos{
     font-family: Georgia,'Times New Roman', Times, serif;
     color: #071928;
     font-size: 1.2rem;
-    width: 40rem;
-    height: 6rem;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 #button:hover{
     background-color: #071928;
@@ -373,35 +393,22 @@ body{
         flex-direction: row;
         justify-content: center;
         width: 99%;
-        height: 21rem;
-        margin-bottom: 20%;
+        height: 70vh;
+        margin-bottom: 10%;
     }
-    .cardArticulos{
-        width: 99%;
-        height: 21rem;
-    }
-    .tituloCardArticulos{
+    .tituloCardArticulo{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
-        font-size: 1.9rem;
+        font-size: 1.6rem;
         width: 99%;
-        height: 9rem;
     }
     .tituloCardArticulosDos{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
-        font-size: 1.7rem;
-        width: 99%;
-        height: 9rem;
-       margin-bottom: 10%;
-    }
-    .tituloCardArticulosTres{
-        font-family: Georgia,'Times New Roman', Times, serif;
-        color: #071928;
         font-size: 1.6rem;
-       margin-bottom: 10%;
-       width: 99%;
-       height: 9rem;
+        margin:0%;
+        margin-top: 3%;
+        width: 99%;
     }
     #cuerpoCard{
         width: fit-content;
