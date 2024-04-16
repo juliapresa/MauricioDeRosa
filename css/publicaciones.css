@@ -125,7 +125,6 @@ body{
 }
 
 #publicaciones{
-    height: fit-content;
     width: 100vw;
     margin: 0%;
     padding: 0%;
@@ -137,11 +136,11 @@ body{
     height: fit-content;
     margin-top: 10%;
     margin-bottom: 7%;
-   }
-   .divSubtituloPublicaciones{
+}
+.divSubtituloPublicaciones{
     height: fit-content;
     margin-bottom: 5%;
-   }
+}
 .tituloPublicacion{
     font-family: Georgia,'Times New Roman', Times, serif;
     font-size: 2.3rem;
@@ -163,7 +162,7 @@ body{
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    height: 20rem;
+    height: fit-content;
     margin: 0%;
     padding: 0%;
     margin-bottom: 5%;
@@ -173,41 +172,41 @@ body{
     flex-direction: row;
     justify-content: center;
     width: 100vw;
+    height: fit-content;
     margin: 0%;
     padding: 0%;
     margin-top: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 20%;
 }
-.divPublicacionesTres{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 10%;
-}
-
 .divTarjetaPublicaciones{
     width: 33%;
     display: flex;
     justify-content: center;
 }
 .cardPublicacionesUno{
-    width: 25rem;
-    height: 19rem;
-    border-radius: 1rem;
-    border-color: rgb(223, 219, 219);
+    width: 100%;
+    height: fit-content;
     
 }
-.cardPublicacionesDos{
-    width: 25rem;
-    height: 19rem;
-    border-radius: 1rem;
-    border-color: rgb(223, 219, 219);
+.imgPublicacionUno{
+    width: 420px;
+    height: 300px;
 }
-.cardPublicacionesTres{
-    width: 25rem;
-    height: 19rem;
-    border-radius: 1rem;
-    border-color: rgb(223, 219, 219);
+.imgPublicacionUno:hover{
+    width: 450px;
+    height: 330px;
+}
+#cuerpoCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.parrafoCard{
+    color: #4d70a5;
+}
+.linkPubli{
+    text-decoration: none;
 }
 
 
@@ -248,109 +247,6 @@ body{
     align-items: start;
     
 }
-#cuerpoCard{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.parrafoCard{
-    color: #4d70a5;
-}
-.tituloCardUno{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    color: #071928;
-    font-size: 1.2rem;
-    margin-top: 3%;
-    width: 24rem;
-    height: 7rem;
-}
-.textoCardUno{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    color: #071928;
-    font-size: 1rem;
-    width: 24rem;
-    height: 6rem;
-}
-.linkPubli{
-    text-decoration: none;
-}
-.textoUno{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    color: #071928;
-    margin-top: 5%;
-    font-size: 1rem;
-    width: 24rem;
-    height: 6rem;
-}
-
-.tituloCardDos{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    color: #071928;
-    font-size: 1.2rem;
-    margin-top: 3%;
-    width: 24rem;
-    height: 7rem;
-}
-.textoCardDos{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    color: #071928;
-    font-size: 1rem;
-    width: 24rem;
-    height: 6rem;
-}
-
-.tituloCardTres{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    color: #071928;
-    font-size: 1.2rem;
-    margin-top: 3%;
-    width: 24rem;
-    height: 7rem;
-}
-.textoCardTres{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    color: #071928;
-    margin-top: 5%;
-    font-size: 1rem;
-    width: 24rem;
-    height: 6rem;
-}
-
-.tituloCardCuatro{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    color: #071928;
-    font-size: 1.2rem;
-    margin-top: 3%;
-    width: 24rem;
-    height: 7rem;
-}
-.textoCardCuatro{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    color: #071928;
-    font-size: 1rem;
-    margin-top: 5%;
-    width: 24rem;
-    height: 6rem;
-}
-.tituloCardCinco{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    color: #071928;
-    font-size: 1.2rem;
-    margin-top: 3%;
-    width: 24rem;
-    height: 7rem;
-}
-.textoCardCinco{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    color: #071928;
-    font-size: 1rem;
-    width: 24rem;
-    height: 6rem;
-}
-
-
-
 @media screen and (min-width: 0px) and (max-width: 768px){
     .row {
         width: 100vw;
@@ -440,6 +336,7 @@ body{
     .footer{
         visibility: hidden;
     }
+
     #publicaciones{
         height: fit-content;
         width: 100vw;
@@ -447,7 +344,7 @@ body{
     }
     .linkPubli{
         text-decoration: none;
-        width: 99%;
+        width: 100%;
     }
     .divTituloPublicaciones{
         display: flex;
@@ -484,7 +381,6 @@ body{
     .divPublicacionesUno{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         text-align: center;
         width: 100vw;
@@ -494,21 +390,10 @@ body{
         width: 100vw;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         text-align: center;
         margin: 0%;
         height: fit-content;
-    }
-    .divPublicacionesTres{
-        width: 100vw;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 0%;
     }
     #cuerpoCard{
         display: flex;
@@ -516,95 +401,21 @@ body{
         align-items: center;
         text-align: center;
         width: 99%;
-        height: 17rem;
     }
-
+    .imgPublicacionUno{
+        width: 400px;
+        height: 400px;
+    }
+    .imgPublicacionUno:hover{
+        width: 400px;
+        height: 400px;
+    }
     .cardPublicacionesUno{
-        width: 99%;
-        height: 17rem;
+        width: 90vw;
+        height: 50vh;
     }
-    .cardPublicacionesTres{
-        width: 99%;
-        height: 19rem;
-    }
-
-    .tituloCardUno{
-        font-family: Georgia,'Times New Roman', Times, serif;
-        color: #071928;
-        font-size: 1.4rem;
-        width: 99%;
-        height: 12rem;
-    }
-    .textoCardUno{
-        font-family: Georgia,'Times New Roman', Times, serif;
-        color: #071928;
-        font-size: 1.2rem;
-        width: 99%;
-        height: fit-content;
-    }
-
-    .tituloCardDos{
-        font-family: Georgia,'Times New Roman', Times, serif;
-        color: #071928;
-        font-size: 1.4rem;
-        width: 99%;
-        height: 13rem;
-    }
-    .textoCardDos{
-        font-family: Georgia,'Times New Roman', Times, serif;
-        color: #071928;
-        font-size: 1.2rem;
-        width: 99%;
-        height:12rem;
-    }
-
-
-    .tituloCardTres{
-        font-family: Georgia,'Times New Roman', Times, serif;
-        color: #071928;
-        font-size: 1.4rem;
-        width: 99%;
-        height: 12rem;
-    }
-    .textoCardTres{
-        font-family: Georgia,'Times New Roman', Times, serif;
-        color: #071928;
-        font-size: 1.2rem;
-        width: 99%;
-        height: fit-content;
-    }
-
-    .tituloCardCuatro{
-        font-family: Georgia,'Times New Roman', Times, serif;
-        color: #071928;
-        font-size: 1.4rem;
-        width: 99%;
-        height: 12rem;
-    }
-    .textoCardCuatro{
-        font-family: Georgia,'Times New Roman', Times, serif;
-        color: #071928;
-        font-size: 1.2rem;
-        width: 99%;
-        height: 10rem;
-    }
-    .tituloCardCinco{
-        font-family: Georgia,'Times New Roman', Times, serif;
-        color: #071928;
-        font-size: 1.4rem;
-        width: 99%;
-        height: 12rem;
-    }
-    .textoCardCinco{
-        font-family: Georgia,'Times New Roman', Times, serif;
-        color: #071928;
-        font-size: 1.2rem;
-        width: 99%;
-        height: fit-content;
-    }
-
     .divTarjetaPublicaciones{
-        width: 99%;
+        width: 90%;
         height: fit-content;
         display: flex;
         justify-content: center;
