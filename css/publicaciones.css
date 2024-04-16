@@ -415,7 +415,7 @@ body{
         height: 50vh;
     }
     .divTarjetaPublicaciones{
-        width: 90%;
+        width: 90vw;
         height: fit-content;
         display: flex;
         justify-content: center;
