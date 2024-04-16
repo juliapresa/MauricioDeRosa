@@ -381,7 +381,6 @@ body{
     
     .divArticulosUno{
         width: 100vw;
-        height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -405,7 +404,7 @@ body{
         flex-direction: row;
         justify-content: center;
         width: 99%;
-        height: 80vh;
+        height: 90vh;
         margin-bottom: 15%;
     }
     .tituloCardArticulo{
