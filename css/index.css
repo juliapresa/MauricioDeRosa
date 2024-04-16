@@ -108,6 +108,7 @@ justify-content: center;
     background-color:#071928;
 }
 .divTituloFormacion{
+    width: 100vw;
     height: fit-content;
     margin-bottom: 5%;
     background-color:#071928;
