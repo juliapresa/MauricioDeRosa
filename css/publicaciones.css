@@ -248,6 +248,12 @@ body{
     
 }
 @media screen and (min-width: 0px) and (max-width: 768px){
+    body{
+        width: 100vw;
+        margin: 0%;
+        padding: 0%;
+        overflow-x: hidden;
+    }
     .row {
         width: 100vw;
         height: fit-content;
@@ -256,7 +262,6 @@ body{
         flex-direction: row;
     }
     .mainPubli{
-        overflow-x: hidden;
         width: 100vw;
         height: fit-content;
     }
@@ -340,7 +345,6 @@ body{
     #publicaciones{
         height: fit-content;
         width: 100vw;
-        overflow-x: hidden;
     }
     .linkPubli{
         text-decoration: none;

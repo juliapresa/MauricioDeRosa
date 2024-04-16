@@ -148,7 +148,6 @@ body{
 }
 .sectionEnseñanza{
     width: 100vw;
-    overflow-y: hidden;
 }
 .divSubtituloEnseñanzaUno{
     width: 40%;
@@ -295,15 +294,12 @@ body{
     }
     .sectionEnseñanza{
         width: 100vw;
-        overflow-y: hidden;
     }
     .mainEnseñanza{
         width: 100vw;
-        overflow-x: hidden;
     }
     .fondo{
         width: 100vw;
-        overflow-x: hidden;
     }
     .contenedorIcono {
         margin: 0%;
@@ -361,7 +357,6 @@ body{
     .divTituloEnseñanza{
         height: 100vh;
         width: 100vw;
-        overflow-x: hidden;
         margin: 0%;
         padding: 0%;
        }
@@ -373,7 +368,6 @@ body{
         font-variant: small-caps;
         color: #071928; 
         margin-top: 50%; 
-        overflow-x: hidden;
     }
     .subtituloEnseñanzaUno{
         font-family: Georgia, 'Times New Roman', Times, serif;
