@@ -102,7 +102,7 @@ justify-content: center;
     width: 100vw;
 }
 .formacion{
-    width: 99vw;
+    width: 100vw;
     display: flex;
     margin-bottom: 5%;
     justify-content: space-around;
@@ -251,7 +251,6 @@ justify-content: center;
         width: 100vw;
         margin: 0%;
         padding: 0%;
-        overflow-x: hidden;
     }
     .sectionNav {
         width: 100%;
@@ -264,7 +263,6 @@ justify-content: center;
         height: 100vh;
         margin: 0%;
         padding: 0%;
-        overflow-x: hidden;
         background-image: url(../assets/img/bannerCel.png);
         background-repeat: no-repeat;
         background-size: contain;
@@ -277,27 +275,20 @@ justify-content: center;
         height: 10vh;
     }
     .divTitle{
-        overflow-x: hidden;
         width: 100vw;
     }
     .divTitleDos{
-        width: 99%;
+        width: 100%;
         display: flex;
         justify-content: center;
-        }
+    }
     .parrafoTitulo{
         font-family: "Poppins", sans-serif;
         font-size: x-large;
     }
     
 
-    .row {
-        width: 100vw;
-        margin: 0%;
-        padding: 0%;
-        flex-direction: row;
-    }
-    
+
     .contenedorIcono {
         margin: 0%;
         padding: 0%;
@@ -360,7 +351,6 @@ justify-content: center;
         display: flex;
         flex-direction: column;
         align-items: center;
-        overflow-x: hidden;
     }
     #cardU{
         width: 95vw;
@@ -425,13 +415,7 @@ justify-content: center;
         font-size: 2.2rem;
         margin-right: 1%;
     }
-    .row {
-        width: 100vw;
-        height: 5rem;
-        margin: 0%;
-        padding: 0%;
-        flex-direction: row;
-    }
+
     #navL:hover{
         text-decoration: underline;
     }
@@ -449,5 +433,13 @@ justify-content: center;
     }
     .footer{
         visibility: hidden;
+    }
+    .footerDos{
+        position: relative;
+        bottom: 0;
+        z-index: -1;
+    }
+    #mainIndex{
+        padding-bottom: 100px;
     }
 }
