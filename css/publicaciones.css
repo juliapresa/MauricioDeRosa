@@ -135,11 +135,11 @@ body{
 .divTituloPublicaciones{
     height: fit-content;
     margin-top: 10%;
-    margin-bottom: 7%;
+    margin-bottom: 10%;
 }
 .divSubtituloPublicaciones{
     height: fit-content;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 .tituloPublicacion{
     font-family: Georgia,'Times New Roman', Times, serif;
@@ -165,7 +165,7 @@ body{
     height: fit-content;
     margin: 0%;
     padding: 0%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 .divPublicacionesDos{
     display: flex;
