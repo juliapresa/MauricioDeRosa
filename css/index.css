@@ -7,7 +7,7 @@ body{
     overflow-x: hidden;
 }
 .sectionNav {
-    width: 100%;
+    width: 100vw;
     height: fit-content;
     margin: 0%;
     padding: 0%;
@@ -93,15 +93,13 @@ justify-content: center;
 }
 
 
-
-
 .fondoFormacion{
     background-color:#071928;
     height: 100vh;
     width: 100vw;
 }
 .formacion{
-    width: 100vw;
+    width: 99vw;
     display: flex;
     margin-bottom: 5%;
     justify-content: space-around;
