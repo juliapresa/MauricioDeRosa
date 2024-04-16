@@ -432,6 +432,12 @@ body{
     #cuerpoCard{
         width: fit-content;
     }
+    .divTituloCardArticulosTres{
+        width: 90%;
+    }
+    .divTituloCardArticulosDos{
+        width: 90%;
+    }
     .textoCardArticulos{
         font-family: Georgia,'Times New Roman', Times, serif;
         color: #071928;
