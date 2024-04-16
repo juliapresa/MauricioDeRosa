@@ -403,11 +403,11 @@ body{
         width: 99%;
     }
     .imgPublicacionUno{
-        width: 400px;
+        width: 90vw;
         height: 400px;
     }
     .imgPublicacionUno:hover{
-        width: 400px;
+        width: 90vw;
         height: 400px;
     }
     .cardPublicacionesUno{
