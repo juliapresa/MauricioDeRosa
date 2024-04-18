@@ -185,51 +185,40 @@ body{
 }
 .divTarjetaPrensa{
     width: 33%;
-    height: 70%;
     display: flex;
     justify-content: center;
 }
 .cardPrensa{
-    width: 25rem;
-    height: 15rem;
+    width: 100%;
+    height: fit-content;
 }
 .parrafoCardPrensa{
     color: #4d70a5;
 }
-.tituloCardPrensa{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    color: #071928;
-    font-size: 1.8rem;
-    width: 24rem;
-    margin: 0%;
-    margin-top: 3%;
-    height: 6rem;
+.imgPrensaUno{
+    width: 425px;
+    height: 350px;
 }
-.textoCardPrensa{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    color: #071928;
-    font-size: 1.2rem;
-    width: 24rem;
-    height: 2rem;
+.imgPrensaUno:hover{
+    width: 450px;
+    height: 380px;
 }
 .divVideo{
     width: 33%;
-    height: 250px;
 }
 .divVideoUltimo{
     display: flex;
     flex-direction: column;
     align-items: start;
     width: 35%;
-    height: 250px;
 }
 .videoPrensa{
-    width: 390px;
-    height: 240px;
+    width: 420px;
+    height: 350px;
 }
 .videoPrensa:hover{
-    width: 400px;
-    height: 250px;
+    width: 450px;
+    height: 380px;
 }
 
 #button{
@@ -403,7 +392,6 @@ body{
         align-items: center;
         margin: 0%;
         padding: 0%;
-        margin-bottom: 2%;
     }
     .divPrensaDos{
         width: 100vw;
@@ -413,7 +401,6 @@ body{
         align-items: center;
         margin: 0%;
         padding: 0%;
-        margin-bottom: 2%;
     }
     .divVideo{
         display: flex;
@@ -436,32 +423,24 @@ body{
         flex-direction: column;
         align-items: center;
         width: 99%;
-        height: fit-content;
-        margin-bottom: 2%;
+        margin-bottom: 15%;
     }
     .cardPrensa{
         width: 99%;
-        height: 15rem;
-        margin-bottom: 20%;
     }
     .parrafoCardPrensa{
         color: #4d70a5;
     }
-    .tituloCardPrensa{
-        font-family: Georgia,'Times New Roman', Times, serif;
-        color: #071928;
-        font-size: 1.9rem;
-        margin-bottom: 10%;
-      
+    .imgPrensaUno{
+        width: 90vw;
+        height: 450px;
     }
-    .textoCardPrensa{
-        font-family: Georgia,'Times New Roman', Times, serif;
-        color: #1c1e1f;
-        font-size: 1.6rem;
-       margin-bottom: 10%;
+    .imgPrensaUno:hover{
+        width: 90vw;
+        height: 380px;
     }
     .videoPrensa{
-        width: 405px;
-        height: 240px;
+        width: 90vw;
+        height: 450px;
     }
 }
