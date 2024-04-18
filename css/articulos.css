@@ -227,6 +227,7 @@ body{
 }
 .divTituloCardArticulosTres{
     width: 80%;
+    margin: 0%;
 }
 .divTituloCardArticulosDos{
     width: 80%;
@@ -241,7 +242,7 @@ body{
     font-family: Georgia,'Times New Roman', Times, serif;
     color: #071928;
     font-size: 1.2rem;
-    margin-top: 3%;
+    margin-top: 2%;
     margin-bottom: 3%;
 }
 .textoCardArticulosDos{
@@ -445,6 +446,7 @@ body{
     }
     .divTituloCardArticulosTres{
         width: 90%;
+        margin-bottom: 2%;
     }
     .divTituloCardArticulosDos{
         width: 90%;
