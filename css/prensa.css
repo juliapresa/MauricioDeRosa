@@ -433,7 +433,7 @@ body{
     }
     .imgPrensaUno{
         width: 90vw;
-        height: 450px;
+        height: 380px;
     }
     .imgPrensaUno:hover{
         width: 90vw;
@@ -441,6 +441,6 @@ body{
     }
     .videoPrensa{
         width: 90vw;
-        height: 450px;
+        height: 400px;
     }
 }
