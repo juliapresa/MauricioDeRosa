@@ -303,6 +303,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: white;
     }
     #navL:hover{
         text-decoration: underline;
@@ -377,6 +378,7 @@ body{
         width: 100vw;
         height: 100vh;
         color: #071928;
+        margin-bottom: 5%;
        }
     .tituloArticulo{
         font-family: Georgia,'Times New Roman', Times, serif;

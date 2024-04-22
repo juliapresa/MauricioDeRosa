@@ -62,9 +62,8 @@ body{
     margin-left: 2%;
 }
 
-
-
 .divTituloEnseñanza{
+    width: 100vw;
     margin: 0%;
     height: 90vh;
     background-color: #071928;
@@ -296,7 +295,7 @@ body{
     .sectionEnseñanza{
         width: 100vw;
     }
-    .mainEnseñanza{
+    .mainEnsenianza{
         width: 100vw;
     }
     .fondo{
@@ -329,6 +328,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: white;
     }
     #navL:hover{
         text-decoration: underline;
@@ -354,12 +354,13 @@ body{
         display: table;
     }
 
-
     .divTituloEnseñanza{
         width: 100vw;
-       height: 100vh;
-       color: #071928;
-       }
+        height: 100vh;
+        background-color: #071928;
+        margin: 0%;
+        padding: 0%;
+    }
     .tituloEnseñanza{
         font-family: Georgia,'Times New Roman', Times, serif;
         font-size: 2.5rem;
