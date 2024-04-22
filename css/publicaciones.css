@@ -133,8 +133,9 @@ body{
     align-items: center;
 }
 .divTituloPublicaciones{
-    height: fit-content;
-    margin-top: 10%;
+    margin: 0%;
+    height: 90vh;
+    background-color: #071928;
     margin-bottom: 10%;
 }
 .divSubtituloPublicaciones{
@@ -146,7 +147,8 @@ body{
     font-size: 2.3rem;
     font-weight: bolder;
     font-variant: small-caps;
-    color: #071928;
+    color: #d3d5d7de;
+    margin-top: 45vh;
 }
 .subtituloPublicacion{
     font-family: Georgia,'Times New Roman', Times, serif;
@@ -176,7 +178,7 @@ body{
     margin: 0%;
     padding: 0%;
     margin-top: 2%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 .divTarjetaPublicaciones{
     width: 33%;
@@ -350,11 +352,9 @@ body{
         width: 100%;
     }
     .divTituloPublicaciones{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
+        width: 100vw;
         height: 100vh;
+        color: #071928;
     }
        .divSubtituloPublicaciones{
         display: flex;
@@ -365,11 +365,10 @@ body{
         margin-bottom: 10%;
     }
     .tituloPublicacion{
-        font-family: 'Times New Roman', Times, serif;
+        font-family: Georgia,'Times New Roman', Times, serif;
         font-size: 2.5rem;
         font-weight: bolder;
         font-variant: small-caps;
-        color: #071928;
         margin-top: 50%;
     }
 

@@ -131,16 +131,18 @@ body{
     width: 100vw;
 }
 .divTituloArticulos{
-    height: fit-content;
-    margin-top: 10%;
-    margin-bottom: 7%;
+    margin: 0%;
+    height: 90vh;
+    background-color: #071928;
+    margin-bottom: 10%;
    }
 .tituloArticulo{
     font-family: Georgia,'Times New Roman', Times, serif;
     font-size: 2.3rem;
     font-weight: bolder;
     font-variant: small-caps;
-    color: #071928;
+    color: #d3d5d7de;
+    margin-top: 45vh;
 }
 
 
@@ -372,14 +374,15 @@ body{
         margin-bottom: 10%;
     }
     .divTituloArticulos{
+        width: 100vw;
         height: 100vh;
+        color: #071928;
        }
     .tituloArticulo{
-        font-family: 'Times New Roman', Times, serif;
+        font-family: Georgia,'Times New Roman', Times, serif;
         font-size: 2.5rem;
         font-weight: bolder;
         font-variant: small-caps;
-        color: #071928;
         margin-top: 50%;
     }
     .subtituloArticulos{

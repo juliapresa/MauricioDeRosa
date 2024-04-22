@@ -65,17 +65,17 @@ body{
 
 
 .divTituloEnseñanza{
-    height: fit-content;
-    margin-top: 7%;
-    margin-bottom: 7%;
+    margin: 0%;
+    height: 90vh;
+    background-color: #071928;
    }
 .tituloEnseñanza{
     font-family: Georgia,'Times New Roman', Times, serif;
     font-size: 2.3rem;
     font-weight: bolder;
     font-variant: small-caps;
-    color: #071928;
-    
+    color: #d3d5d7de;
+    margin-top: 45vh;
 }
 .subtituloEnseñanzaUno{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -145,6 +145,7 @@ body{
 .divParrafoEnseñanzaUno{
     width: 60%;
     margin-right: 3%;
+    margin-top: 3%;
 }
 .sectionEnseñanza{
     width: 100vw;
@@ -355,19 +356,16 @@ body{
 
 
     .divTituloEnseñanza{
-        height: 100vh;
         width: 100vw;
-        margin: 0%;
-        padding: 0%;
+       height: 100vh;
+       color: #071928;
        }
     .tituloEnseñanza{
-        width: 100vw;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: Georgia,'Times New Roman', Times, serif;
         font-size: 2.5rem;
         font-weight: bolder;
         font-variant: small-caps;
-        color: #071928; 
-        margin-top: 50%; 
+        margin-top: 50%;
     }
     .subtituloEnseñanzaUno{
         font-family: Georgia, 'Times New Roman', Times, serif;
