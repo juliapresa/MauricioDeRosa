@@ -203,6 +203,14 @@ body{
     width: 450px;
     height: 380px;
 }
+.imgPrensaNueve{
+    width: 350px;
+    height: 350px;
+}
+.imgPrensaNueve:hover{
+    width: 375px;
+    height: 380px;
+}
 .divVideo{
     width: 33%;
 }
@@ -436,8 +444,16 @@ body{
         height: 380px;
     }
     .imgPrensaUno:hover{
-        width: 95vw;
+        width: 99vw;
         height: 380px;
+    }
+    .imgPrensaNueve{
+        width: 99vw;
+        height: 510px;
+    }
+    .imgPrensaNueve:hover{
+        width: 95vw;
+        height: 510px;
     }
     .videoPrensa{
         width: 95vw;
