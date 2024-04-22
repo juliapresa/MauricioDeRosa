@@ -367,11 +367,14 @@ body{
         margin-top: 10%;
     }
     .tituloPublicacion{
+        height: fit-content;
+        margin: 0%;
+        padding: 0%;
         font-family: Georgia,'Times New Roman', Times, serif;
         font-size: 2.3rem;
         font-weight: bolder;
         font-variant: small-caps;
-        margin-top: 50%;
+        margin-top: 40vh;
     }
 
     .subtituloPublicacion{
