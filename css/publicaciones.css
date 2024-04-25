@@ -190,13 +190,14 @@ body{
     height: fit-content;
     
 }
+
 .imgPublicacionUno{
-    width: 420px;
-    height: 300px;
+    width: 400px;
+    height: 260px;
 }
 .imgPublicacionUno:hover{
-    width: 450px;
-    height: 330px;
+    width: 430px;
+    height: 290px;
 }
 #cuerpoCard{
     display: flex;
@@ -410,12 +411,12 @@ body{
         width: 99%;
     }
     .imgPublicacionUno{
-        width: 89vw;
-        height: 400px;
+        width: 90vw;
+        height: 350px;
     }
     .imgPublicacionUno:hover{
-        width: 89vw;
-        height: 400px;
+        width: 90vw;
+        height: 350px;
     }
     .cardPublicacionesUno{
         width: 90vw;

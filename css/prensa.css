@@ -180,6 +180,7 @@ body{
     margin-bottom: 10%;
 }
 .divPrensaDos{
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -187,6 +188,7 @@ body{
 }
 .divTarjetaPrensa{
     width: 33%;
+    height: fit-content;
     display: flex;
     justify-content: center;
 }
@@ -198,11 +200,11 @@ body{
     color: #4d70a5;
 }
 .imgPrensaUno{
-    width: 425px;
+    width: 420px;
     height: 350px;
 }
 .imgPrensaUno:hover{
-    width: 450px;
+    width: 440px;
     height: 380px;
 }
 .imgPrensaNueve{
@@ -219,8 +221,8 @@ body{
 .divVideoUltimo{
     display: flex;
     flex-direction: column;
-    align-items: start;
-    width: 35%;
+    align-items: center;
+    width: 33%;
 }
 .videoPrensa{
     width: 420px;
