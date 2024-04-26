@@ -184,12 +184,17 @@ body{
     width: 33%;
     display: flex;
     justify-content: center;
+    height: fit-content;
 }
 .cardPublicacionesUno{
     width: 100%;
-    height: fit-content;
-    
+    height: fit-content; 
 }
+.cardPublicacionesArbitradas{
+    width: 90%;
+    height: fit-content; 
+}
+
 
 .imgPublicacionUno{
     width: 400px;
@@ -205,11 +210,44 @@ body{
     align-items: center;
     text-align: center;
 }
+.divTituloCardArticulosDos{
+    width: 80%;
+}
+.tituloCardArticulo{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    font-size: 1rem;
+    margin-top: 3%;
+}
+.tituloCardArticuloDos{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    font-size: 1rem;
+    margin-top: 3%;
+}
+.textoCardArticulos{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    font-size: 1rem;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+.textoCardArticulosDos{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #071928;
+    font-size: 1rem;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
 .parrafoCard{
     color: #4d70a5;
 }
 .linkPubli{
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 
