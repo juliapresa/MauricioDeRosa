@@ -24,7 +24,7 @@ function cambiarIdioma(idioma) {
         'Tutora: Andrea Vigorito.':'Tutora: Andrea Vigorito.',
         'Licenciatura en Economía.':'Licenciatura en Economía.',
         'Tesis de Grado: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.':'Tesis de Grado: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.',
-        'Toca para ir al contrenido':'Toca para ir al contrenido',
+        'Toca para ir al contenido':'Toca para ir al contenido',
         'Tesis de Maestría: “Distribución de la riqueza en Uruguay: una aproximación por el método de capitalización”.':'Tesis de Maestría: “Distribución de la riqueza en Uruguay: una aproximación por el método de capitalización”.',
       },
       'en': {
@@ -47,7 +47,7 @@ function cambiarIdioma(idioma) {
         'Tutora: Andrea Vigorito.':'Tutor: Andrea Vigorito.',
         'Licenciatura en Economía.':'Degree in Economics',
         'Tesis de Grado: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.':'Thesis: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.',
-        'Toca para ir al contrenido':'Tap to go to content',
+        'Toca para ir al contenido':'Tap to go to content',
         'Tesis de Maestría: “Distribución de la riqueza en Uruguay: una aproximación por el método de capitalización”.':'Thesis: “Distribución de la riqueza en Uruguay: una aproximación por el método de capitalización”.',
       }
     };
