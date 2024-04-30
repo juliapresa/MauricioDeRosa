@@ -179,6 +179,15 @@ body{
     height: fit-content;
     margin-bottom: 10%;
 }
+.divPrensaUnoPrimero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0%;
+    width: 100vw;
+    height: fit-content;
+    margin-bottom: 10%;
+}
 .divPrensaDos{
     width: 100vw;
     display: flex;
@@ -410,6 +419,16 @@ body{
         margin: 0%;
         padding: 0%;
     }
+    .divPrensaUnoPrimero{
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0%;
+        margin-top: 3%;
+        padding: 0%;
+    }
     .divPrensaDos{
         width: 100vw;
         height: fit-content;
@@ -462,7 +481,7 @@ body{
     }
     .imgPrensaNueve:hover{
         width: 95vw;
-        height: 510px;
+        height: 400px;
     }
     .videoPrensa{
         width: 95vw;
@@ -470,6 +489,6 @@ body{
     }
     .videoPrensa:hover{
         width: 95vw;
-        height: 350px;
+        height: 380px;
     }
 }
