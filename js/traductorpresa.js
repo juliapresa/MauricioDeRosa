@@ -1,5 +1,5 @@
 function cambiarIdioma(idioma) {
-    // Selecciona todos los elementos que deseas traducir
+
     var elementosATraducir = document.querySelectorAll('.traducible');
 
     var traducciones = {
@@ -29,15 +29,18 @@ function cambiarIdioma(idioma) {
       }
     };
   
-    // Recorre todos los elementos a traducir
-    elementosATraducir.forEach(function(elemento) {
-      // Obtiene el texto actual del elemento
-      var textoActual = elemento.textContent.trim();
-  
-      // Verifica si hay una traducción disponible para el texto actual
-      if (traducciones[idioma][textoActual]) {
-        // Aplica la traducción al elemento
-        elemento.textContent = traducciones[idioma][textoActual];
-      }
+
+  elementosATraducir.forEach(function(elemento) {
+
+    if (!elemento.dataset.original) {
+      elemento.dataset.original = elemento.textContent.trim();
+    }
+    
+    var textoOriginal = elemento.dataset.original;
+    
+    if (traducciones[idioma][textoOriginal]) {
+
+      elemento.textContent = traducciones[idioma][textoOriginal];
+    }
     });
   }

@@ -40,10 +40,20 @@ function cambiarIdioma(idioma) {
       }
     };
 
-    elementosATraducir.forEach(function(elemento) {
-      var textoActual = elemento.textContent.trim();
-      if (traducciones[idioma][textoActual]) {
-        elemento.textContent = traducciones[idioma][textoActual];
-      }
+
+  elementosATraducir.forEach(function(elemento) {
+  
+    if (!elemento.dataset.original) {
+      elemento.dataset.original = elemento.textContent.trim();
+    }
+    
+
+    var textoOriginal = elemento.dataset.original;
+    
+
+    if (traducciones[idioma][textoOriginal]) {
+
+      elemento.textContent = traducciones[idioma][textoOriginal];
+    }
     });
   }
