@@ -385,6 +385,7 @@ body{
         width: 100vw;
        height: 100vh;
        color: #071928;
+       margin-bottom: 10%;
     }
     .divSubtituloPrensa{
         width: 100vw;
@@ -472,16 +473,16 @@ body{
         height: 380px;
     }
     .imgPrensaUno:hover{
-        width: 99vw;
+        width: 95vw;
         height: 380px;
     }
     .imgPrensaNueve{
         width: 99vw;
-        height: 400px;
+        height: 390px;
     }
     .imgPrensaNueve:hover{
-        width: 95vw;
-        height: 400px;
+        width: 99vw;
+        height: 390px;
     }
     .videoPrensa{
         width: 95vw;
