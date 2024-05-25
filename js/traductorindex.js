@@ -9,10 +9,8 @@ function cambiarIdioma(idioma) {
         'Publicaciones': 'Publicaciones',
         'Prensa': 'Prensa',
         'Articulos': 'Articulos',
-        'Español': 'Español',
-        'Ingles': 'Ingles',
         'IR AL CV':'IR AL CV',
-        'Docente efectivo grado 3 del Departamento de   Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel  Iniciación. Research Fellow del World Inequality Lab - Paris School of Economics.':'Docente efectivo grado 3 del Departamento de   Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel  Iniciación. Research Fellow del World Inequality Lab - Paris School of Economics.',
+        'Docente efectivo grado 3 del Departamento de   Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics.':'Docente efectivo grado 3 del Departamento de   Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics.',
         'FORMACIÓN':'FORMACIÓN',
         'Doctorado en Economía.':'Doctorado en Economía.',
         'Supervisores: Thomas Piketty y Facundo Alvaredo.': ' Supervisores: Thomas Piketty y Facundo Alvaredo.',
@@ -33,10 +31,8 @@ function cambiarIdioma(idioma) {
         'Publicaciones': 'Publications',
         'Prensa': 'Press',
         'Articulos': 'Articles',
-        'Español': 'Spanish',
-        'Inglés': 'English',
         'IR AL CV':'GO TO CV',
-        'Docente efectivo grado 3 del Departamento de   Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel  Iniciación. Research Fellow del World Inequality Lab - Paris School of Economics.':'Effective grade 3 professor at the Department of Economics, Faculty of Economics and Administration. Full Dedication professor. National System of Researchers, Initiation level. Research Fellow of the World Inequality Lab - Paris School of Economics.',
+        'Docente efectivo grado 3 del Departamento de   Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics.':'Professor at the Department of Economics, Facultad de Ciencias Económicas y de Administración (UdelaR). Research Fellow of the World Inequality Lab - Paris School of Economics.',
         'FORMACIÓN':'EDUCATION',
         'Doctorado en Economía.':'Doctorate in Economics.',
         'Supervisores: Thomas Piketty y Facundo Alvaredo.': ' Supervisors: Thomas Piketty y Facundo Alvaredo.',
@@ -66,4 +62,3 @@ function cambiarIdioma(idioma) {
     }
     });
   }
-  
