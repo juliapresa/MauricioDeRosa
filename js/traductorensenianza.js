@@ -36,7 +36,7 @@ function cambiarIdioma(idioma) {
         'Dirección de Tesis: grado y posgrado':'Master and Bachelors thesis',
         'Dirección de Trabajo Final de Grado (FCEA) de Julieta Pessina y Carolina Ardoguein. Finalizada. 2021-2022.':'Final Degree Project Direction (FCEA) by Julieta Pessina and Carolina Ardoguein. Finished. 2021-2022.',
         'Co-Dirección (junto a Matías Brum) de Tesis de Maestría de Joaquín Toledo en Maestría de FCEA. 2021-2022.':'Co-Direction (with Matías Brum) of Joaquín Toledos Masters Thesis in the FCEA Masters Degree. 2021-2022.',
-        'Previamente: dictado de cursos de grado:':'Previously: teaching degree courses:',
+        'Previamente: dictado de cursos de grado':'Previously: teaching degree courses',
         'Desigualdad y Pobreza, Economía del Uruguay, Economía I, Matemática I y Estadística I.':'Inequality and Poverty, Economy of Uruguay, Economics I, Mathematics I and Statistics I.',
       }
     };
