@@ -165,7 +165,7 @@ body{
     flex-direction: row;
     justify-content: center;
     margin-top: 5%;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }
 .divTarjetaArticulos{
     display: flex;
