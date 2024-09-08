@@ -74,6 +74,18 @@ body{
     margin-top: 2%;
     margin-left: 2%;
 }
+.divSubtituloArticulos{
+    height: fit-content;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.subtituloArticulos{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #071928;
+    margin-bottom: 2%;
+}
 
 
 .footer{
@@ -341,8 +353,22 @@ body{
         margin-left: 10%;
         display: table;
     }
-
-
+    .divSubtituloArticulos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        height: fit-content;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+    .subtituloArticulos{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        font-size: 2rem;
+        font-weight: bolder;
+        color: #071928;
+        margin-bottom: 2%;
+    }
 
     #tituloFooter{
         font-size: 1.5rem;
