@@ -4,6 +4,7 @@ function cambiarIdioma(idioma) {
 
   var traducciones = {
     'es': {
+      'Mauricio De Rosa | Articulos':'Mauricio De Rosa | Articulos',
       'Inicio': 'Inicio',
       'Enseñanza': 'Enseñanza',
       'Publicaciones': 'Publicaciones',
@@ -16,6 +17,7 @@ function cambiarIdioma(idioma) {
       'Revista Lento, (2015).':'Revista Lento, (2015).',
     },
     'en': {
+      'Mauricio De Rosa | Articulos':'Mauricio De Rosa | Articles',
       'Inicio': 'Home',
       'Enseñanza': 'Teaching',
       'Publicaciones': 'Publications',

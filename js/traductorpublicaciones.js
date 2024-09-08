@@ -3,6 +3,7 @@ function cambiarIdioma(idioma) {
 
     var traducciones = {
       'es': {
+        'Mauricio De Rosa | Publicaciones':'Mauricio De Rosa | Publicaciones',
         'Inicio': 'Inicio',
         'Enseñanza': 'Enseñanza',
         'Publicaciones': 'Publicaciones',
@@ -19,6 +20,7 @@ function cambiarIdioma(idioma) {
         'Arim, R, De Rosa, M. y Vigorito, A.':'Arim, R, De Rosa, M. y Vigorito, A.',
       },
       'en': {
+        'Mauricio De Rosa | Publicaciones':'Mauricio De Rosa | Publications',
         'Inicio': 'Home',
         'Enseñanza': 'Teaching',
         'Publicaciones': 'Publications',

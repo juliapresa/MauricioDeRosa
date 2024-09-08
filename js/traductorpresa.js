@@ -4,6 +4,7 @@ function cambiarIdioma(idioma) {
 
     var traducciones = {
       'es': {
+        'Mauricio De Rosa | Prensa':'Mauricio De Rosa | Prensa',
         'Inicio': 'Inicio',
         'Enseñanza': 'Enseñanza',
         'Publicaciones': 'Publicaciones',
@@ -14,6 +15,7 @@ function cambiarIdioma(idioma) {
         'Ir a Youtube':'Ir a Youtube',
       },
       'en': {
+        'Mauricio De Rosa | Prensa':'Mauricio De Rosa | Press',
         'Inicio': 'Home',
         'Enseñanza': 'Teaching',
         'Publicaciones': 'Publications',
