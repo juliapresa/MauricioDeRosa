@@ -171,21 +171,19 @@ body{
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    height: fit-content;
+    height: 90vh;
     margin: 0%;
     padding: 0%;
-    margin-bottom: 10%;
 }
 .divPublicacionesDos{
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    height: fit-content;
+    height: 90vh;
     margin: 0%;
     padding: 0%;
     margin-top: 2%;
-    margin-bottom: 10%;
 }
 .divTarjetaPublicaciones{
     width: 33%;
@@ -197,6 +195,7 @@ body{
     width: 100%;
     height: fit-content; 
 }
+
 .cardPublicacionesArbitradas{
     width: 90%;
     height: fit-content; 
@@ -208,8 +207,8 @@ body{
     height: 260px;
 }
 .imgPublicacionUno:hover{
-    width: 430px;
-    height: 290px;
+    width: 410px;
+    height: 270px;
 }
 #cuerpoCard{
     display: flex;

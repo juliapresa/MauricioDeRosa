@@ -99,7 +99,7 @@ justify-content: center;
 
 .fondoFormacion{
     background-color:#071928;
-    height: 100vh;
+    height: 105vh;
     width: 100vw;
 }
 .formacion{
@@ -120,7 +120,7 @@ justify-content: center;
     font-size: xx-large;
     font-weight: bold;
     color: #d3d5d7de;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 .divFormacionUno{
     width: 25%;
@@ -145,7 +145,7 @@ justify-content: center;
         font-family: Georgia,'Times New Roman', Times, serif;
         font-family: 'Poppins', sans-serif;
         width:100%;
-        height:29rem;
+        height:30rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -155,7 +155,7 @@ justify-content: center;
         font-family: Georgia,'Times New Roman', Times, serif;
         font-family: 'Poppins', sans-serif;
         width:100%;
-        height:29rem;
+        height:30rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -206,6 +206,11 @@ justify-content: center;
     #cardR{
         margin-top: 5%;
         margin-bottom: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    #cardRD{
+        margin-top: 1%;
+        margin-bottom: 4%;
         font-family: 'Poppins', sans-serif;
     }
 
@@ -468,6 +473,10 @@ justify-content: center;
         margin-bottom: 5%;
     }
     #cardR{
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+    #cardRD{
         margin-bottom: 0%;
         margin-top: 0%;
     }
