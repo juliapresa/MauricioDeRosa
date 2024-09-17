@@ -177,7 +177,6 @@ body{
     flex-direction: row;
     justify-content: center;
     margin-top: 5%;
-    margin-bottom: 5%;
 }
 .divTarjetaArticulos{
     display: flex;
@@ -423,9 +422,6 @@ body{
         font-variant: small-caps;
         margin-top: 40vh;
     }
-    .subtituloArticulos{
-        font-size: large;
-    }
     
     .divArticulosUno{
         width: 100vw;
@@ -459,8 +455,8 @@ body{
         flex-direction: row;
         justify-content: center;
         width: 99%;
-        height: 90vh;
-        margin-bottom: 15%;
+        height: 85vh;
+        margin-bottom: 0%;
     }
     .tituloCardArticulo{
         font-family: Georgia,'Times New Roman', Times, serif;
