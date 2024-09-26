@@ -211,20 +211,6 @@ body{
     color: black;
     text-decoration: underline;
 }
-.footer{
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-.footerDos {
-    width: 100%;
-    height: fit-content;
-    margin: 0%;
-    padding: 0%;
-    flex-direction: row;
-    margin-bottom: 2%;
-
-}
-
 .contenedorIcono {
     margin: 0%;
     padding: 0%;
@@ -236,16 +222,7 @@ body{
     padding: 0%;
     width: 50%;
 }
-.divTituloDosFooter{
-    margin-top: 2%;
-}
-#tituloFooter{
-    font-size: 1.7rem;
-}
-#tituloDosFooter{
-    font-size: 1.7rem;
-    margin: 0%;
-}
+
 #navLF{
     display: flex;
     margin-left: 3%;
@@ -278,11 +255,14 @@ body{
     margin-top: 3%;
     margin-left: 3%;
 }
-.iconoMail{
-    font-size: x-large;
-    margin-right: 1%;
-    justify-content: center;
-    align-items: center;
+.divFooter{
+    font-family: 'Poppins', sans-serif;
+}
+.liFooter:hover{
+    text-decoration: underline;
+}
+.aFooter{
+    text-decoration: none;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px){
@@ -483,18 +463,6 @@ body{
         margin-top: 5%;
     }
     
-    #tituloFooter{
-        font-size: 1.5rem;
-    }
-    #tituloDosFooter{
-        font-size: 1.5rem;
-        margin-bottom: 1%;
-    }
-    .iconoMail{
-        font-size: 1rem;
-        margin-right: 1%;
-    }
-
     #navL:hover{
         text-decoration: underline;
     }
@@ -505,8 +473,26 @@ body{
         margin-top: 5%;
         margin-left: 10%;
     }
-    .footer{
-        visibility: hidden;
+    #divFooters{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-
+    #listFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .divFooter{
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .liFooter:hover{
+        text-decoration: underline;
+    }
+    .aFooter{
+        text-decoration: none;
+    }
 }

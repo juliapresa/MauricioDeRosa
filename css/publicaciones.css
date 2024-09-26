@@ -58,28 +58,15 @@ body{
     width: 2.5rem;
     height: 2.5rem;
 }
-
-.footer{
-    margin-bottom: 2%;
+.divFooter{
+    font-family: 'Poppins', sans-serif;
 }
-.footerDos {
-    width: 100%;
-    height: fit-content;
-    margin: 0%;
-    padding: 0%;
-    flex-direction: row;
-    margin-bottom: 2%;
-
+.liFooter:hover{
+    text-decoration: underline;
 }
-
-#tituloFooter{
-    font-size: 1.7rem;
+.aFooter{
+    text-decoration: none;
 }
-#tituloDosFooter{
-    font-size: 1.7rem;
-    margin-bottom: 0%;
-}
-
 .contenedorIcono {
     margin: 0%;
     padding: 0%;
@@ -91,17 +78,7 @@ body{
     padding: 0%;
     width: 50%;
 }
-.divTituloDosFooter{
-    margin-top: 2%;
-}
-#navLF{
-    display: flex;
-    margin-left: 3%;
-    font-family: 'Poppins', sans-serif;
-}
-#navLF:hover{
-    text-decoration: underline;
-}
+
 #iconoT{
    width: 2rem;
    height: 2rem;
@@ -126,11 +103,6 @@ body{
     margin-top: 3%;
     margin-left: 3%;
 }
-.iconoMail{
-    font-size: x-large;
-    margin-right: 1%;
-}
-
 #publicaciones{
     width: 100vw;
     margin: 0%;
@@ -147,7 +119,7 @@ body{
 }
 .divSubtituloPublicaciones{
     height: fit-content;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
 }
 .tituloPublicacion{
     font-family: Georgia,'Times New Roman', Times, serif;
@@ -162,7 +134,7 @@ body{
     font-size: xx-large;
     font-weight: bolder;
     color: #071928;
-    margin-bottom: 2%;
+    margin-bottom: 0;
 }
 
 
@@ -171,7 +143,7 @@ body{
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
     margin: 0%;
     padding: 0%;
 }
@@ -180,7 +152,7 @@ body{
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
     margin: 0%;
     padding: 0%;
     margin-top: 2%;
@@ -259,7 +231,7 @@ body{
 
 .divLibroPublicacion{
     width: 60%;
-    height: 70vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -360,20 +332,6 @@ body{
         margin-left: 10%;
         display: table;
     }
-
-
-
-    #tituloFooter{
-        font-size: 1.5rem;
-    }
-    #tituloDosFooter{
-        font-size: 1.5rem;
-        margin-bottom: 1%;
-    }
-    .iconoMail{
-        font-size: 1rem;
-        margin-right: 1%;
-    }
     .row {
         width: 100%;
         height: fit-content;
@@ -383,10 +341,6 @@ body{
     }
     #navL:hover{
         text-decoration: underline;
-    }
-
-    .footer{
-        visibility: hidden;
     }
 
     #publicaciones{
@@ -517,5 +471,27 @@ body{
         flex-direction: column;
         align-items: start;
         
+    }
+    #divFooters{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #listFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .divFooter{
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .liFooter:hover{
+        text-decoration: underline;
+    }
+    .aFooter{
+        text-decoration: none;
     }
 }

@@ -86,31 +86,14 @@ body{
     color: #071928;
     margin-bottom: 2%;
 }
-
-
-.footer{
-    margin-top: 2%;
-    margin-bottom: 2%;
+.divFooter{
+    font-family: 'Poppins', sans-serif;
 }
-.footerDos {
-    width: 100%;
-    height: fit-content;
-    margin: 0%;
-    padding: 0%;
-    flex-direction: row;
-    margin-bottom: 2%;
-
+.liFooter:hover{
+    text-decoration: underline;
 }
-#tituloFooter{
-    font-size: 1.7rem;
-}
-#tituloDosFooter{
-    font-size: 1.7rem;
-    margin-bottom: 0%;
-}
-
-.divTituloDosFooter{
-    margin-top: 2%;
+.aFooter{
+    text-decoration: none;
 }
 #navLF{
     display: flex;
@@ -144,7 +127,6 @@ body{
     text-decoration: none;
     width: fit-content;
 }
-
 
 #articulos{
     width: 100vw;
@@ -368,18 +350,6 @@ body{
         color: #071928;
         margin-bottom: 2%;
     }
-
-    #tituloFooter{
-        font-size: 1.5rem;
-    }
-    #tituloDosFooter{
-        font-size: 1.5rem;
-        margin-bottom: 1%;
-    }
-    .iconoMail{
-        font-size: 1rem;
-        margin-right: 1%;
-    }
     .row {
         width: 100%;
         height: fit-content;
@@ -397,14 +367,10 @@ body{
         margin-top: 5%;
         margin-left: 10%;
     }
-    .footer{
-        visibility: hidden;
-    }
-
     #articulos{
         height: fit-content;
         width: 100vw;
-        margin-bottom: 10%;
+        margin-bottom: 0;
     }
     .divTituloArticulos{
         width: 100vw;
@@ -527,5 +493,27 @@ body{
     #button:hover{
         background-color: #071928;
         color: #95999f;
+    }
+    #divFooters{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #listFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .divFooter{
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .liFooter:hover{
+        text-decoration: underline;
+    }
+    .aFooter{
+        text-decoration: none;
     }
 }

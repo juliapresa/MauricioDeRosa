@@ -96,7 +96,6 @@ justify-content: center;
     height: 10vh;
 }
 
-
 .fondoFormacion{
     background-color:#071928;
     height: 105vh;
@@ -213,41 +212,15 @@ justify-content: center;
         margin-bottom: 4%;
         font-family: 'Poppins', sans-serif;
     }
-
-
-
-
-
-    #tituloFooter{
+    .divFooter{
         font-family: 'Poppins', sans-serif;
-        font-size: x-large;
-        padding: 0%;
-        color: #071928;
     }
-    #tituloDosFooter{
-        font-family: 'Poppins', sans-serif;
-        font-size: x-large;
-        padding: 0%;
-        color: #071928;
+    .liFooter:hover{
+        text-decoration: underline;
     }
-    #divTituloFooter{
-        padding: 0%;
-        margin: 0%;
+    .aFooter{
+        text-decoration: none;
     }
-    .footer{
-        margin-top: 2%;
-        margin-bottom: 2%;
-    }
-    .footerDos {
-        width: 100%;
-        height: fit-content;
-        margin: 0%;
-        padding: 0%;
-        flex-direction: row;
-        margin-bottom: 2%;
-    
-    }
-    
     .contenedorIcono {
         margin: 0%;
         padding: 0%;
@@ -258,17 +231,6 @@ justify-content: center;
         margin: 0%;
         padding: 0%;
         width: 50%;
-    }
-    .divTituloDosFooter{
-        margin-top: 2%;
-    }
-    #navLF{
-        display: flex;
-        margin-left: 3%;
-        font-family: 'Poppins', sans-serif;
-    }
-    #navLF:hover{
-        text-decoration: underline;
     }
     #iconoT{
         width: 2rem;
@@ -486,18 +448,6 @@ justify-content: center;
         justify-content: space-around;
     }
 
-    #tituloFooter{
-        font-size: 1.5rem;
-    }
-    #tituloDosFooter{
-        font-size: 1.5rem;
-        margin-bottom: 1%;
-    }
-    .iconoMail{
-        font-size: 2.2rem;
-        margin-right: 1%;
-    }
-
     #navL:hover{
         text-decoration: underline;
     }
@@ -510,13 +460,7 @@ justify-content: center;
         margin-left: 10%;
         display: table;
     }
-    .divTituloDosFooter{
-        width: 100vw;
-    }
     .footer{
-        visibility: hidden;
-    }
-    .footerDos{
         visibility: hidden;
     }
 }
