@@ -116,10 +116,9 @@ body{
     height: 90vh;
     background-color: #071928;
     margin-bottom: 10%;
-}
-.divSubtituloPublicaciones{
-    height: fit-content;
-    margin-bottom: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .tituloPublicacion{
     font-family: Georgia,'Times New Roman', Times, serif;
@@ -127,7 +126,10 @@ body{
     font-weight: bolder;
     font-variant: small-caps;
     color: #d3d5d7de;
-    margin-top: 45vh;
+}
+.divSubtituloPublicaciones{
+    height: fit-content;
+    margin-bottom: 7%;
 }
 .subtituloPublicacion{
     font-family: Georgia,'Times New Roman', Times, serif;

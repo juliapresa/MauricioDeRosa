@@ -136,10 +136,9 @@ body{
     height: 90vh;
     background-color: #071928;
     margin-bottom: 10%;
-}
-.divSubtituloPrensa{
-    height: fit-content;
-    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .tituloPrensa{
     font-family: Georgia,'Times New Roman', Times, serif;
@@ -147,7 +146,10 @@ body{
     font-weight: bolder;
     font-variant: small-caps;
     color: #d3d5d7de;
-    margin-top: 45vh;
+}
+.divSubtituloPrensa{
+    height: fit-content;
+    margin-bottom: 10%;
 }
 .subtituloPrensa{
     font-family: Georgia,'Times New Roman', Times, serif;
@@ -188,10 +190,15 @@ body{
     height: fit-content;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .cardPrensa{
     width: 100%;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .parrafoCardPrensa{
     color: #4d70a5;
@@ -236,14 +243,14 @@ body{
     font-size: 0.9rem;
     color: #071928;
     background-color: #ffffff;
-    margin-top: 2%;
+    margin-top: 8%;
     border-radius: 0.2rem;
     width: 150px;
     height: 2rem;
 }
 #button:hover{
-    width: 153px;
-    height: 2.09rem;
+    color: #ffffff;
+    background-color: #071928;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px){
@@ -349,15 +356,12 @@ body{
     }
     .divTituloPrensa{
         width: 100vw;
-       height: 100vh;
-       color: #071928;
-       margin-bottom: 10%;
-    }
-    .divSubtituloPrensa{
-        width: 100vw;
-        height: fit-content;
-        margin-top: 10%;
+        height: 100vh;
+        color: #071928;
         margin-bottom: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .tituloPrensa{
         height: fit-content;
@@ -367,7 +371,12 @@ body{
         font-size: 2.5rem;
         font-weight: bolder;
         font-variant: small-caps;
-        margin-top: 40vh;
+    }
+    .divSubtituloPrensa{
+        width: 100vw;
+        height: fit-content;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
     .subtituloPrensa{
         font-family: Georgia,'Times New Roman', Times, serif;

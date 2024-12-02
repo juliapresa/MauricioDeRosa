@@ -74,6 +74,9 @@ body{
     margin: 0%;
     height: 90vh;
     background-color: #071928;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    }
 .tituloEnseñanza{
     font-family: Georgia,'Times New Roman', Times, serif;
@@ -81,7 +84,6 @@ body{
     font-weight: bolder;
     font-variant: small-caps;
     color: #d3d5d7de;
-    margin-top: 45vh;
 }
 .subtituloEnseñanzaUno{
     font-family: Georgia, 'Times New Roman', Times, serif;
