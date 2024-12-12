@@ -170,7 +170,8 @@ body{
     height: 70vh;
     margin: 0%;
     padding: 0%;
-}.divTarjetaArticulosUno{
+}
+.divTarjetaArticulosUno{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -230,7 +231,7 @@ body{
     margin-top: 3%;
 }
 .divTituloCardArticulosTres{
-    width: 80%;
+    width: 70%;
     margin: 0%;
 }
 .divTituloCardArticulosDos{
