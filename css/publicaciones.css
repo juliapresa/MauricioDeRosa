@@ -162,9 +162,8 @@ body{
     padding: 0%;
     margin-bottom: 5%;
 }
-
 .divTarjetaPublicaciones{
-    width: 33%;
+    width: 30%;
     display: flex;
     justify-content: center;
     height: fit-content;
@@ -196,7 +195,7 @@ body{
     text-align: center;
 }
 .divTituloCardArticulosDos{
-    width: 80%;
+    width: 85%;
 }
 .tituloCardArticulo{
     font-family: Georgia,'Times New Roman', Times, serif;
