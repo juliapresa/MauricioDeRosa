@@ -103,8 +103,10 @@ body{
     margin-top: 3%;
     margin-left: 3%;
 }
+
 #publicaciones{
     width: 100vw;
+    height: fit-content;
     margin: 0%;
     padding: 0%;
     display: flex;
@@ -145,19 +147,20 @@ body{
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    height: 80vh;
+    height: fit-content;
     margin: 0%;
     padding: 0%;
+    margin-bottom: 5%;
 }
 .divPublicacionesDos{
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    height: 80vh;
+    height: fit-content;
     margin: 0%;
     padding: 0%;
-    margin-top: 2%;
+    margin-top: 5%;
 }
 .divTarjetaPublicaciones{
     width: 33%;
@@ -375,7 +378,7 @@ body{
         font-size: 2.3rem;
         font-weight: bolder;
         font-variant: small-caps;
-        margin-top: 40vh;
+        margin-top: 0;
     }
 
     .subtituloPublicacion{
@@ -412,24 +415,42 @@ body{
     }
     .imgPublicacionUno{
         width: 90vw;
-        height: 350px;
+        height: auto;
     }
     .imgPublicacionUno:hover{
         width: 90vw;
-        height: 350px;
+        height: auto;
     }
     .cardPublicacionesUno{
-        width: 90vw;
-        height: 50vh;
+        width: 95vw;
+        height: auto;
+    }
+    .cardPublicacionesArbitradas{
+        width: 95vw;
+        height: fit-content; 
     }
     .divTarjetaPublicaciones{
-        width: 90vw;
+        width: 95vw;
         height: fit-content;
         display: flex;
         justify-content: center;
         margin-bottom: 15%;
     }
-    
+    .divTituloCardArticulosDos{
+        width: 100%;
+    }
+    .tituloCardArticulo{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        color: #071928;
+        font-size: 1rem;
+        margin-top: 3%;
+    }
+    .tituloCardArticuloDos{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        color: #071928;
+        font-size: 1rem;
+        margin-top: 3%;
+    }
     .parrafoCard{
         color: #4d70a5;
     }
@@ -440,7 +461,7 @@ body{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        height: 50vh;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -477,7 +498,7 @@ body{
     #divFooters{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: first baseline;
     }
     #listFooter{
         display: flex;
@@ -488,7 +509,7 @@ body{
         font-family: 'Poppins', sans-serif;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: first baseline;
     }
     .liFooter:hover{
         text-decoration: underline;

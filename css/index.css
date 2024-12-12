@@ -63,7 +63,7 @@ body{
 }
 
 .divTitulo{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     margin: 0%;
     padding: 0%;
@@ -103,13 +103,13 @@ body{
 
 .fondoFormacion{
     background-color:#071928;
-    height: 105vh;
+    height: 100vh;
     width: 100vw;
 }
 .formacion{
     width: 99vw;
     display: flex;
-    margin-bottom: 5%;
+    padding-bottom: 10%;
     justify-content: space-around;
     background-color:#071928;
 }
@@ -261,58 +261,14 @@ body{
         text-decoration: none;
     }
 @media screen and (min-width: 0px) and (max-width: 768px){
-    body{
-        width: 100vw;
-        margin: 0%;
-        padding: 0%;
-        overflow-x: hidden;
-    }
-    .sectionNav {
-        width: 100%;
-        margin: 0%;
-        padding: 0%;
-        flex-direction: row;
-    }
-    .divTitulo{
-        width: 100vw;
-        height: 100vh;
-        margin: 0%;
-        padding: 0%;
-        background-image: url(../assets/img/bannerCel.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        background-color: #0a2c42;
-    } 
     .navbar{
         height: 10vh;
     }
-    .divTitle{
-        width: 100vw;
-    }
-    .divTitleDos{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .parrafoTitulo{
-        font-family: "Poppins", sans-serif;
-        font-size: x-large;
-    }
-    .buttonCV{
-        width: 30vw;
-        height: 6vh;
-    }
-
-
     .contenedorIcono {
         margin: 0%;
         padding: 0%;
         width: 50%;
     }
-    
     .contenedorNav {
         margin: 0%;
         padding: 0%;
@@ -358,17 +314,82 @@ body{
         margin-top: 5%;
         margin-left: 10%;
     }
+    .sectionNav {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        flex-direction: row;
+    }
+
+    
+    body{
+        width: 100vw;
+        height: fit-content;
+        margin: 0%;
+        padding: 0%;
+        overflow-x: hidden;
+    }
+    .divTitulo{
+        width: 100vw;
+        height: 100vh;
+        margin: 0%;
+        padding: 0%;
+        background-image: url(../assets/img/bannerCel.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        background-color: #0a2c42;
+    } 
+    .divTitle{
+        width: 100vw;
+        height: fit-content;
+    }
+    .divTitleDos{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+    .parrafoTitulo{
+        font-family: "Poppins", sans-serif;
+        font-size: x-large;
+        padding: 1%;
+    }
+    .buttonCV{
+        width: 30vw;
+        height: 6vh;
+    }
 
 
-
-
-
-
+    .fondoFormacion{
+        width: 100vw;
+        height: fit-content;
+    }
     .formacion{
         width: 100vw;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .divTituloFormacion{
+        width: 100vw;
+        height: fit-content;
+        background-color:#071928;
+        margin-bottom: 0%;
+        margin-top: 0%;
+       }
+    .tituloFormacion{
+        font-family: Georgia,'Times New Roman', Times, serif;
+        font-size: xx-large;
+        font-weight: bold;
+        color: #d3d5d7de;
+        margin-top: 0%;
+        margin-bottom: 10%;
+        margin-top: 10%;
     }
     .divFormacionUno{
         width: 100vw;
@@ -391,7 +412,7 @@ body{
         justify-content: center;
     }
     #cardU{
-        width: 95%;
+        width: 100vw;
         height: 28rem;
         display: flex;
         flex-direction: column;
@@ -468,7 +489,26 @@ body{
         margin-left: 10%;
         display: table;
     }
-    .footer{
-        visibility: hidden;
+    #divFooters{
+        display: flex;
+        flex-direction: column;
+        align-items: first baseline;
+    }
+    #listFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .divFooter{
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: first baseline;
+    }
+    .liFooter:hover{
+        text-decoration: underline;
+    }
+    .aFooter{
+        text-decoration: none;
     }
 }
