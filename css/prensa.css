@@ -85,6 +85,9 @@ body{
 .aFooter{
     text-decoration: none;
 }
+.aFooter:hover{
+    text-decoration: underline;
+}
 .contenedorIcono {
     margin: 0%;
     padding: 0%;
@@ -208,16 +211,16 @@ body{
     height: 350px;
 }
 .imgPrensaUno:hover{
-    width: 440px;
-    height: 380px;
+    width: 430px;
+    height: 360px;
 }
 .imgPrensaNueve{
     width: 350px;
     height: 350px;
 }
 .imgPrensaNueve:hover{
-    width: 375px;
-    height: 380px;
+    width: 360px;
+    height: 360px;
 }
 .divVideo{
     width: 33%;
@@ -233,8 +236,8 @@ body{
     height: 350px;
 }
 .videoPrensa:hover{
-    width: 450px;
-    height: 380px;
+    width: 430px;
+    height: 360px;
 }
 
 #button{

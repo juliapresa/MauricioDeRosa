@@ -95,6 +95,9 @@ body{
 .aFooter{
     text-decoration: none;
 }
+.aFooter:hover{
+    text-decoration: underline;
+}
 #navLF{
     display: flex;
     margin-left: 3%;
@@ -188,32 +191,32 @@ body{
     height: 300px;
 }
 .imgArticulo:hover{
-    width: 520px;
-    height: 320px;
+    width: 510px;
+    height: 310px;
 }
 .imgArticuloDos{
     width: 600px;
     height: 300px;
 }
 .imgArticuloDos:hover{
-    width: 620px;
-    height: 320px;
+    width: 610px;
+    height: 310px;
 }
 .imgArticuloTres{
     width: 500px;
     height: 300px;
 }
 .imgArticuloTres:hover{
-    width: 520px;
-    height: 320px;
+    width: 510px;
+    height: 310px;
 }
 .imgArticuloCuatro{
     width: 500px;
     height: 300px;
 }
 .imgArticuloCuatro:hover{
-    width: 520px;
-    height: 320px;
+    width: 510px;
+    height: 310px;
 }
 .parrafoCardArticulos{
     color: #4d70a5;

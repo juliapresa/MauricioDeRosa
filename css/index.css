@@ -226,6 +226,9 @@ body{
     .aFooter{
         text-decoration: none;
     }
+    .aFooter:hover{
+        text-decoration: underline;
+    }
     .contenedorIcono {
         margin: 0%;
         padding: 0%;

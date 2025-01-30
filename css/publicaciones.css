@@ -67,6 +67,9 @@ body{
 .aFooter{
     text-decoration: none;
 }
+.aFooter:hover{
+    text-decoration: underline;
+}
 .contenedorIcono {
     margin: 0%;
     padding: 0%;
@@ -175,7 +178,7 @@ body{
 }
 
 .cardPublicacionesArbitradas{
-    width: 90%;
+    width: fit-content;
     height: fit-content; 
 }
 
