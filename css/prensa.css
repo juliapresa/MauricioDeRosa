@@ -359,9 +359,10 @@ body{
     }
     .divTituloPrensa{
         width: 100vw;
-        height: 100vh;
+        height: 35vh;
         color: #071928;
-        margin-bottom: 10%;
+        margin-bottom: 20%;
+        margin-top: 20%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -448,32 +449,32 @@ body{
     }
     .imgPrensaUno{
         width: 95vw;
-        height: 380px;
+        height: fit-content;
     }
     .imgPrensaUno:hover{
         width: 95vw;
-        height: 380px;
+        height: fit-content;
     }
     .imgPrensaNueve{
         width: 99vw;
-        height: 390px;
+        height: fit-content;
     }
     .imgPrensaNueve:hover{
         width: 99vw;
-        height: 390px;
+        height: fit-content;
     }
     .videoPrensa{
         width: 95vw;
-        height: 380px;
+        height: 280px;
     }
     .videoPrensa:hover{
         width: 95vw;
-        height: 380px;
+        height: 290px;
     }
     #divFooters{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
     }
     #listFooter{
         display: flex;
@@ -484,7 +485,7 @@ body{
         font-family: 'Poppins', sans-serif;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
     }
     .liFooter:hover{
         text-decoration: underline;

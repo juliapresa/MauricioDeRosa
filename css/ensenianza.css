@@ -342,11 +342,11 @@ body{
 
     .divTituloEnseñanza{
         width: 100vw;
-        height: 100vh;
+        height: 35vh;
+        margin-bottom: 20%;
+        margin-top: 20%;
         background-color: #071928;
-        margin: 0%;
         padding: 0%;
-        margin-bottom: 10%;
     }
     .tituloEnseñanza{
         height: fit-content;
@@ -356,11 +356,10 @@ body{
         font-size: 2.5rem;
         font-weight: bolder;
         font-variant: small-caps;
-        margin-top: 40vh;
     }
     .subtituloEnseñanzaUno{
         font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 2.4rem;
+        font-size: 2rem;
         font-weight: bolder;
         color: #071928;
         margin: 0%;
@@ -368,7 +367,7 @@ body{
     }
     .subtituloEnseñanzaDos{
         font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 2.4rem;
+        font-size: 2rem;
         font-weight: bolder;
         color: #071928;
         margin-top: 7%;
@@ -376,7 +375,7 @@ body{
     }
     .subtituloEnseñanzaDosDos{
         font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 2.4rem;
+        font-size: 2rem;
         font-weight: bolder;
         color: #071928;
         font-style: italic;
@@ -384,15 +383,15 @@ body{
     }
     .subtituloEnseñanzaTres{
         font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 2.4rem;
+        font-size: 2rem;
         font-weight: bolder;
         color: #071928;
-        margin-top: 7%;
+        margin-top: 5%;
         font-style: italic;
     }
     .subtituloChicoEnseñanzaTres{
         font-family: 'Poppins', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-style: italic;
         margin-bottom: 7%;
     }
@@ -481,18 +480,18 @@ body{
     #divFooters{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
     }
     #listFooter{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
     }
     .divFooter{
         font-family: 'Poppins', sans-serif;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
     }
     .liFooter:hover{
         text-decoration: underline;

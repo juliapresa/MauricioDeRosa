@@ -351,6 +351,7 @@ body{
     }
     .divTitleDos{
         width: 100vw;
+        height: 80vh;
         display: flex;
         justify-content: center;
         padding-top: 10vh;
@@ -358,7 +359,7 @@ body{
     }
     .parrafoTitulo{
         font-family: "Poppins", sans-serif;
-        font-size: x-large;
+        font-size: large;
         padding: 1%;
     }
     .buttonCV{
@@ -379,11 +380,10 @@ body{
         align-items: center;
     }
     .divTituloFormacion{
-        width: 100vw;
         height: fit-content;
         background-color:#071928;
-        margin-bottom: 0%;
-        margin-top: 0%;
+        padding: 0%;
+        margin: 0%;
        }
     .tituloFormacion{
         font-family: Georgia,'Times New Roman', Times, serif;
@@ -393,6 +393,7 @@ body{
         margin-top: 0%;
         margin-bottom: 10%;
         margin-top: 10%;
+        padding: 0%;
     }
     .divFormacionUno{
         width: 100vw;
@@ -415,7 +416,7 @@ body{
         justify-content: center;
     }
     #cardU{
-        width: 100vw;
+        width: 99vw;
         height: 28rem;
         display: flex;
         flex-direction: column;

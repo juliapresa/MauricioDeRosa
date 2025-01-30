@@ -362,7 +362,9 @@ body{
     }
     .divTituloPublicaciones{
         width: 100vw;
-        height: 100vh;
+        height: 35vh;
+        margin-bottom: 20%;
+        margin-top: 20%;
         color: #071928;
     }
        .divSubtituloPublicaciones{
