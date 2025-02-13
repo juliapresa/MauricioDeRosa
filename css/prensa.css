@@ -171,7 +171,7 @@ body{
     justify-content: center;
     margin: 0%;
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
 }
 .divPrensaUnoPrimero{
     display: flex;
@@ -179,14 +179,14 @@ body{
     justify-content: center;
     margin: 0%;
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
 }
 .divPrensaDos{
     width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: start;
-    height: 80vh;
+    height: 70vh;
 }
 .divTarjetaPrensa{
     width: 33%;
