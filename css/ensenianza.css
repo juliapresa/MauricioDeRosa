@@ -259,12 +259,16 @@ body{
 }
 .divFooter{
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 .liFooter:hover{
     text-decoration: underline;
 }
 .aFooter{
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 .aFooter:hover{
     text-decoration: underline;

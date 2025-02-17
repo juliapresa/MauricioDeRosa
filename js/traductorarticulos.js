@@ -5,6 +5,8 @@ function cambiarIdioma(idioma) {
   var traducciones = {
     'es': {
       'Mauricio De Rosa | Articulos':'Mauricio De Rosa | Articulos',
+      'Enlaces':'Enlaces',
+      'Contacto':'Contacto',
       'Inicio': 'Inicio',
       'Enseñanza': 'Enseñanza',
       'Publicaciones': 'Publicaciones',
@@ -19,6 +21,8 @@ function cambiarIdioma(idioma) {
     },
     'en': {
       'Mauricio De Rosa | Articulos':'Mauricio De Rosa | Articles',
+      'Enlaces':'Links',
+      'Contacto':'Contact',
       'Inicio': 'Home',
       'Enseñanza': 'Teaching',
       'Publicaciones': 'Publications',

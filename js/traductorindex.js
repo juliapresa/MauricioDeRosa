@@ -4,13 +4,15 @@ function cambiarIdioma(idioma) {
 
     var traducciones = {
       'es': {
+        'Enlaces':'Enlaces',
+        'Contacto':'Contacto',
         'Inicio': 'Inicio',
         'Enseñanza': 'Enseñanza',
         'Publicaciones': 'Publicaciones',
         'Prensa': 'Prensa',
         'Divulgación': 'Divulgación',
         'IR AL CV':'IR AL CV',
-        'Docente efectivo grado 3 del Departamento de   Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics.':'Docente efectivo grado 3 del Departamento de   Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics.',
+        'Docente efectivo grado 3 del Departamento de Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics.':'Docente efectivo grado 3 del Departamento de Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics.',
         'FORMACIÓN':'FORMACIÓN',
         'Doctorado en Economía.':'Doctorado en Economía.',
         'Supervisores: Thomas Piketty y Facundo Alvaredo.': ' Supervisores: Thomas Piketty y Facundo Alvaredo.',
@@ -26,13 +28,15 @@ function cambiarIdioma(idioma) {
         'Tesis de Maestría: “Distribución de la riqueza en Uruguay: una aproximación por el método de capitalización”.':'Tesis de Maestría: “Distribución de la riqueza en Uruguay: una aproximación por el método de capitalización”.',
       },
       'en': {
+        'Enlaces':'Links',
+        'Contacto':'Contact',
         'Inicio': 'Home',
         'Enseñanza': 'Teaching',
         'Publicaciones': 'Publications',
         'Prensa': 'Press',
         'Divulgación': 'Outreach',
         'IR AL CV':'GO TO CV',
-        'Docente efectivo grado 3 del Departamento de   Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics.':'Professor at the Department of Economics, Facultad de Ciencias Económicas y de Administración (UdelaR). Research Fellow of the World Inequality Lab - Paris School of Economics.',
+        'Docente efectivo grado 3 del Departamento de Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics.':'Professor at the Department of Economics, Facultad de Ciencias Económicas y de Administración (UdelaR). Full Dedication Teacher. Sistema Nacional de Investigadores, level I. Research Fellow of the World Inequality Lab - Paris School of Economics.',
         'FORMACIÓN':'EDUCATION',
         'Doctorado en Economía.':'Doctorate in Economics.',
         'Supervisores: Thomas Piketty y Facundo Alvaredo.': ' Supervisors: Thomas Piketty y Facundo Alvaredo.',
