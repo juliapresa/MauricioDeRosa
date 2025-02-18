@@ -1,8 +1,27 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // Obtener el idioma guardado en localStorage (si existe)
+  let idiomaGuardado = localStorage.getItem("idioma") || "es"; // Por defecto, español
+
+  // Aplicar el idioma guardado al cargar la página
+  cambiarIdioma(idiomaGuardado);
+
+  // Asignar eventos a los botones de idioma
+  document.getElementById("btn-es").addEventListener("click", function () {
+      cambiarIdioma("es");
+  });
+
+  document.getElementById("btn-en").addEventListener("click", function () {
+      cambiarIdioma("en");
+  });
+});
+
 function cambiarIdioma(idioma) {
+  // Guardar idioma en localStorage
+  localStorage.setItem("idioma", idioma);
 
-    var elementosATraducir = document.querySelectorAll('.traducible');
+  var elementosATraducir = document.querySelectorAll('.traducible');
 
-    var traducciones = {
+  var traducciones = {
       'es': {
         'Mauricio De Rosa | Enseñanza':'Mauricio De Rosa | Enseñanza',
         'Enlaces':'Enlaces',
@@ -51,20 +70,17 @@ function cambiarIdioma(idioma) {
         'dictado de cursos de grado':'teaching degree courses',
         'Desigualdad y Pobreza, Economía del Uruguay, Economía I, Matemática I y Estadística I.':'Inequality and Poverty, Economy of Uruguay, Economics I, Mathematics I and Statistics I.',
       }
-    };
-  
-   elementosATraducir.forEach(function(elemento) {
+  };
 
-    if (!elemento.dataset.original) {
-      elemento.dataset.original = elemento.textContent.trim();
-    }
-    
-    var textoOriginal = elemento.dataset.original;
-    
-    if (traducciones[idioma][textoOriginal]) {
-
-      elemento.textContent = traducciones[idioma][textoOriginal];
-    }
-    });
-  }
-  
+  elementosATraducir.forEach(function(elemento) {
+      if (!elemento.dataset.original) {
+          elemento.dataset.original = elemento.textContent.trim();
+      }
+      
+      var textoOriginal = elemento.dataset.original;
+      
+      if (traducciones[idioma][textoOriginal]) {
+          elemento.textContent = traducciones[idioma][textoOriginal];
+      }
+  });
+}

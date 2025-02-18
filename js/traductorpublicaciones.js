@@ -1,7 +1,27 @@
-function cambiarIdioma(idioma) {
-    var elementosATraducir = document.querySelectorAll('.traducible');
+document.addEventListener("DOMContentLoaded", function () {
+  // Obtener el idioma guardado en localStorage (si existe)
+  let idiomaGuardado = localStorage.getItem("idioma") || "es"; // Por defecto, español
 
-    var traducciones = {
+  // Aplicar el idioma guardado al cargar la página
+  cambiarIdioma(idiomaGuardado);
+
+  // Asignar eventos a los botones de idioma
+  document.getElementById("btn-es").addEventListener("click", function () {
+      cambiarIdioma("es");
+  });
+
+  document.getElementById("btn-en").addEventListener("click", function () {
+      cambiarIdioma("en");
+  });
+});
+
+function cambiarIdioma(idioma) {
+  // Guardar idioma en localStorage
+  localStorage.setItem("idioma", idioma);
+
+  var elementosATraducir = document.querySelectorAll('.traducible');
+
+  var traducciones = {
       'es': {
         'Mauricio De Rosa | Publicaciones':'Mauricio De Rosa | Publicaciones',
         'Enlaces':'Enlaces',
@@ -40,22 +60,17 @@ function cambiarIdioma(idioma) {
         'Documentos de trabajo y publicaciones no arbitradas':'Working papers and non-refereed publications',
         'Arim, R, De Rosa, M. y Vigorito, A.':'Arim, R, De Rosa, M. and Vigorito, A.',
       }
-    };
-
+  };
 
   elementosATraducir.forEach(function(elemento) {
-  
-    if (!elemento.dataset.original) {
-      elemento.dataset.original = elemento.textContent.trim();
-    }
-    
-
-    var textoOriginal = elemento.dataset.original;
-    
-
-    if (traducciones[idioma][textoOriginal]) {
-
-      elemento.textContent = traducciones[idioma][textoOriginal];
-    }
-    });
-  }
+      if (!elemento.dataset.original) {
+          elemento.dataset.original = elemento.textContent.trim();
+      }
+      
+      var textoOriginal = elemento.dataset.original;
+      
+      if (traducciones[idioma][textoOriginal]) {
+          elemento.textContent = traducciones[idioma][textoOriginal];
+      }
+  });
+}

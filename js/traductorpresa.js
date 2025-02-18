@@ -1,8 +1,27 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // Obtener el idioma guardado en localStorage (si existe)
+  let idiomaGuardado = localStorage.getItem("idioma") || "es"; // Por defecto, español
+
+  // Aplicar el idioma guardado al cargar la página
+  cambiarIdioma(idiomaGuardado);
+
+  // Asignar eventos a los botones de idioma
+  document.getElementById("btn-es").addEventListener("click", function () {
+      cambiarIdioma("es");
+  });
+
+  document.getElementById("btn-en").addEventListener("click", function () {
+      cambiarIdioma("en");
+  });
+});
+
 function cambiarIdioma(idioma) {
+  // Guardar idioma en localStorage
+  localStorage.setItem("idioma", idioma);
 
-    var elementosATraducir = document.querySelectorAll('.traducible');
+  var elementosATraducir = document.querySelectorAll('.traducible');
 
-    var traducciones = {
+  var traducciones = {
       'es': {
         'Mauricio De Rosa | Prensa':'Mauricio De Rosa | Prensa',
         'Enlaces':'Enlaces',
@@ -29,20 +48,17 @@ function cambiarIdioma(idioma) {
         'APARICIONES EN PRENSA':'PRESS APPEARANCES',
         'Ir a Youtube':'Go to Youtube',
       }
-    };
-  
+  };
 
   elementosATraducir.forEach(function(elemento) {
-
-    if (!elemento.dataset.original) {
-      elemento.dataset.original = elemento.textContent.trim();
-    }
-    
-    var textoOriginal = elemento.dataset.original;
-    
-    if (traducciones[idioma][textoOriginal]) {
-
-      elemento.textContent = traducciones[idioma][textoOriginal];
-    }
-    });
-  }
+      if (!elemento.dataset.original) {
+          elemento.dataset.original = elemento.textContent.trim();
+      }
+      
+      var textoOriginal = elemento.dataset.original;
+      
+      if (traducciones[idioma][textoOriginal]) {
+          elemento.textContent = traducciones[idioma][textoOriginal];
+      }
+  });
+}
