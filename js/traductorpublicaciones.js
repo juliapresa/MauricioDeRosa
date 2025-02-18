@@ -40,6 +40,7 @@ function cambiarIdioma(idioma) {
         'Organizadores: Harari L Mazzeo M, Alemany C. Págs. 385-398.':'Organizadores: Harari L Mazzeo M, Alemany C. Págs. 385-398.',
         'Documentos de trabajo y publicaciones no arbitradas':'Documentos de trabajo y publicaciones no arbitradas',
         'Arim, R, De Rosa, M. y Vigorito, A.':'Arim, R, De Rosa, M. y Vigorito, A.',
+        '2024. Todos los derechos reservados.':'2024. Todos los derechos reservados.',
       },
       'en': {
         'Mauricio De Rosa | Publicaciones':'Mauricio De Rosa | Publications',
@@ -59,6 +60,7 @@ function cambiarIdioma(idioma) {
         'Organizadores: Harari L Mazzeo M, Alemany C. Págs. 385-398.':'Organizers: Harari L Mazzeo M, Alemany C. Págs. 385-398.',
         'Documentos de trabajo y publicaciones no arbitradas':'Working papers and non-refereed publications',
         'Arim, R, De Rosa, M. y Vigorito, A.':'Arim, R, De Rosa, M. and Vigorito, A.',
+        '2024. Todos los derechos reservados.':'2024. All rights reserved.',
       }
   };
 

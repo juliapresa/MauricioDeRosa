@@ -43,6 +43,7 @@ function cambiarIdioma(idioma) {
           'Licenciatura en Economía.':'Licenciatura en Economía.',
           'Tesis de Grado: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.':'Tesis de Grado: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.',
           'Toca para ir al contenido':'Toca para ir al contenido',
+          '2024. Todos los derechos reservados.':'2024. Todos los derechos reservados.',
       },
       'en': {
           'Enlaces':'Links',
@@ -65,6 +66,7 @@ function cambiarIdioma(idioma) {
           'Licenciatura en Economía.':'Degree in Economics',
           'Tesis de Grado: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.':'Thesis: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.',
           'Toca para ir al contenido':'Tap to go to content',
+          '2024. Todos los derechos reservados.':'2024. All rights reserved.',
       }
   };
 

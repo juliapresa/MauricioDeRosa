@@ -34,6 +34,7 @@ function cambiarIdioma(idioma) {
         'Toca para ir al contenido':'Toca para ir al contenido',
         'APARICIONES EN PRENSA':'APARICIONES EN PRENSA',
         'Ir a Youtube':'Ir a Youtube',
+        '2024. Todos los derechos reservados.':'2024. Todos los derechos reservados.',
       },
       'en': {
         'Mauricio De Rosa | Prensa':'Mauricio De Rosa | Press',
@@ -47,6 +48,7 @@ function cambiarIdioma(idioma) {
         'Toca para ir al contenido':'Tap to go to content',
         'APARICIONES EN PRENSA':'PRESS APPEARANCES',
         'Ir a Youtube':'Go to Youtube',
+        '2024. Todos los derechos reservados.':'2024. All rights reserved.',
       }
   };
 

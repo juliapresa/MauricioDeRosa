@@ -37,6 +37,7 @@ function cambiarIdioma(idioma) {
         'Con Andrea Vigorito, Ignacio Pardo y Gabriel Burdín.':'Con Andrea Vigorito, Ignacio Pardo y Gabriel Burdín.',
         '“Un best seller contra el capital” reseña del libro El Capital en el siglo XXI de Thomas Piketty':'“Un best seller contra el capital” reseña del libro El Capital en el siglo XXI de Thomas Piketty',
         'Revista Lento, (2015).':'Revista Lento, (2015).',
+        '2024. Todos los derechos reservados.':'2024. Todos los derechos reservados.',
       },
       'en': {
         'Mauricio De Rosa | Articulos':'Mauricio De Rosa | Articles',
@@ -53,6 +54,7 @@ function cambiarIdioma(idioma) {
         'Con Andrea Vigorito, Ignacio Pardo y Gabriel Burdín.':'With Andrea Vigorito, Ignacio Pardo y Gabriel Burdín.',
         '“Un best seller contra el capital” reseña del libro El Capital en el siglo XXI de Thomas Piketty':'“Un best seller contra el capital” review of the book El Capital en el siglo XXI of Thomas Piketty',
         'Revista Lento, (2015).':'Lento magazine, (2015).',
+        '2024. Todos los derechos reservados.':'2024. All rights reserved.',
       }
   };
 

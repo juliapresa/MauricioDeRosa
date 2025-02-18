@@ -45,6 +45,7 @@ function cambiarIdioma(idioma) {
         'dictado de cursos de grado:':'dictado de cursos de grado:',
         'Previamente:':'Previamente:',
         'Desigualdad y Pobreza, Economía del Uruguay, Economía I, Matemática I y Estadística I.':'Desigualdad y Pobreza, Economía del Uruguay, Economía I, Matemática I y Estadística I.',
+        '2024. Todos los derechos reservados.':'2024. Todos los derechos reservados.',
       },
       'en': {
         'Mauricio De Rosa | Enseñanza':'Mauricio De Rosa | Teaching Activities',
@@ -69,6 +70,7 @@ function cambiarIdioma(idioma) {
         'Previamente:':'Previously:',
         'dictado de cursos de grado':'teaching degree courses',
         'Desigualdad y Pobreza, Economía del Uruguay, Economía I, Matemática I y Estadística I.':'Inequality and Poverty, Economy of Uruguay, Economics I, Mathematics I and Statistics I.',
+        '2024. Todos los derechos reservados.':'2024. All rights reserved.',
       }
   };
 
