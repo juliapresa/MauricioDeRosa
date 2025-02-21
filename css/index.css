@@ -137,6 +137,9 @@ body{
 #tarjeta{
     justify-content: space-around;
 }
+#tarjetaCol{
+    width: 24%;
+}
 .parrafoCardInicio{
     color: #4d70a5;
     font-size: small;
@@ -365,6 +368,14 @@ body{
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+    #tarjeta{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #tarjetaCol{
+        width: 95vw;
     }
     #navL:hover{
         text-decoration: underline;
