@@ -45,7 +45,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 70%;
+    width: fit-content;
 }
 #navL{
     font-family: 'Poppins', sans-serif;
@@ -211,19 +211,19 @@ body{
     color: #4d70a5;
 }
 .imgPrensaUno{
-    width: 420px;
+    width: 30vw;
     height: 350px;
 }
 .imgPrensaUno:hover{
-    width: 430px;
+    width: 31vw;
     height: 360px;
 }
 .imgPrensaNueve{
-    width: 350px;
+    width: 30vw;
     height: 350px;
 }
 .imgPrensaNueve:hover{
-    width: 360px;
+    width: 31vw;
     height: 360px;
 }
 .divVideo{
@@ -236,11 +236,11 @@ body{
     width: 33%;
 }
 .videoPrensa{
-    width: 420px;
+    width: 30vw;
     height: 350px;
 }
 .videoPrensa:hover{
-    width: 430px;
+    width: 31vw;
     height: 360px;
 }
 

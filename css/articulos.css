@@ -6,6 +6,9 @@ body{
     padding: 0%;
     overflow-x: hidden;
 }
+.mainArticulos{
+    width: 100vw;
+}
 .buttonTraductor{
     font-family: "Poppins", sans-serif;
     border: #071928, 1px, solid;
@@ -33,8 +36,6 @@ body{
 .contenedorNav {
     margin: 0%;
     padding: 0%;
-    width: 50%;
-    
 }
 #navBarra{
     display: flex;
@@ -42,7 +43,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 70%;
+    width: fit-content;
 }
 #navL{
     font-family: 'Poppins', sans-serif;
@@ -141,9 +142,12 @@ body{
 
 #articulos{
     width: 100vw;
+    height: fit-content;
 }
 .divTituloArticulos{
     margin: 0%;
+    padding: 0%;
+    width: 100vw;
     height: 90vh;
     background-color: #071928;
     margin-bottom: 10%;
@@ -164,6 +168,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: fit-content;
     margin: 0%;
     padding: 0%;
     margin-top: 0%;
@@ -173,6 +178,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: fit-content;
     margin: 0%;
     padding: 0%;
     margin-top: 0%;
@@ -182,7 +188,7 @@ body{
     flex-direction: row;
     justify-content: center;
     width: 50%;
-    height: 70vh;
+    height: fit-content;
     margin: 0%;
     padding: 0%;
 }
@@ -191,7 +197,7 @@ body{
     flex-direction: row;
     justify-content: center;
     width: 50%;
-    height: 70vh;
+    height: fit-content;
     margin: 0%;
     padding: 0%;
 }
@@ -203,8 +209,8 @@ body{
     height: 300px;
 }
 .imgArticulo:hover{
-    width: 510px;
-    height: 310px;
+    width: 505px;
+    height: 305px;
 }
 .imgArticuloDos{
     width: 600px;

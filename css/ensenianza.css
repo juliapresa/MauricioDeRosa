@@ -44,7 +44,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 70%;
+    width: fit-content;
 }
 #navL{
     font-family: 'Poppins', sans-serif;
@@ -273,7 +273,6 @@ body{
 .aFooter:hover{
     text-decoration: underline;
 }
-
 @media screen and (min-width: 0px) and (max-width: 768px){
     body{
         width: 100vw;

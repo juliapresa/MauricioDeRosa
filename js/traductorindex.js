@@ -44,6 +44,8 @@ function cambiarIdioma(idioma) {
           'Tesis de Grado: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.':'Tesis de Grado: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.',
           'Toca para ir al contenido':'Toca para ir al contenido',
           '2024. Todos los derechos reservados.':'2024. Todos los derechos reservados.',
+          'Mostrar Tweets': 'Mostrar Tweets',
+          'Ocultar Tweets': 'Ocultar Tweets',
       },
       'en': {
           'Enlaces':'Links',
@@ -67,6 +69,8 @@ function cambiarIdioma(idioma) {
           'Tesis de Grado: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.':'Thesis: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.',
           'Toca para ir al contenido':'Tap to go to content',
           '2024. Todos los derechos reservados.':'2024. All rights reserved.',
+          'Mostrar Tweets': 'Show Tweets',
+          'Ocultar Tweets': 'Hide Tweets',
       }
   };
 
@@ -82,3 +86,15 @@ function cambiarIdioma(idioma) {
       }
   });
 }
+document.getElementById("toggleTwitter").addEventListener("click", function() {
+    let widget = document.getElementById("twitterContainer");
+    let idiomaActual = localStorage.getItem("idioma") || "es"; // Obtener el idioma actual
+
+    if (widget.classList.contains("expandido")) {
+        widget.classList.remove("expandido");
+        this.textContent = (idiomaActual === "en") ? "Show Tweets" : "Mostrar Tweets";
+    } else {
+        widget.classList.add("expandido");
+        this.textContent = (idiomaActual === "en") ? "Hide Tweets" : "Ocultar Tweets";
+    }
+});

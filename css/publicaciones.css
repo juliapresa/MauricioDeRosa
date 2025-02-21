@@ -42,7 +42,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 70%;
+    width: fit-content;
 }
 #navL{
     font-family: 'Poppins', sans-serif;
@@ -154,7 +154,7 @@ body{
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    height: 60vh;
+    height: fit-content;
     margin: 0%;
     padding: 0%;
     margin-bottom: 5%;
@@ -164,13 +164,13 @@ body{
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    height: 60vh;
+    height: fit-content;
     margin: 0%;
     padding: 0%;
     margin-bottom: 5%;
 }
 .divTarjetaPublicaciones{
-    width: 30%;
+    width: 32%;
     display: flex;
     justify-content: center;
     height: fit-content;
@@ -188,11 +188,11 @@ body{
 
 
 .imgPublicacionUno{
-    width: 400px;
+    width: 30vw;
     height: 260px;
 }
 .imgPublicacionUno:hover{
-    width: 410px;
+    width: 31vw;
     height: 270px;
 }
 #cuerpoCard{
