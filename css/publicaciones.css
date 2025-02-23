@@ -183,7 +183,7 @@ body{
 
 .cardPublicacionesArbitradas{
     width: fit-content;
-    height: fit-content; 
+    height: 310px; 
 }
 
 
@@ -193,7 +193,7 @@ body{
 }
 .imgPublicacionUno:hover{
     width: 31vw;
-    height: 270px;
+    height: 265px;
 }
 #cuerpoCard{
     display: flex;

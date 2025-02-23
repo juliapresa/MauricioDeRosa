@@ -219,11 +219,11 @@ body{
     height: 360px;
 }
 .imgPrensaNueve{
-    width: 30vw;
+    width: fit-content;
     height: 350px;
 }
 .imgPrensaNueve:hover{
-    width: 31vw;
+    width: fit-content;
     height: 360px;
 }
 .divVideo{
@@ -241,7 +241,7 @@ body{
 }
 .videoPrensa:hover{
     width: 31vw;
-    height: 360px;
+    height: 365px;
 }
 
 #button{
@@ -426,7 +426,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 99%;
+        width: 95%;
         height: fit-content;
         margin-bottom: 15%;
     }
@@ -434,7 +434,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 99%;
+        width: 95%;
         height: fit-content;
         margin-bottom: 20%;
     }
@@ -460,7 +460,7 @@ body{
         height: fit-content;
     }
     .imgPrensaNueve{
-        width: 99vw;
+        width: 95vw;
         height: fit-content;
     }
     .imgPrensaNueve:hover{
