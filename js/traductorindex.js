@@ -31,7 +31,7 @@ function cambiarIdioma(idioma) {
           'Prensa': 'Prensa',
           'Divulgación': 'Divulgación',
           'IR AL CV':'IR AL CV',
-          'Docente efectivo grado 3 del Departamento de Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics.':'Docente efectivo grado 3 del Departamento de Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics.',
+          'Soy docente efectivo grado 3 del Departamento de Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics. Mi trabajo de investigación se centra en la desigualdad de ingresos y riqueza, así como en las políticas públicas necesarias para reducirlas. También doy clase sobre estos temas, así como sobre Historia del Pensamiento Económico.':'Soy docente efectivo grado 3 del Departamento de Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics. Mi trabajo de investigación se centra en la desigualdad de ingresos y riqueza, así como en las políticas públicas necesarias para reducirlas. También doy clase sobre estos temas, así como sobre Historia del Pensamiento Económico.',
           'FORMACIÓN':'FORMACIÓN',
           'Doctorado en Economía.':'Doctorado en Economía.',
           'Supervisores: Thomas Piketty y Facundo Alvaredo.': ' Supervisores: Thomas Piketty y Facundo Alvaredo.',
@@ -44,8 +44,8 @@ function cambiarIdioma(idioma) {
           'Tesis de Grado: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.':'Tesis de Grado: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.',
           'Toca para ir al contenido':'Toca para ir al contenido',
           '2024. Todos los derechos reservados.':'2024. Todos los derechos reservados.',
-          'Mostrar Tweets': 'Mostrar Tweets',
-          'Ocultar Tweets': 'Ocultar Tweets',
+          'Mostrar tweets destacados': 'Mostrar tweets destacados',
+          'Ocultar tweets destacados': 'Ocultar tweets destacados',
       },
       'en': {
           'Enlaces':'Links',
@@ -56,9 +56,9 @@ function cambiarIdioma(idioma) {
           'Prensa': 'Press',
           'Divulgación': 'Outreach',
           'IR AL CV':'GO TO CV',
-          'Docente efectivo grado 3 del Departamento de Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics.':'Professor at the Department of Economics, Facultad de Ciencias Económicas y de Administración (UdelaR). Full Dedication Teacher. Sistema Nacional de Investigadores, level I. Research Fellow of the World Inequality Lab - Paris School of Economics.',
+          'Soy docente efectivo grado 3 del Departamento de Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics. Mi trabajo de investigación se centra en la desigualdad de ingresos y riqueza, así como en las políticas públicas necesarias para reducirlas. También doy clase sobre estos temas, así como sobre Historia del Pensamiento Económico.':'I am an Assistant Professor at the Department of Economics, Facultad de Ciencias Económicas y de Administración (UdelaR). Full Dedication Teacher. Sistema Nacional de Investigadores, level I. Research Fellow of the World Inequality Lab - Paris School of Economics. My research focuses on income and wealth inequality, as well as the public policies needed to reduce them. I also teach on these topics, as well as on the history of economic thought.',
           'FORMACIÓN':'EDUCATION',
-          'Doctorado en Economía.':'Doctorate in Economics.',
+          'Doctorado en Economía.':'PhD in Economics',
           'Supervisores: Thomas Piketty y Facundo Alvaredo.': ' Supervisors: Thomas Piketty y Facundo Alvaredo.',
           'Maestría en Economía.':'Master in Economics',
           '(Políticas Públicas y Desarrollo).':'(Public Policy and Development).',
@@ -69,8 +69,8 @@ function cambiarIdioma(idioma) {
           'Tesis de Grado: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.':'Thesis: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.',
           'Toca para ir al contenido':'Tap to go to content',
           '2024. Todos los derechos reservados.':'2024. All rights reserved.',
-          'Mostrar Tweets': 'Show Tweets',
-          'Ocultar Tweets': 'Hide Tweets',
+          'Mostrar tweets destacados': 'Show highlighted tweets',
+          'Ocultar tweets destacados': 'Hide highlighted tweets',
       }
   };
 
@@ -92,9 +92,9 @@ document.getElementById("toggleTwitter").addEventListener("click", function() {
 
     if (widget.classList.contains("expandido")) {
         widget.classList.remove("expandido");
-        this.textContent = (idiomaActual === "en") ? "Show Tweets" : "Mostrar Tweets";
+        this.textContent = (idiomaActual === "en") ? "Show highlighted tweets" : "Mostrar tweets destacados";
     } else {
         widget.classList.add("expandido");
-        this.textContent = (idiomaActual === "en") ? "Hide Tweets" : "Ocultar Tweets";
+        this.textContent = (idiomaActual === "en") ? "Hide highlighted tweets" : "Ocultar tweets destacados";
     }
 });

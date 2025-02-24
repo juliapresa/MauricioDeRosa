@@ -203,8 +203,6 @@ body{
     #twitter{
         transform: scale(0.8); 
         transform-origin: top left; 
-        height: 400px;
-        overflow: hidden; 
     }
     #twitterContainer {
         width: 100vw;
