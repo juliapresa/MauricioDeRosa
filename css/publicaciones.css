@@ -169,6 +169,17 @@ body{
     padding: 0%;
     margin-bottom: 5%;
 }
+.divPublicacionesTres{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100vw;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+    margin-bottom: 5%;
+    margin-left: 4%;
+}
 .divTarjetaPublicaciones{
     width: 32%;
     display: flex;
@@ -408,6 +419,15 @@ body{
         height: fit-content;
     }
     .divPublicacionesDos{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0%;
+        height: fit-content;
+    }
+    .divPublicacionesTres{
         width: 100vw;
         display: flex;
         flex-direction: column;

@@ -79,8 +79,8 @@ body{
     height: fit-content;
     margin: 0%;
     padding: 0;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-top: 3%;
 }
 .subtituloArticulos{
     font-family: Georgia,'Times New Roman', Times, serif;
@@ -168,7 +168,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: fit-content;
+    height: 70vh;
     margin: 0%;
     padding: 0%;
     margin-top: 0%;
@@ -177,17 +177,28 @@ body{
 .divArticulosDos{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    height: fit-content;
+    justify-content: start;
+    height: 70vh;
     margin: 0%;
     padding: 0%;
     margin-top: 0%;
+    margin-left: 2%;
+}
+#divArticulosTres{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 60vh;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 0%;
+    margin-left: 2%;
 }
 .divTarjetaArticulos{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 50%;
+    width: 33%;
     height: fit-content;
     margin: 0%;
     padding: 0%;
@@ -196,7 +207,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 50%;
+    width: 33%;
     height: fit-content;
     margin: 0%;
     padding: 0%;
@@ -205,36 +216,36 @@ body{
     height: 100%;
 }
 .imgArticulo{
-    width: 500px;
+    width: 32vw;
     height: 300px;
 }
 .imgArticulo:hover{
-    width: 505px;
-    height: 305px;
+    width: 33vw;
+    height: 315px;
 }
 .imgArticuloDos{
-    width: 600px;
+    width: 32vw;
     height: 300px;
 }
 .imgArticuloDos:hover{
-    width: 610px;
-    height: 310px;
+    width: 33vw;
+    height: 315px;
 }
 .imgArticuloTres{
-    width: 500px;
+    width: 32vw;
     height: 300px;
 }
 .imgArticuloTres:hover{
-    width: 510px;
-    height: 310px;
+    width: 33vw;
+    height: 315px;
 }
 .imgArticuloCuatro{
-    width: 500px;
+    width: 32vw;
     height: 300px;
 }
 .imgArticuloCuatro:hover{
-    width: 510px;
-    height: 310px;
+    width: 33vw;
+    height: 315px;
 }
 .parrafoCardArticulos{
     color: #4d70a5;
@@ -252,11 +263,11 @@ body{
     margin-top: 3%;
 }
 .divTituloCardArticulosTres{
-    width: 70%;
+    width: 90%;
     margin: 0%;
 }
 .divTituloCardArticulosDos{
-    width: 80%;
+    width: 90%;
 }
 .tituloCardArticulosTres{
     font-family: Georgia,'Times New Roman', Times, serif;
@@ -417,6 +428,7 @@ body{
     
     .divArticulosUno{
         width: 100vw;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -434,6 +446,17 @@ body{
         align-items: center;
         text-align: center;
         padding: 0%;
+        margin-left: 0%;
+    }
+    #divArticulosTres{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        height: 60vh;
+        margin: 0%;
+        padding: 0%;
+        margin-top: 0%;
+        margin-left: 0%;
     }
     .divTarjetaArticulos{
         display: flex;
