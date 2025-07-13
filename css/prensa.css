@@ -217,7 +217,7 @@ body{
 }
 .imgPrensaUno:hover{
     width: 31vw;
-    height: 360px;
+    height: 370px;
 }
 .imgPrensaNueve{
     width: fit-content;
@@ -225,7 +225,7 @@ body{
 }
 .imgPrensaNueve:hover{
     width: fit-content;
-    height: 360px;
+    height: 370px;
 }
 .divVideo{
     width: 33%;
@@ -242,7 +242,7 @@ body{
 }
 .videoPrensa:hover{
     width: 31vw;
-    height: 365px;
+    height: 370px;
 }
 
 #button{
