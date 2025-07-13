@@ -176,6 +176,7 @@ body{
     margin: 0%;
     width: 100vw;
     height: 70vh;
+    padding: 0%;
 }
 .divPrensaUnoPrimero{
     display: flex;

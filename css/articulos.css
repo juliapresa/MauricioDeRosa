@@ -8,6 +8,8 @@ body{
 }
 .mainArticulos{
     width: 100vw;
+    margin: 0%;
+    padding: 0%;
 }
 .buttonTraductor{
     font-family: "Poppins", sans-serif;
@@ -139,11 +141,6 @@ body{
     text-decoration: none;
     width: fit-content;
 }
-
-#articulos{
-    width: 100vw;
-    height: fit-content;
-}
 .divTituloArticulos{
     margin: 0%;
     padding: 0%;
@@ -179,6 +176,7 @@ body{
     flex-direction: row;
     justify-content: start;
     height: 70vh;
+    width: 100vw;
     margin: 0%;
     padding: 0%;
     margin-top: 0%;
@@ -189,10 +187,12 @@ body{
     flex-direction: row;
     justify-content: start;
     height: 60vh;
+    width: 100vw;
     margin: 0%;
     padding: 0%;
     margin-top: 0%;
-    margin-left: 2%;
+    margin-left: 1%;
+    margin-bottom: 3%;
 }
 .divTarjetaArticulos{
     display: flex;

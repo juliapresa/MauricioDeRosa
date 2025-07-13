@@ -197,14 +197,13 @@ body{
     height: 310px; 
 }
 
-
 .imgPublicacionUno{
     width: 30vw;
     height: 260px;
 }
 .imgPublicacionUno:hover{
     width: 31vw;
-    height: 265px;
+    height: 275px;
 }
 #cuerpoCard{
     display: flex;
@@ -251,7 +250,6 @@ body{
     align-items: center;
     text-align: center;
 }
-
 
 .divLibroPublicacion{
     width: 60%;
