@@ -480,7 +480,7 @@ body{
     }
     .imgPrensaUno{
         width: 95vw;
-        height: fit-content;
+        height: auto;
     }
     .imgPrensaUno:hover{
         width: 95vw;
