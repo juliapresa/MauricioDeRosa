@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="traducible">Mauricio De Rosa | Articulos</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/divulgacion.css">
     <script src="https://kit.fontawesome.com/eb5d67a816.js" crossorigin="anonymous"></script>
     <meta name="google-site-verification" content="K3wkjUW7TCt6TDZrZAQ7jgo9Xujg4ruF8b6-LGRoLrA" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/divulgacion.css">
   </head>
 <body>
     <header>
@@ -53,11 +54,11 @@
     <main class="mainArticulos">
       <section id='articulos' class='contenido d-flex row col-sm-12 col-md-12'>
         <div class='divTituloArticulos d-flex row col-sm-12 col-md-12 text-center justify-content-center'>
-            <h1 class='traducible tituloArticulo'>ARTÍCULOS DE DIVULGACIÓN</h1>
+            <h1 data-aos="zoom-in" class='traducible tituloArticulo'>ARTÍCULOS DE DIVULGACIÓN</h1>
         </div>
 
         <div class='divArticulosUno'>
-          <div class='col-md-3 col-sm-12 divTarjetaArticulosUno d-flex flex-column align-items-center text-center'>
+          <div class='col-md-3 col-sm-12 divTarjetaArticulosUno d-flex flex-column align-items-center text-center' data-aos="fade-up">
             <div id='cuerpoCard'>
               <a class="linkArticulo" target='_blank' href="https://ladiaria.com.uy/opinion/articulo/2025/8/el-aire-que-entra-por-la-ventana-de-overton/">
                 <img class="imgArticulo" src="../assets/img/articuloDiezynueve.png" alt="imgArticulos">
@@ -73,7 +74,7 @@
               </div>
             </div>
           </div>
-          <div class='col-md-3 col-sm-12 divTarjetaArticulosUno d-flex flex-column align-items-center text-center'>
+          <div class='col-md-3 col-sm-12 divTarjetaArticulosUno d-flex flex-column align-items-center text-center' data-aos="fade-up">
             <div id='cuerpoCard'>
               <a class="linkArticulo" target='_blank' href="https://www.razonesypersonas.com/2025/04/erradicar-la-pobreza-monetaria-en.html">
                 <img class="imgArticulo" src="../assets/img/articuloSeis.png" alt="imgArticulos">
@@ -89,7 +90,7 @@
               </div>
             </div>
           </div>
-          <div class='col-md-3 col-sm-12 divTarjetaArticulosUno d-flex flex-column align-items-center text-center'>
+          <div class='col-md-3 col-sm-12 divTarjetaArticulosUno d-flex flex-column align-items-center text-center' data-aos="fade-up">
               <div id='cuerpoCard'>
                 <a class="linkArticulo" target='_blank' href="https://ladiaria.com.uy/economia/articulo/2020/7/el-1-y-un-desfile-de-enanos-y-gigantes/">
                   <img class="imgArticulo" src="../assets/img/articuloTres.png" alt="imgArticulos">
@@ -108,7 +109,7 @@
         </div>
 
         <div class='divArticulosDos'>
-          <div class='col-md-3 col-sm-12 divTarjetaArticulos d-flex flex-column align-items-center text-center'>
+          <div class='col-md-3 col-sm-12 divTarjetaArticulos d-flex flex-column align-items-center text-center' data-aos="fade-up">
               <div id='cuerpoCard'>
                 <a class="linkArticulo" target='_blank' href="https://ladiaria.com.uy/articulo/2018/1/el-rapido-ascenso-de-las-clases-medias-de-paises-como-china-o-india-no-ha-logrado-revertir-la-tendencia-al-alza-en-la-desigualdad-a-escala-global/">
                   <img class="imgArticuloDos" src="../assets/img/articuloDiez.png" alt="imgArticulos">
@@ -123,7 +124,7 @@
                 </div>
               </div>
             </div>
-            <div class='col-md-3 col-sm-12 divTarjetaArticulosUno d-flex flex-column align-items-center text-center'>
+            <div class='col-md-3 col-sm-12 divTarjetaArticulosUno d-flex flex-column align-items-center text-center' data-aos="fade-up">
               <div id='cuerpoCard'>
                 <a class="linkArticulo" target='_blank' href="https://ladiaria.com.uy/articulo/2017/2/reduccion-de-la-desigualdad-tuvo-tiene-que-pasar-de-todo/">
                   <img class="imgArticuloTres" src="../assets/img/articuloOnce.png" alt="imgArticulos">
@@ -139,7 +140,7 @@
                 </div>
               </div>
             </div>
-            <div class='col-md-3 col-sm-12 divTarjetaArticulosUno d-flex flex-column align-items-center text-center'>
+            <div class='col-md-3 col-sm-12 divTarjetaArticulosUno d-flex flex-column align-items-center text-center' data-aos="fade-up">
               <div id='cuerpoCard'>
                 <a class="linkArticulo" target='_blank' href="https://lento.uy/lento-29-agosto-2015/"> 
                   <img class="imgArticuloCuatro" src="../assets/img/articuloTrece.png" alt="imgArticulos">
@@ -184,5 +185,7 @@
     </footer>
     <script src="../js/traductordivulgacion.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init({duration: 1000, once: true });</script>
 </body>
 </html>

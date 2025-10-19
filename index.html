@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mauricio De Rosa</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/index.css" />
     <script src="https://kit.fontawesome.com/eb5d67a816.js" crossorigin="anonymous"></script>
     <meta name="google-site-verification" content="K3wkjUW7TCt6TDZrZAQ7jgo9Xujg4ruF8b6-LGRoLrA"/>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="./css/index.css"/>
   </head>
   <body>
     <header>
@@ -49,34 +50,34 @@
       </section>
       <div class="divTitulo">
         <div class="divImgMauricio">
-          <img class="imgMauricio" src="./assets/img/mauricio.jpg" alt="img">
+          <img class="imgMauricio" src="./assets/img/mauricio.jpg" alt="img" data-aos="fade-up">
         </div>
         <div class="divTituloMauricio">
-          <h1 class="tituloMauricio">MAURICIO</h1>
-          <h1 class="tituloMauricio">DE ROSA</h1>
+          <h1 data-aos="zoom-in" class="tituloMauricio">MAURICIO</h1>
+          <h1 data-aos="zoom-in" class="tituloMauricio">DE ROSA</h1>
         </div>
       </div>
     </header>
     <main>
       <div class="divTitle d-flex align-items-center col-md-12 col-sm-12">
         <div class="divTitleDos">
-          <p style="color: #071928" class="traducible parrafoTitulo"> Soy docente efectivo grado 3 del Departamento de Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics. Mi trabajo de investigación se centra en la desigualdad de ingresos y riqueza, así como en las políticas públicas necesarias para reducirlas. También doy clase sobre estos temas, así como sobre Historia del Pensamiento Económico.</p>
+          <p data-aos="zoom-in" style="color: #071928" class="traducible parrafoTitulo" data-aos="zoom-in"> Soy docente efectivo grado 3 del Departamento de Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics. Mi trabajo de investigación se centra en la desigualdad de ingresos y riqueza, así como en las políticas públicas necesarias para reducirlas. También doy clase sobre estos temas, así como sobre Historia del Pensamiento Económico.</p>
           <a target="_blank" href="./assets/cvMauricio.pdf" download="">
-            <button type="button" class="buttonCV traducible btn btn-outline-dark">IR AL CV</button>
+            <button data-aos="fade-up" type="button" class="buttonCV traducible btn btn-outline-dark">IR AL CV</button>
           </a>
         </div>
       </div>
 
       <div class="fondoFormacion">
         <div class="divTituloFormacion d-flex row col-sm-12 col-md-12 text-center justify-content-center">
-          <h1 class="traducible tituloFormacion">FORMACIÓN</h1>
+          <h1 data-aos="zoom-in" class="traducible tituloFormacion">FORMACIÓN</h1>
         </div>
         <div class="formacion">
           <section>
             <div id="tarjeta" class="row row-cols-1 row-cols-md-4 g-4">
               <div id="tarjetaCol" class="col">
                 <a target="_blank" class="anclaFormacion" href="http://piketty.pse.ens.fr/files/DeRosa2023.pdf">
-                <div class="card h-100 ">
+                <div class="card h-100" data-aos="fade-up">
                   <div class="card-body">
                     <h5 class="card-title traducible">Doctorado en Economía.</h5>
                     <p class="card-text traducible">Paris School of Economics - École des Hautes Études en Sciences Sociales (EHESS). 2019 - 2023.</p>
@@ -93,7 +94,7 @@
               </div>
               <div id="tarjetaCol" class="col" >
                 <a target="_blank" class="anclaFormacion" href="http://piketty.pse.ens.fr/files/DeRosa2019.pdf">
-                <div class="card h-100">
+                <div class="card h-100" data-aos="fade-up">
                   <div class="card-body">
                     <h5 class="card-title traducible">Maestría en Economía.</h5>
                     <p class="card-text traducible">(Políticas Públicas y Desarrollo).</p>
@@ -111,7 +112,7 @@
               </div>
               <div id="tarjetaCol" class="col">
                 <a target="_blank" class="anclaFormacion" href="https://www.colibri.udelar.edu.uy/jspui/handle/20.500.12008/31088">
-                <div class="card h-100">
+                <div class="card h-100" data-aos="fade-up">
                   <div class="card-body">
                     <h5 class="card-title traducible">Maestría en Economía.</h5>
                     <p class="card-text traducible">Facultad de Ciencias Económicas y de Administración - Universidad de la República 2011 - 2016</p>
@@ -126,7 +127,7 @@
               </div>
               <div id="tarjetaCol" class="col">
                 <a target="_blank" class="anclaFormacion" href="https://www.colibri.udelar.edu.uy/jspui/handle/20.500.12008/251">
-                <div class="card h-100">
+                <div class="card h-100" data-aos="fade-up">
                   <div class="card-body">
                     <h5 class="card-title traducible">Licenciatura en Economía.</h5>
                     <p class="card-text traducible">Facultad de Ciencias Económicas y de Administración - Universidad de la República 2005 - 2010, Plan 1990.</p>
@@ -146,7 +147,7 @@
         </div>
       </div>
       <div id="contenedorBoton">
-        <button class="traducible" id="toggleTwitter">Mostrar tweets destacados</button>
+        <button data-aos="fade-up" class="traducible" id="toggleTwitter">Mostrar tweets destacados</button>
       </div>
       <div id="twitterContainer" class="contraido">
         <section class="sectionTwitter">
@@ -188,5 +189,7 @@
     </footer>
     <script src="./js/traductorindex.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init({duration: 1000, once: true});</script>
   </body>
 </html>

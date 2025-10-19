@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="traducible">Mauricio De Rosa | Enseñanza</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/ensenianza.css">
     <script src="https://kit.fontawesome.com/eb5d67a816.js" crossorigin="anonymous"></script>
     <meta name="google-site-verification" content="K3wkjUW7TCt6TDZrZAQ7jgo9Xujg4ruF8b6-LGRoLrA" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/ensenianza.css">
   </head>
 <body  style="overflow-x: hidden;">
     <header >
@@ -54,16 +55,17 @@
     <main class="mainEnsenianza">
       <section id="sectionEnseñanza " class="contenido d-flex row col-sm-12 col-md-12 justify-content-center">
             <div class="divTituloEnseñanza d-flex row col-sm-12 col-md-12 text-center justify-content-center">
-                <h1 class='traducible tituloEnseñanza'>ACTIVIDADES DE ENSEÑANZA</h1>
+                <h1 data-aos="zoom-in" class='traducible tituloEnseñanza'>ACTIVIDADES DE ENSEÑANZA</h1>
             </div>
     
         <div class='divContenido'>
             <div class='contenidoUno'>
                 <div class='divSubtituloEnseñanzaUno'>
-                    <h2 class='traducible subtituloEnseñanzaUno'>Cursos dictados</h2>
+                    <h2 data-aos="fade-right" class='traducible subtituloEnseñanzaUno'>Cursos dictados</h2>
                 </div>
-                <div class='traducible divParrafoEnseñanzaUno'>
-                   <p class="parrafoEnseñanzaUno"><a class="traducible anclaEnsenianza" target="_blank" rel="stylesheet" href="https://www.bogotasummerschoolineconomics.co/cursos-summer/understanding-inequality-theory-evidence-and-methodology/"> Profesor invitado para la Bogotá Summer School, en la Universidad de Los Andes (Colombia-2024)</a></p>
+                <div class='traducible divParrafoEnseñanzaUno' data-aos="fade-left"
+                >
+                    <p class="parrafoEnseñanzaUno"><a class="traducible anclaEnsenianza" target="_blank" rel="stylesheet" href="https://www.bogotasummerschoolineconomics.co/cursos-summer/understanding-inequality-theory-evidence-and-methodology/"> Profesor invitado para la Bogotá Summer School, en la Universidad de Los Andes (Colombia-2024)</a></p>
                     <p class='traducible parrafoEnseñanzaUno'>Historia del Pensamiento Económico. Curso obligatorio del séptimo semestre de la Licenciatura en Economía (Encargado del curso). 2021-2024.</p>
                     <p class='traducible parrafoEnseñanzaUno'>Economía Descriptiva. Curso obligatorio del segundo semestre de la Licenciatura en Economía. 2022-2024.</p>
                     <p class='traducible parrafoEnseñanzaUno'>Tópicos de Distribución del Ingreso de la Maestría en Economía de la Facultad de Ciencias Económicas y de Administración.</p>
@@ -73,11 +75,11 @@
             <hr />
             <div class='contenidoDos'>
                 <div class='divSubtituloEnseñanzaDos d-flex flex-column'>
-                    <h2 class='traducible subtituloEnseñanzaDos'>Dirección de Tesis:</h2>
-                    <h2 class='traducible subtituloEnseñanzaDos'>grado y posgrado</h2>
+                    <h2 data-aos="fade-right" class='traducible subtituloEnseñanzaDos'>Dirección de Tesis:</h2>
+                    <h2 data-aos="fade-right" class='traducible subtituloEnseñanzaDos'>grado y posgrado</h2>
         
                 </div>
-                <div class='divParrafoEnseñanzaDos'>
+                <div class='divParrafoEnseñanzaDos' data-aos="fade-left">
                     <p class='traducible parrafoEnseñanzaDos'>Dirección de Trabajo Final de Grado (FCEA) de Julieta Pessina y Carolina Ardoguein. Finalizada. 2021-2022.</p>
                     <p class='traducible parrafoEnseñanzaDosDos'>Co-Dirección (junto a Matías Brum) de Tesis de Maestría de Joaquín Toledo en Maestría de FCEA. 2021-2022.</p>
                 </div>
@@ -85,11 +87,11 @@
             <hr />
             <div class='contenidoTres'>
                 <div class='divSubtituloEnseñanzaTres d-flex flex-column'>
-                    <h2 class='traducible subtituloEnseñanzaTres'>Previamente: </h2>
-                    <h2 class='traducible subtituloEnseñanzaTres'>dictado de cursos de grado</h2>
+                    <h2 data-aos="fade-right" class='traducible subtituloEnseñanzaTres'>Previamente: </h2>
+                    <h2 data-aos="fade-right" class='traducible subtituloEnseñanzaTres'>dictado de cursos de grado</h2>
                 </div>
                 <div class='divParrafoEnseñanzaTres'>
-                    <p class='traducible parrafoEnseñanzaTres'>Desigualdad y Pobreza, Economía del Uruguay, Economía I, Matemática I y Estadística I.</p>
+                    <p data-aos="fade-left" class='traducible parrafoEnseñanzaTres'>Desigualdad y Pobreza, Economía del Uruguay, Economía I, Matemática I y Estadística I.</p>
                 </div>
             </div>
             <hr />
@@ -122,5 +124,12 @@
     </footer>
     <script src="../js/traductorensenianza.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
 </body>
 </html>
