@@ -52,6 +52,7 @@ body{
 }
 #navL{
     font-family: 'Poppins', sans-serif;
+    font-size: large;
 }
 #navL:hover{
     text-decoration: underline;
@@ -148,7 +149,7 @@ body{
     margin: 0%;
     padding: 0%;
     width: 100vw;
-    height: 90vh;
+    height: 85vh;
     background-color: #071928;
     margin-bottom: 10%;
     display: flex;
@@ -171,7 +172,7 @@ body{
     margin: 0%;
     padding: 0%;
     margin-top: 0%;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
 }
 .divArticulosDos{
     display: flex;
@@ -181,8 +182,10 @@ body{
     margin: 0%;
     padding: 0%;
     margin-top: 0%;
+    margin-bottom: 5%;
+
 }
-#divArticulosTres{
+/* #divArticulosTres{
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -193,7 +196,7 @@ body{
     margin-top: 0%;
     margin-left: 1%;
     margin-bottom: 3%;
-}
+} */
 .divTarjetaArticulos{
     display: flex;
     flex-direction: row;
@@ -324,6 +327,14 @@ body{
         padding: 0%;
         width: 50%;
     }
+    .navbar-collapse {
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 9999;
+}
     #navBarra{
         width: fit-content;
         margin-right: 5%;

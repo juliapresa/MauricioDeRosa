@@ -48,6 +48,7 @@ body{
 }
 #navL{
     font-family: 'Poppins', sans-serif;
+    font-size: large;
 }
 #navL:hover{
     text-decoration: underline;
@@ -72,7 +73,7 @@ body{
 .divTituloEnseñanza{
     width: 100vw;
     margin: 0%;
-    height: 90vh;
+    height: 85vh;
     background-color: #071928;
     display: flex;
     justify-content: center;
@@ -302,6 +303,14 @@ body{
         width: 50%;
         height: 5rem;
     }
+    .navbar-collapse {
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 9999;
+}
     #navBarra{
         width: fit-content;
         margin-right: 5%;

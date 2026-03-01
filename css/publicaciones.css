@@ -34,7 +34,6 @@ body{
     margin: 0%;
     padding: 0%;
     width: 50%;
-    
 }
 #navBarra{
     display: flex;
@@ -46,6 +45,7 @@ body{
 }
 #navL{
     font-family: 'Poppins', sans-serif;
+    font-size: large;
 }
 #navL:hover{
     text-decoration: underline;
@@ -57,22 +57,6 @@ body{
 #iconoT:hover{
     width: 2.5rem;
     height: 2.5rem;
-}
-.divFooter{
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-.liFooter:hover{
-    text-decoration: underline;
-}
-.aFooter{
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-}
-.aFooter:hover{
-    text-decoration: underline;
 }
 .contenedorIcono {
     margin: 0%;
@@ -122,9 +106,9 @@ body{
 }
 .divTituloPublicaciones{
     margin: 0%;
-    height: 90vh;
+    height: 85vh;
     background-color: #071928;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,7 +151,7 @@ body{
     height: fit-content;
     margin: 0%;
     padding: 0%;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
 }
 .divPublicacionesTres{
     display: flex;
@@ -177,7 +161,7 @@ body{
     height: fit-content;
     margin: 0%;
     padding: 0%;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
     margin-left: 4%;
 }
 .divTarjetaPublicaciones{
@@ -284,8 +268,24 @@ body{
     font-style: italic;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    
+    align-items: start; 
+}
+
+.divFooter{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.liFooter:hover{
+    text-decoration: underline;
+}
+.aFooter{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.aFooter:hover{
+    text-decoration: underline;
 }
 @media screen and (min-width: 0px) and (max-width: 768px){
     body{
@@ -316,6 +316,14 @@ body{
         padding: 0%;
         width: 50%;
     }
+    .navbar-collapse {
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 9999;
+}
     #navBarra{
         width: fit-content;
         margin-right: 5%;
