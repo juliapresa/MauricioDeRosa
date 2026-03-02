@@ -6,14 +6,7 @@ body{
     padding: 0%;
     overflow-x: hidden;
 }
-#articulos{
-    width: 100vw;
-}
-.mainArticulos{
-    width: 100vw;
-    margin: 0%;
-    padding: 0%;
-}
+
 .buttonTraductor{
     font-family: "Poppins", sans-serif;
     border: #071928, 1px, solid;
@@ -81,6 +74,19 @@ body{
     margin-top: 2%;
     margin-left: 2%;
 }
+
+
+main{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+#articulos{
+    width: 100%;
+}
+
+
 .divSubtituloArticulos{
     height: fit-content;
     margin: 0%;
@@ -97,50 +103,7 @@ body{
     padding: 0%;
     margin-bottom: 0%;
 }
-.divFooter{
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-.liFooter:hover{
-    text-decoration: underline;
-}
-.aFooter{
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-}
-.aFooter:hover{
-    text-decoration: underline;
-}
-#navLF{
-    display: flex;
-    margin-left: 3%;
-    font-family: 'Poppins', sans-serif;
-}
-#navLF:hover{
-    text-decoration: underline;
-}
-#iconoT{
-   width: 2rem;
-   height: 2rem;
-}
-#iconoT:hover{
-    width: 2.5rem;
-   height: 2.5rem;
-}
-#ancla{
-    text-decoration-line: none;
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    margin-top: 3%;
-    margin-left: 3%;
-}
-.iconoMail{
-    font-size: x-large;
-    margin-right: 1%;
-}
+
 .linkArticulo{
     text-decoration: none;
     width: fit-content;
@@ -148,8 +111,8 @@ body{
 .divTituloArticulos{
     margin: 0%;
     padding: 0%;
-    width: 100vw;
-    height: 85vh;
+    width: 100%;
+    height: 60vh;
     background-color: #071928;
     margin-bottom: 10%;
     display: flex;
@@ -185,18 +148,6 @@ body{
     margin-bottom: 5%;
 
 }
-/* #divArticulosTres{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    height: 60vh;
-    width: 100vw;
-    margin: 0%;
-    padding: 0%;
-    margin-top: 0%;
-    margin-left: 1%;
-    margin-bottom: 3%;
-} */
 .divTarjetaArticulos{
     display: flex;
     flex-direction: row;
@@ -221,34 +172,50 @@ body{
 .imgArticulo{
     width: 30vw;
     height: 300px;
+    object-fit: contain;
+    background-color: #ffffff;
+    filter: grayscale(70%);
+    transition: transform 0.4s ease, filter 0.4s ease;
 }
 .imgArticulo:hover{
-    width: 31vw;
-    height: 315px;
+    transform: scale(1.05);
+    filter: grayscale(0%);
 }
 .imgArticuloDos{
     width: 30vw;
     height: 300px;
+    object-fit: contain;
+    background-color: #ffffff;
+    filter: grayscale(70%);
+    transition: transform 0.4s ease, filter 0.4s ease;
 }
 .imgArticuloDos:hover{
-    width: 31vw;
-    height: 315px;
+    transform: scale(1.05);
+    filter: grayscale(0%);
 }
 .imgArticuloTres{
     width: 30vw;
     height: 300px;
+    object-fit: contain;
+    background-color: #ffffff;
+    filter: grayscale(70%);
+    transition: transform 0.4s ease, filter 0.4s ease;
 }
 .imgArticuloTres:hover{
-    width: 31vw;
-    height: 315px;
+    transform: scale(1.05);
+    filter: grayscale(0%);
 }
 .imgArticuloCuatro{
     width: 30vw;
     height: 300px;
+    object-fit: contain;
+    background-color: #ffffff;
+    filter: grayscale(70%);
+    transition: transform 0.4s ease, filter 0.4s ease;
 }
 .imgArticuloCuatro:hover{
-    width: 31vw;
-    height: 315px;
+    transform: scale(1.05);
+    filter: grayscale(0%);
 }
 .parrafoCardArticulos{
     color: #4d70a5;
@@ -296,17 +263,64 @@ body{
     background-color: #071928;
     color: #95999f;
 }
+
+/* FOOTER */
+
+.divFooter{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.liFooter:hover{
+    text-decoration: underline;
+}
+.aFooter{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.aFooter:hover{
+    text-decoration: underline;
+}
+#navLF{
+    display: flex;
+    margin-left: 3%;
+    font-family: 'Poppins', sans-serif;
+}
+#navLF:hover{
+    text-decoration: underline;
+}
+#iconoT{
+   width: 2rem;
+   height: 2rem;
+}
+#iconoT:hover{
+    width: 2.5rem;
+   height: 2.5rem;
+}
+#ancla{
+    text-decoration-line: none;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.iconoMail{
+    font-size: x-large;
+    margin-right: 1%;
+}
 @media screen and (min-width: 0px) and (max-width: 768px){
 
     body{
-        width: 100vw;
+        width: 100%;
         height: fit-content;
         margin: 0%;
         padding: 0%;
         overflow-x: hidden;
     }
     .mainArticulos{
-        width: 100vw;
+        width: 100%;
     }
     .row {
         width: 100%;
@@ -419,11 +433,11 @@ body{
     }
     #articulos{
         height: fit-content;
-        width: 100vw;
+        width: 100%;
         margin-bottom: 0;
     }
     .divTituloArticulos{
-        width: 100vw;
+        width: 100%;
         height: 35vh;
         color: #071928;
         margin-bottom: 20%;
@@ -442,7 +456,7 @@ body{
     }
     
     .divArticulosUno{
-        width: 100vw;
+        width: 100%;
         height: fit-content;
         display: flex;
         flex-direction: column;
@@ -453,7 +467,7 @@ body{
         margin: 0%;
     }
     .divArticulosDos{
-        width: 100vw;
+        width: 100%;
         height: fit-content;
         display: flex;
         flex-direction: column;
