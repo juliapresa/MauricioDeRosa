@@ -311,6 +311,9 @@ body{
         background: white;
         z-index: 9999;
     }
+    .navbar-toggler{
+        margin-bottom: 0%;
+    }
     #navBarra{
         width: fit-content;
         margin-right: 5%;
