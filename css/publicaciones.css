@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body{
-    width: 100vw;
-    margin: 0%;
-    padding: 0%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
+
 .buttonTraductor{
     font-family: "Poppins", sans-serif;
-    border: #071928, 1px, solid;
+    border: 1px solid #071928;
     margin-left: 1%;
     margin-right: 1%;
 }
@@ -16,25 +17,22 @@ body{
 .navbar{
     height: 10vh;
 }
+
 .sectionNav {
     width: 100%;
     height: fit-content;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     flex-direction: row;
 }
 
-.contenedorIcono {
-    margin: 0%;
-    padding: 0%;
+.contenedorIcono,
+.contenedorNav {
+    margin: 0;
+    padding: 0;
     width: 50%;
 }
 
-.contenedorNav {
-    margin: 0%;
-    padding: 0%;
-    width: 50%;
-}
 #navBarra{
     display: flex;
     flex-direction: row;
@@ -43,76 +41,58 @@ body{
     text-align: center;
     width: fit-content;
 }
+
 #navL{
     font-family: 'Poppins', sans-serif;
     font-size: large;
 }
+
 #navL:hover{
     text-decoration: underline;
 }
+
 #iconoT{
    width: 2rem;
    height: 2rem;
 }
+
 #iconoT:hover{
     width: 2.5rem;
     height: 2.5rem;
 }
-.contenedorIcono {
-    margin: 0%;
-    padding: 0%;
-    width: 50%;
-}
 
-.contenedorNav {
-    margin: 0%;
-    padding: 0%;
-    width: 50%;
-}
-
-#iconoT{
-   width: 2rem;
-   height: 2rem;
-}
-#iconoT:hover{
-    width: 2.5rem;
-   height: 2.5rem;
-}
-#ancla{
-    text-decoration-line: none;
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    margin-top: 3%;
-    margin-left: 3%;
-}
+#ancla,
 #anclaNav{
-    text-decoration-line: none;
+    text-decoration: none;
     display: flex;
     width: fit-content;
     height: fit-content;
     margin-top: 3%;
     margin-left: 3%;
 }
+
+/* ================= PUBLICACIONES ================= */
 
 #publicaciones{
-    width: 100vw;
+    width: 100%;
     height: fit-content;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .divTituloPublicaciones{
-    margin: 0%;
-    height: 85vh;
+    margin: 0;
+    height: 60vh;
     background-color: #071928;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .tituloPublicacion{
     font-family: Georgia,'Times New Roman', Times, serif;
     font-size: 2.3rem;
@@ -120,57 +100,50 @@ body{
     font-variant: small-caps;
     color: #d3d5d7de;
 }
+
 .divSubtituloPublicaciones{
     height: fit-content;
-    margin-bottom: 7%;
+    margin-bottom: 3%;
+    margin-left: 3%;
 }
+
 .subtituloPublicacion{
     font-family: Georgia,'Times New Roman', Times, serif;
     font-size: xx-large;
     font-weight: bolder;
     color: #071928;
     margin-bottom: 0;
+    text-align: left;
 }
 
-
-.divPublicacionesUno{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100vw;
-    height: fit-content;
-    margin: 0%;
-    padding: 0%;
-    margin-bottom: 5%;
-}
+.divPublicacionesUno,
 .divPublicacionesDos{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
-    margin: 0%;
-    padding: 0%;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
 }
+
 .divPublicacionesTres{
     display: flex;
     flex-direction: row;
     justify-content: start;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
-    margin: 0%;
-    padding: 0%;
     margin-bottom: 7%;
     margin-left: 4%;
 }
+
 .divTarjetaPublicaciones{
     width: 32%;
     display: flex;
     justify-content: center;
     height: fit-content;
-    margin: 0%;
+    padding: 0 10px;
 }
+
 .cardPublicacionesUno{
     width: 100%;
     height: fit-content; 
@@ -178,55 +151,55 @@ body{
 
 .cardPublicacionesArbitradas{
     width: fit-content;
-    height: 310px; 
+    height: 310px;
+    overflow: hidden;
 }
 
-.imgPublicacionUno{
+.cardPublicacionesArbitradas img{
     width: 30vw;
     height: 260px;
+    object-fit: contain;
+    background-color: #ffffff;
+    filter: grayscale(70%);
+    transition: transform 0.4s ease, filter 0.4s ease;
 }
-.imgPublicacionUno:hover{
-    width: 31vw;
-    height: 275px;
+
+.cardPublicacionesArbitradas:hover img{
+    transform: scale(1.05);
+    filter: grayscale(0%);
 }
-#cuerpoCard{
+
+.cuerpoCard{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+
 .divTituloCardArticulosDos{
     width: 85%;
 }
-.tituloCardArticulo{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    color: #071928;
-    font-size: 1rem;
-    margin-top: 3%;
-}
+
+.tituloCardArticulo,
 .tituloCardArticuloDos{
     font-family: Georgia,'Times New Roman', Times, serif;
     color: #071928;
     font-size: 1rem;
     margin-top: 3%;
 }
-.textoCardArticulos{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    color: #071928;
-    font-size: 1rem;
-    margin-top: 2%;
-    margin-bottom: 3%;
-}
+
+.textoCardArticulos,
 .textoCardArticulosDos{
     font-family: Georgia,'Times New Roman', Times, serif;
     color: #071928;
     font-size: 1rem;
-    margin-top: 3%;
     margin-bottom: 3%;
 }
+
 .parrafoCard{
     color: #4d70a5;
 }
+
 .linkPubli{
     text-decoration: none;
     display: flex;
@@ -235,326 +208,129 @@ body{
     text-align: center;
 }
 
-.divLibroPublicacion{
-    width: 60%;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* ================= LIBRO ================= */
+
+.seccionPublicaciones {
+    margin: 80px 0;
+    margin-top: 0;
 }
-.libroPublicacionTitulo{
-    color: #071928;
-    font-family: 'Poppins', sans-serif;
+
+.libroPublicacionItem {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 3%;
+}
+
+.libroImagen img {
+    max-width: 180px;
+    height: auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    filter: grayscale(60%);
+    transition: 0.4s ease;
+}
+
+.libroContenido {
+    max-width: 700px;
+}
+
+.libroTitulo {
     font-size: 1.4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-
-}
-.libroPublicacion{
+    font-weight: 600;
     color: #071928;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.3rem;
-    font-style: italic;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+    margin-bottom: 15px;
+}
 
-}
-.libroPublicacionDos{
-    color: #071928;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+.libroCapitulo {
     font-style: italic;
-    display: flex;
-    flex-direction: column;
-    align-items: start; 
+    font-size: 1.1rem;
+    margin-bottom: 15px;
 }
+
+.libroAutores {
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.libroEditorial,
+.libroDetalles {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* ================= FOOTER ================= */
 
 .divFooter{
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
 }
+
 .liFooter:hover{
     text-decoration: underline;
 }
+
 .aFooter{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
+
 .aFooter:hover{
     text-decoration: underline;
 }
-@media screen and (min-width: 0px) and (max-width: 768px){
-    body{
-        width: 100vw;
-        margin: 0%;
-        padding: 0%;
-        overflow-x: hidden;
-    }
-    .row {
-        width: 100vw;
-        height: fit-content;
-        margin: 0%;
-        padding: 0%;
-        flex-direction: row;
-    }
-    .mainPubli{
-        width: 100vw;
-        height: fit-content;
-    }
-    .contenedorIcono {
-        margin: 0%;
-        padding: 0%;
-        width: 50%;
-    }
-    
-    .contenedorNav {
-        margin: 0%;
-        padding: 0%;
-        width: 50%;
-    }
-    .navbar-collapse {
-        position: fixed;
-        top: 10vh;
-        left: 0;
-        width: 100%;
-        background: white;
-        z-index: 9999;
-    }
-    .navbar-toggler{
-        margin-bottom: 0%;
-    }
-    #navBarra{
-        width: fit-content;
-        margin-right: 5%;
-    }
-    #navL{
-        display: flex;
-        width: 100%;
-        font-family: 'Poppins', sans-serif;
-        margin-left: 5%;
-    }
-    #containerNav{
-        width: fit-content;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: white;
-    }
-    #navL:hover{
-        text-decoration: underline;
-    }
-    #iconoT{
-        width: 2rem;
-        height: 2rem;
-        display: table-cell;
-        vertical-align: middle;
-    }
-    #iconoT:hover{
-        width: 2.5rem;
-       height: 2.5rem;
-    }
-    #anclaNav{
-        text-decoration-line: none;
-        display: flex;
-        width: fit-content;
-        height: 100%;
-        margin: 0%;
-        margin-left: 10%;
-        display: table;
-    }
-    .row {
-        width: 100%;
-        height: fit-content;
-        margin: 0%;
-        padding: 0%;
-        flex-direction: row;
-    }
-    #navL:hover{
-        text-decoration: underline;
-    }
 
-    #publicaciones{
-        height: fit-content;
-        width: 100vw;
-    }
-    .linkPubli{
-        text-decoration: none;
-        width: 100%;
-    }
-    .divTituloPublicaciones{
-        width: 100vw;
-        height: 35vh;
-        margin-bottom: 20%;
-        margin-top: 5%;
-        color: #071928;
-    }
-       .divSubtituloPublicaciones{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        height: fit-content;
-        margin-bottom: 10%;
-        margin-top: 10%;
-    }
-    .tituloPublicacion{
-        height: fit-content;
-        margin: 0%;
-        padding: 0%;
-        font-family: Georgia,'Times New Roman', Times, serif;
-        font-size: 2.3rem;
-        font-weight: bolder;
-        font-variant: small-caps;
-        margin-top: 0;
-    }
+/* ================= RESPONSIVE ================= */
 
-    .subtituloPublicacion{
-        font-family: Georgia,'Times New Roman', Times, serif;
-        font-size: 2rem;
-        font-weight: bolder;
-        color: #071928;
-        margin-bottom: 2%;
-    }
-    
-    .divPublicacionesUno{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 100vw;
-        height: fit-content;
-    }
-    .divPublicacionesDos{
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin: 0%;
-        height: fit-content;
-    }
-    .divPublicacionesTres{
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin: 0%;
-        height: fit-content;
-    }
-    #cuerpoCard{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 99%;
-    }
-    .imgPublicacionUno{
-        width: 90vw;
-        height: auto;
-    }
-    .imgPublicacionUno:hover{
-        width: 90vw;
-        height: auto;
-    }
-    .cardPublicacionesUno{
-        width: 95vw;
-        height: auto;
-    }
-    .cardPublicacionesArbitradas{
-        width: 95vw;
-        height: fit-content; 
-    }
-    .divTarjetaPublicaciones{
-        width: 95vw;
-        height: fit-content;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 15%;
-    }
-    .divTituloCardArticulosDos{
-        width: 100%;
-    }
-    .tituloCardArticulo{
-        font-family: Georgia,'Times New Roman', Times, serif;
-        color: #071928;
-        font-size: 1rem;
-        margin-top: 3%;
-    }
-    .tituloCardArticuloDos{
-        font-family: Georgia,'Times New Roman', Times, serif;
-        color: #071928;
-        font-size: 1rem;
-        margin-top: 3%;
-    }
-    .parrafoCard{
-        color: #4d70a5;
-    }
+@media screen and (min-width: 0px) and (max-width: 768px){ 
 
-    .divLibroPublicacion{
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .libroPublicacionTitulo{
-        color: #071928;
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.4rem;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
+    body{ width: 100%; margin: 0%; padding: 0%; overflow-x: hidden; } 
+    .row { width: 100%; height: fit-content; margin: 0%; padding: 0%; flex-direction: row; } 
+    .mainPubli{ width: 100%; height: fit-content; } 
+    .contenedorIcono { margin: 0%; padding: 0%; width: 50%; } 
+    .contenedorNav { margin: 0%; padding: 0%; width: 50%; } 
+    .navbar-collapse { position: fixed; top: 10vh; left: 0; width: 100%; background: white; z-index: 9999; } 
+    .navbar-toggler{ margin-bottom: 0%; } 
+    #navBarra{ width: fit-content; margin-right: 5%; } 
+    #navL{ display: flex; width: 100%; font-family: 'Poppins', sans-serif; margin-left: 5%; } 
+    #containerNav{ width: fit-content; display: flex; flex-direction: column; align-items: center; background-color: white; }
+    #navL:hover{ text-decoration: underline; } 
+    #iconoT{ width: 2rem; height: 2rem; display: table-cell; vertical-align: middle; } 
+    #iconoT:hover{ width: 2.5rem; height: 2.5rem; } 
+    #anclaNav{ text-decoration-line: none; display: flex; width: fit-content; height: 100%; margin: 0%; margin-left: 10%; display: table; } .row { width: 100%; height: fit-content; margin: 0%; padding: 0%; flex-direction: row; } 
+    #navL:hover{ text-decoration: underline; } 
+
+    /* PUBLICACIONES */
+
+    #publicaciones{ height: fit-content; width: 100%; } 
+    .linkPubli{ text-decoration: none; width: 100%; } 
+    .divTituloPublicaciones{ width: 100%; height: 35vh; margin-bottom: 20%; margin-top: 5%; color: #071928; } 
+    .divSubtituloPublicaciones{ display: flex; flex-direction: row; justify-content: center; text-align: center; height: fit-content; margin-bottom: 10%; margin-top: 10%; } 
+    .tituloPublicacion{ height: fit-content; margin: 0%; padding: 0%; font-family: Georgia,'Times New Roman', Times, serif; font-size: 2.3rem; font-weight: bolder; font-variant: small-caps; margin-top: 0; } 
+    .subtituloPublicacion{ font-family: Georgia,'Times New Roman', Times, serif; font-size: 1.8rem; font-weight: bolder; color: #071928; margin-bottom: 2%; } 
+    .divPublicacionesUno{ display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; height: fit-content; } 
+    .divPublicacionesDos{ width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; margin: 0%; height: fit-content; } 
+    .divPublicacionesTres{ width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; margin: 0%; height: fit-content; } 
+    .cuerpoCard{ display: flex; flex-direction: column; align-items: center; text-align: center; width: 99%; } 
+    .cardPublicacionesUno{ width: 95vw; height: auto; } 
+    .cardPublicacionesArbitradas{ width: 95vw; height: fit-content; } 
+    .cardPublicacionesArbitradas img{ width: 90vw; height: auto; } 
+    .cardPublicacionesArbitradas img:hover{ width: 90vw; height: auto; } 
+    .divTarjetaPublicaciones{ width: 95vw; height: fit-content; display: flex; justify-content: center; margin-bottom: 15%; } 
+    .divTituloCardArticulosDos{ width: 100%; } 
+    .tituloCardArticulo{ font-family: Georgia,'Times New Roman', Times, serif; color: #071928; font-size: 1rem; margin-top: 3%; } 
+    .tituloCardArticuloDos{ font-family: Georgia,'Times New Roman', Times, serif; color: #071928; font-size: 1rem; margin-top: 3%; } 
+    .parrafoCard{ color: #4d70a5; } 
     
-    }
-    .libroPublicacion{
-        color: #071928;
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.2rem;
-        font-style: italic;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
+    /* LIBRO */ 
+    .libroPublicacionItem { flex-direction: column; } 
+    .libroImagen img { max-width: 140px; margin-left: 2%; margin-top: 20%; } 
     
-    }
-    .libroPublicacionDos{
-        color: #071928;
-        font-family: 'Poppins', sans-serif;
-        font-size: 1rem;
-        font-style: italic;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        
-    }
-    #divFooters{
-        display: flex;
-        flex-direction: column;
-        align-items: first baseline;
-    }
-    #listFooter{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .divFooter{
-        font-family: 'Poppins', sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: first baseline;
-    }
-    .liFooter:hover{
-        text-decoration: underline;
-    }
-    .aFooter{
-        text-decoration: none;
-    }
+    /* FOOTER */ 
+    #divFooters{ display: flex; flex-direction: column; align-items: first baseline; } 
+    #listFooter{ display: flex; flex-direction: column; align-items: center; } 
+    .divFooter{ font-family: 'Poppins', sans-serif; display: flex; flex-direction: column; align-items: first baseline; } 
+    .liFooter:hover{ text-decoration: underline; } 
+    .aFooter{ text-decoration: none; } 
 }
