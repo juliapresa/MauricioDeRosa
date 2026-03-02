@@ -328,13 +328,13 @@ body{
         width: 50%;
     }
     .navbar-collapse {
-    position: fixed;
-    top: 10vh;
-    left: 0;
-    width: 100%;
-    background: white;
-    z-index: 9999;
-}
+        position: fixed;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        background: white;
+        z-index: 9999;
+    }
     #navBarra{
         width: fit-content;
         margin-right: 5%;
@@ -343,6 +343,7 @@ body{
         display: flex;
         width: 100%;
         font-family: 'Poppins', sans-serif;
+        margin-left: 5%;
     }
     #containerNav{
         width: fit-content;
@@ -459,16 +460,6 @@ body{
         padding: 0%;
         margin-left: 0%;
     }
-    #divArticulosTres{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        height: 60vh;
-        margin: 0%;
-        padding: 0%;
-        margin-top: 0%;
-        margin-left: 0%;
-    }
     .divTarjetaArticulos{
         display: flex;
         flex-direction: row;
@@ -532,19 +523,19 @@ body{
     }
     .imgArticulo{
         width: 95vw;
-        height: fit-content;
+        height: auto;
     }
     .imgArticuloDos{
         width: 95vw;
-        height: fit-content;
+        height: auto;
     }
     .imgArticuloTres{
         width: 95vw;
-        height: fit-content;
+        height: auto;
     }
     .imgArticuloCuatro{
         width: 95vw;
-        height: fit-content;
+        height: auto;
     }
     #button{
         color: #071928;
