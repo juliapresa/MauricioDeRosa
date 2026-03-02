@@ -63,22 +63,26 @@ body{
 .divTitulo{
     background-color: #031c2d;
     width: 100vw;
-    height: 100vh;
+    height: 82vh;
     display: flex;
     flex-direction: row;
 }
 .divImgMauricio{
     width: 50vw;
-    height: 100vh;
+    height: 82vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.imgMauricio{
+    width: auto;
+    height: 70vh;
 }
 .divTituloMauricio{
     margin: 0%;
     padding: 0;
     width: 50vw;
-    height: 100vh;
+    height: 82vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,11 +92,7 @@ body{
     color: #d3d5d7de;
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: 80px;
-}
-.imgMauricio{
-    width: auto;
-    height: 80vh;
+    font-size: 65px;
 }
 .sectionNav {
     width: 100vw;
@@ -114,20 +114,20 @@ body{
     text-align: center;
     justify-content: center;
     width: 70vw;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
 .parrafoTitulo{
     font-family: "Poppins", sans-serif;
-    font-size: xx-large;
-    line-height: 2;
+    font-size: 22px;
+    line-height: 1.7;
     color:#071928;
     text-align: justify;
 }
 .buttonCV{
     margin-top: 5%;
-    width: 12vw;
-    height: 6vh;
+    width: 180px;
+    height: 48px;
 }
 
 .fondoFormacion{
@@ -139,10 +139,10 @@ body{
     width: 100vw;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     padding-right: 2%;
     padding-left: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     background-color:#071928;
 }
 .divTituloFormacion{
@@ -150,17 +150,17 @@ body{
     height: fit-content;
     margin: 0%;
     padding: 0%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     background-color:#071928;
    }
 .tituloFormacion{
     font-family: 'Poppins', sans-serif;
-    font-size: 45px;
+    font-size: 42px;
     font-weight: bold;
     color: #d3d5d7de;
     margin: 0%;
     padding: 0%;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 #tarjeta{
     justify-content: space-around;

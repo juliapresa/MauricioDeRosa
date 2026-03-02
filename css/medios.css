@@ -77,22 +77,7 @@ body{
     margin-left: 2%;
     text-decoration: none;
 }
-.divFooter{
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-.liFooter:hover{
-    text-decoration: underline;
-}
-.aFooter{
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-}
-.aFooter:hover{
-    text-decoration: underline;
-}
+
 .contenedorIcono {
     margin: 0%;
     padding: 0%;
@@ -141,7 +126,7 @@ body{
 }
 .divTituloPrensa{
     margin: 0%;
-    height: 85vh;
+    height: 60vh;
     background-color: #071928;
     margin-bottom: 7%;
     display: flex;
@@ -155,17 +140,7 @@ body{
     font-variant: small-caps;
     color: #d3d5d7de;
 }
-.divSubtituloPrensa{
-    height: fit-content;
-    margin-bottom: 10%;
-}
-.subtituloPrensa{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    font-size: xx-large;
-    font-weight: bolder;
-    color: #071928;
-    margin: 0%;
-}
+
 .linkPrensa{
     text-decoration: none;
     width: fit-content;
@@ -218,18 +193,26 @@ body{
 .imgPrensaUno{
     width: 30vw;
     height: 350px;
+    object-fit: contain;
+    background-color: #ffffff;
+    filter: grayscale(70%);
+    transition: transform 0.4s ease, filter 0.4s ease;
 }
 .imgPrensaUno:hover{
-    width: 31vw;
-    height: 370px;
+    transform: scale(1.05);
+    filter: grayscale(0%);
 }
 .imgPrensaNueve{
     width: fit-content;
     height: 350px;
+    object-fit: contain;
+    background-color: #ffffff;
+    filter: grayscale(70%);
+    transition: transform 0.4s ease, filter 0.4s ease;
 }
 .imgPrensaNueve:hover{
-    width: fit-content;
-    height: 370px;
+    transform: scale(1.05);
+    filter: grayscale(0%);
 }
 .divVideo{
     width: 33%;
@@ -243,10 +226,13 @@ body{
 .videoPrensa{
     width: 30vw;
     height: 350px;
+    background-color: #ffffff;
+    filter: grayscale(70%);
+    transition: transform 0.4s ease, filter 0.4s ease;
 }
 .videoPrensa:hover{
-    width: 31vw;
-    height: 370px;
+    transform: scale(1.05);
+    filter: grayscale(0%);
 }
 
 #button{
@@ -277,6 +263,26 @@ body{
     color: #071928;
     margin: 0%;
     padding: 0%;
+    text-align: left;
+    margin-left: 2%;
+}
+
+
+.divFooter{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.liFooter:hover{
+    text-decoration: underline;
+}
+.aFooter{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.aFooter:hover{
+    text-decoration: underline;
 }
 @media screen and (min-width: 0px) and (max-width: 768px){
     body{
@@ -409,19 +415,6 @@ body{
         font-size: 2.5rem;
         font-weight: bolder;
         font-variant: small-caps;
-    }
-    .divSubtituloPrensa{
-        width: 100vw;
-        height: fit-content;
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-    .subtituloPrensa{
-        font-family: Georgia,'Times New Roman', Times, serif;
-        font-size: 2.4rem;
-        font-weight: bolder;
-        color: #071928;
-        margin-bottom: 2%;
     }
     .divSubtituloMediosChico{
         margin-bottom: 15%;
