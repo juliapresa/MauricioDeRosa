@@ -338,17 +338,18 @@ body{
     .divTitulo{
         background-color: #031c2d;
         width: 100vw;
-        height: 100vh;
+        height: fit-content;
         display: flex;
         flex-direction: column;
     }
     .divImgMauricio{
         width: 100vw;
-        height: 100vh;
+        height: fit-content;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 10%;
+        margin-bottom: 10%;
     }
     .imgMauricio{
         width: 95vw;
@@ -358,11 +359,12 @@ body{
         margin: 0%;
         padding: 0;
         width: 100vw;
-        height: 100vh;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 10%;
     }
     .tituloMauricio{
         color: #d3d5d7de;
