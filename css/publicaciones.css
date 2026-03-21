@@ -177,12 +177,13 @@ body{
 }
 
 .divTituloCardArticulosDos{
-    width: 85%;
+    width: 100%;
 }
 
 .tituloCardArticulo,
 .tituloCardArticuloDos{
-    font-family: Georgia,'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
     color: #071928;
     font-size: 1rem;
     margin-top: 3%;
@@ -190,7 +191,8 @@ body{
 
 .textoCardArticulos,
 .textoCardArticulosDos{
-    font-family: Georgia,'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
     color: #071928;
     font-size: 1rem;
     margin-bottom: 3%;

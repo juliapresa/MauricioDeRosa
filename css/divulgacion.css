@@ -221,13 +221,15 @@ main{
     color: #4d70a5;
 }
 .tituloCardArticulo{
-    font-family: Georgia,'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
     color: #071928;
     font-size: 1rem;
     margin-top: 3%;
 }
 .tituloCardArticuloDos{
-    font-family: Georgia,'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
     color: #071928;
     font-size: 1rem;
     margin-top: 3%;
@@ -240,20 +242,23 @@ main{
     width: 90%;
 }
 .tituloCardArticulosTres{
-    font-family: Georgia,'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
     color: #071928;
     font-size: 1rem;
     margin-top: 3%;
 }
 .textoCardArticulos{
-    font-family: Georgia,'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
     color: #071928;
     font-size: 1rem;
     margin-top: 2%;
     margin-bottom: 3%;
 }
 .textoCardArticulosDos{
-    font-family: Georgia,'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
     color: #071928;
     font-size: 1rem;
     margin-top: 3%;
