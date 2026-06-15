@@ -303,6 +303,8 @@ footer {
   .hero-desc{display: none;}
   .btn-cv {font-size: 10px;padding: 11px 24px;}
 
+  .bio-text {font-size: 18px;margin-bottom: 2.5rem;}
+
   section { padding: 4rem 2rem; }
   .formacion-section { padding-bottom: 4rem; }
 
