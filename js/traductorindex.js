@@ -16,7 +16,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function cambiarIdioma(idioma) {
-  // Guardar idioma en localStorage
+
+   document.querySelectorAll(".nav-lang span")
+  .forEach(el => el.classList.remove("active"));
+
+    const idiomaActivo = document.querySelector(
+    `[onclick="cambiarIdioma('${idioma}')"]`
+    );
+
+    if (idiomaActivo) {
+    idiomaActivo.classList.add("active");
+    }
+
   localStorage.setItem("idioma", idioma);
 
   var elementosATraducir = document.querySelectorAll('.traducible');
@@ -32,21 +43,24 @@ function cambiarIdioma(idioma) {
           'Medios': 'Medios',
           'Divulgación': 'Divulgación',
           'IR AL CV':'IR AL CV',
-          'Soy docente efectivo grado 3 del Departamento de Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics. Mi trabajo de investigación se centra en la desigualdad de ingresos y riqueza, así como en las políticas públicas necesarias para reducirlas. También doy clase sobre estos temas, así como sobre Historia del Pensamiento Económico.':'Soy docente efectivo grado 3 del Departamento de Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics. Mi trabajo de investigación se centra en la desigualdad de ingresos y riqueza, así como en las políticas públicas necesarias para reducirlas. También doy clase sobre estos temas, así como sobre Historia del Pensamiento Económico.',
-          'FORMACIÓN':'FORMACIÓN',
-          'Doctorado en Economía.':'Doctorado en Economía.',
-          'Supervisores: Thomas Piketty y Facundo Alvaredo.': ' Supervisores: Thomas Piketty y Facundo Alvaredo.',
-          'Maestría en Economía.':'Maestría en Economía.',
-          '(Políticas Públicas y Desarrollo).':'(Políticas Públicas y Desarrollo).',
-          'Tesis de Maestría: “Distribución de la riqueza en Uruguay: una aproximación por el método de capitalización”.':'Tesis de Maestría: “Distribución de la riqueza en Uruguay: una aproximación por el método de capitalización”.',
-          'Tesis: “Wealth accumulation and its distribution in Uruguay: first estimates of the untold half of the story”.':'Tesis: “Wealth accumulation and its distribution in Uruguay: first estimates of the untold half of the story”.',
-          'Tutora: Andrea Vigorito.':'Tutora: Andrea Vigorito.',
-          'Licenciatura en Economía.':'Licenciatura en Economía.',
-          'Tesis de Grado: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.':'Tesis de Grado: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.',
-          'Toca para ir al contenido':'Toca para ir al contenido',
-          '2024. Todos los derechos reservados.':'2024. Todos los derechos reservados.',
-          'Mostrar tweets destacados': 'Mostrar tweets destacados',
-          'Ocultar tweets destacados': 'Ocultar tweets destacados',
+          'Sobre mí':'Sobre mí',
+          'Ver Curriculum Vitae →':'Ver Curriculum Vitae →',
+          'Docente grado 3 en FCEA–Udelar. Research Fellow del World Inequality Lab - Paris School of Economics. SNI nivel I. Especializado en desigualdad de ingresos y riqueza en América Latina.':'Docente grado 3 en FCEA–Udelar. Research Fellow del World Inequality Lab - Paris School of Economics. SNI nivel I. Especializado en desigualdad de ingresos y riqueza en América Latina.',
+          'Soy Docente en Régimen de Dedicación Total, grado 3, del Departamento de Economía, Facultad de Ciencias Económicas y de Administración. Pertenezco además al Sistema Nacional de Investigadores, Nivel I, y soy además Research Fellow del World Inequality Lab – Paris School of Economics. Mi trabajo de investigación se centra en la desigualdad de ingresos y riqueza, así como en las políticas públicas necesarias para reducirlas. Soy además docente de Historia del Pensamiento Económico, Economía de América Latina y Desigualdad (en la maestría de FCEA). Desde 2026, soy además el Director de Carrera de la Licenciatura en Economía.':'Soy Docente en Régimen de Dedicación Total, grado 3, del Departamento de Economía, Facultad de Ciencias Económicas y de Administración. Pertenezco además al Sistema Nacional de Investigadores, Nivel I, y soy además Research Fellow del World Inequality Lab – Paris School of Economics. Mi trabajo de investigación se centra en la desigualdad de ingresos y riqueza, así como en las políticas públicas necesarias para reducirlas. Soy además docente de Historia del Pensamiento Económico, Economía de América Latina y Desigualdad (en la maestría de FCEA). Desde 2026, soy además el Director de Carrera de la Licenciatura en Economía.',
+          'Formación':'Formación',
+          'Doctorado en Economía':'Doctorado en Economía',
+          'Supervisores: Thomas Piketty y Facundo Alvaredo': ' Supervisores: Thomas Piketty y Facundo Alvaredo',
+          'Maestría en Economía':'Maestría en Economía',
+          'Paris School of Economics · EHESS (Políticas Públicas y Desarrollo)':'Paris School of Economics · EHESS (Políticas Públicas y Desarrollo)',
+          'Tesis de Maestría: “Distribución de la riqueza en Uruguay: una aproximación por el método de capitalización”':'Tesis de Maestría: “Distribución de la riqueza en Uruguay: una aproximación por el método de capitalización”',
+          'Tesis: “Wealth accumulation and its distribution in Uruguay: first estimates of the untold half of the story”':'Tesis: “Wealth accumulation and its distribution in Uruguay: first estimates of the untold half of the story”',
+          'Tutora: Andrea Vigorito':'Tutora: Andrea Vigorito',
+          'Licenciatura en Economía':'Licenciatura en Economía',
+          'Tesis de Grado: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”':'Tesis de Grado: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”',
+          'Toca para ir al contenido →':'Toca para ir al contenido →',
+          '© 2024 · Todos los derechos reservados':'© 2024 · Todos los derechos reservados',
+          'Tweets destacados':'Tweets destacados',
+          'Redes':'Redes',
       },
       'en': {
           'Enlaces':'Links',
@@ -57,22 +71,24 @@ function cambiarIdioma(idioma) {
           'Prensa': 'Press',
           'Medios': 'Media',
           'Divulgación': 'Outreach',
-          'IR AL CV':'GO TO CV',
-          'Soy docente efectivo grado 3 del Departamento de Economía, Facultad de Ciencias Económicas y de Administración. Docente en Régimen de Dedicación Total. Sistema Nacional de Investigadores, nivel I. Research Fellow del World Inequality Lab - Paris School of Economics. Mi trabajo de investigación se centra en la desigualdad de ingresos y riqueza, así como en las políticas públicas necesarias para reducirlas. También doy clase sobre estos temas, así como sobre Historia del Pensamiento Económico.':'I am an Assistant Professor at the Department of Economics, Facultad de Ciencias Económicas y de Administración (UdelaR). Full Dedication Teacher. Sistema Nacional de Investigadores, level I. Research Fellow of the World Inequality Lab - Paris School of Economics. My research focuses on income and wealth inequality, as well as the public policies needed to reduce them. I also teach on these topics, as well as on the history of economic thought.',
-          'FORMACIÓN':'EDUCATION',
-          'Doctorado en Economía.':'PhD in Economics',
-          'Supervisores: Thomas Piketty y Facundo Alvaredo.': ' Supervisors: Thomas Piketty y Facundo Alvaredo.',
-          'Maestría en Economía.':'Master in Economics',
-          '(Políticas Públicas y Desarrollo).':'(Public Policy and Development).',
-          'Tesis de Maestría: “Distribución de la riqueza en Uruguay: una aproximación por el método de capitalización”.':'Masters Thesis: “Distribución de la riqueza en Uruguay: una aproximación por el método de capitalización”.',
-          'Tesis: “Wealth accumulation and its distribution in Uruguay: first estimates of the untold half of the story”.':'Thesis: “Wealth accumulation and its distribution in Uruguay: first estimates of the untold half of the story”.',
-          'Tutora: Andrea Vigorito.':'Tutor: Andrea Vigorito.',
-          'Licenciatura en Economía.':'Degree in Economics',
-          'Tesis de Grado: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.':'Thesis: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”.',
-          'Toca para ir al contenido':'Tap to go to content',
-          '2024. Todos los derechos reservados.':'2024. All rights reserved.',
-          'Mostrar tweets destacados': 'Show highlighted tweets',
-          'Ocultar tweets destacados': 'Hide highlighted tweets',
+          'Ver Curriculum Vitae →':'View Curriculum Vitae →',
+          'Sobre mí':'About me',
+          'Docente grado 3 en FCEA–Udelar. Research Fellow del World Inequality Lab - Paris School of Economics. SNI nivel I. Especializado en desigualdad de ingresos y riqueza en América Latina.':'Assistant Professor at FCEA–Udelar. Research Fellow of the World Inequality Lab - Paris School of Economics. SNI level I. Specialized on income and wealth inequality.',
+          'Soy Docente en Régimen de Dedicación Total, grado 3, del Departamento de Economía, Facultad de Ciencias Económicas y de Administración. Pertenezco además al Sistema Nacional de Investigadores, Nivel I, y soy además Research Fellow del World Inequality Lab – Paris School of Economics. Mi trabajo de investigación se centra en la desigualdad de ingresos y riqueza, así como en las políticas públicas necesarias para reducirlas. Soy además docente de Historia del Pensamiento Económico, Economía de América Latina y Desigualdad (en la maestría de FCEA). Desde 2026, soy además el Director de Carrera de la Licenciatura en Economía.':'I am an Assistant Professor (Grade 3, Full-Time Dedication Regime) in the Department of Economics at the Faculty of Economics and Administration, Universidad de la República (Uruguay). I am also a Level I researcher in Uruguay’s National System of Researchers and a Research Fellow at the World Inequality Lab, Paris School of Economics. My research focuses on income and wealth inequality, as well as the public policies aimed at reducing them. I teach courses on the History of Economic Thought, Latin American Economics, and Inequality (Master’s Program in Economics). Since 2026, I have served as Director of the Bachelor’s Degree Program in Economics.',
+          'Formación':'Education',
+          'Doctorado en Economía':'PhD in Economics',
+          'Supervisores: Thomas Piketty y Facundo Alvaredo': ' Supervisors: Thomas Piketty y Facundo Alvaredo',
+          'Maestría en Economía':'Master in Economics',
+          'Paris School of Economics · EHESS (Políticas Públicas y Desarrollo)':'Paris School of Economics · EHESS (Public Policy and Development)',
+          'Tesis de Maestría: “Distribución de la riqueza en Uruguay: una aproximación por el método de capitalización”':'Masters Thesis: “Distribución de la riqueza en Uruguay: una aproximación por el método de capitalización”',
+          'Tesis: “Wealth accumulation and its distribution in Uruguay: first estimates of the untold half of the story”':'Thesis: “Wealth accumulation and its distribution in Uruguay: first estimates of the untold half of the story”',
+          'Tutora: Andrea Vigorito':'Tutor: Andrea Vigorito',
+          'Licenciatura en Economía':'Degree in Economics',
+          'Tesis de Grado: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”':'Thesis: “Sistemas tributarios alternativos y su impacto en la distribución del ingreso y la oferta laboral: una aproximación comportamental para el caso uruguayo”',
+          'Toca para ir al contenido →':'Tap to go to content →',
+          'Tweets destacados':'Highlighted tweets',
+          'Redes':'Networks',
+          '© 2024 · Todos los derechos reservados':'© 2024 · All rights reserved.',
       }
   };
 

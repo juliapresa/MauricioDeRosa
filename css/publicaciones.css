@@ -1,338 +1,336 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap');
 
-body{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+/* ── VARIABLES ── */
+:root {
+  --navy: #071928;
+  --navy-deep: #031c2d;
+  --cream: #f5f1ea;
+  --cream-2: #ede8df;
+  --gold: #b08d3a;
+  --gold-light: #c9a84c;
+  --text: #1a1814;
+  --text-2: #3d3a34;
+  --text-3: #6b6760;
+  --border: rgba(7, 25, 40, 0.12);
 }
 
-.buttonTraductor{
-    font-family: "Poppins", sans-serif;
-    border: 1px solid #071928;
-    margin-left: 1%;
-    margin-right: 1%;
+/* ── RESET ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  overflow-x: hidden;
 }
 
-.navbar{
-    height: 10vh;
+/* ── NAV ── */
+#navBarra {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 3.5rem; height: 64px;
+  background: rgba(3, 28, 45, 0.93);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.nav-logo {
+  font-family: 'EB Garamond', serif;
+  font-size: 17px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: #e2ddd4; white-space: nowrap; text-decoration: none;
+}
+.nav-links { display: flex; gap: 2.2rem; }
+.nav-links a {
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: #8a9baa; text-decoration: none; transition: color 0.2s;
+}
+.nav-links a:hover { color: #e2ddd4; }
+.nav-links a.active { color: var(--gold-light); }
+.nav-right { display: flex; align-items: center; gap: 1.5rem; }
+.nav-lang { display: flex; gap: 0.5rem; align-items: center; }
+.nav-lang span {
+  font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: #4a6070; cursor: pointer; transition: color 0.2s;
+}
+.nav-lang span:hover { color: var(--gold-light); }
+.nav-lang span.active { color: var(--gold-light); }
+.nav-lang .sep { color: #2a3d4a; }
+.nav-twitter { font-size: 18px; color: #4a6070; transition: color 0.2s; }
+.nav-twitter:hover { color: #e2ddd4; }
+#anclaNav { display: flex; align-items: center; }
+
+/* Hamburguesa */
+.hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: none; cursor: pointer; padding: 4px;
+}
+.hamburger span {
+  display: block; width: 22px; height: 2px;
+  background: #8a9baa; border-radius: 2px;
 }
 
-.sectionNav {
-    width: 100%;
-    height: fit-content;
-    margin: 0;
-    padding: 0;
-    flex-direction: row;
+/* Menú mobile */
+.mobile-menu {
+  display: none; flex-direction: column;
+  position: fixed; top: 64px; left: 0; right: 0; z-index: 999;
+  background: rgba(3, 28, 45, 0.97);
+  padding: 1.5rem 2rem; gap: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: #8a9baa; text-decoration: none; padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05); transition: color 0.2s;
+}
+.mobile-menu a:hover { color: #e2ddd4; }
+.mobile-lang { display: flex; gap: 1rem; margin-top: 0.5rem; }
+.mobile-lang span {
+  font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: #4a6070; cursor: pointer; transition: color 0.2s;
+}
+.mobile-lang span:hover { color: var(--gold-light); }
+
+/* ── PAGE HERO ── */
+.page-hero {
+  padding-top: 64px;
+  background: var(--navy-deep);
+  min-height: 260px;
+  display: flex; align-items: flex-end;
+  position: relative; overflow: hidden;
+}
+.page-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(176,141,58,0.06) 0%, transparent 60%);
+}
+.page-hero::after {
+  content: '';
+  position: absolute; top: 0; right: 0;
+  width: 40%; height: 100%;
+  background: repeating-linear-gradient(
+    90deg, transparent, transparent 60px,
+    rgba(255,255,255,0.015) 60px, rgba(255,255,255,0.015) 61px
+  );
+}
+.page-hero-inner {
+  position: relative; z-index: 2;
+  padding: 0 5rem 3.5rem; width: 100%;
+}
+.page-eyebrow {
+  display: flex; align-items: center; gap: 1rem; margin-bottom: 1.2rem;
+}
+.page-eyebrow-line { width: 32px; height: 1px; background: var(--gold); }
+.page-eyebrow span {
+  font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--gold); font-weight: 500;
+}
+.page-title {
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(40px, 5.5vw, 68px);
+  line-height: 0.95; color: #f0ece3; font-weight: 400;
 }
 
-.contenedorIcono,
-.contenedorNav {
-    margin: 0;
-    padding: 0;
-    width: 50%;
+/* ── SECTION LABEL ── */
+.section-label {
+  display: flex; align-items: center; gap: 1rem; margin-bottom: 3rem;
+}
+.section-label-line { flex: 1; height: 1px; background: var(--border); }
+.section-label-line.dark { background: rgba(255,255,255,0.08); }
+.section-label-title {
+  font-family: 'EB Garamond', serif; font-size: 13px;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-3);
+}
+.section-label-title.dark { color: rgba(255,255,255,0.3); }
+
+/* ── SECCIONES ── */
+.publi-section {
+  background: #fff;
+  padding: 6rem 5rem;
+  border-top: 1px solid var(--border);
+}
+.publi-section.alt {
+  background: var(--navy-deep);
 }
 
-#navBarra{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: fit-content;
+/* ── GRID ── */
+.publi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
-#navL{
-    font-family: 'Poppins', sans-serif;
-    font-size: large;
+/* ── CARD ── */
+.publi-item {
+  background: #fff;
+  display: flex; flex-direction: column;
+  text-decoration: none; color: inherit;
+  position: relative; overflow: hidden;
+  border: 1.5px solid var(--border);
+  transition: background 0.25s;
+}
+.publi-item::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: var(--gold); transform: scaleX(0); transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.publi-item:hover { background: var(--cream); }
+.publi-item:hover::before { transform: scaleX(1); }
+
+.publi-item.dark {
+  background: rgba(3,28,45,0.9);
+  border-color: rgba(255,255,255,0.06);
+}
+.publi-item.dark:hover { background: rgba(7,25,40,0.95); }
+.publi-item.dark .publi-titulo { color: #e8e3d8; }
+.publi-item.dark .publi-ref { color: #5a7a90; }
+.publi-item.dark .publi-cta-hint { color: #4a6070; }
+
+.publi-img-wrap {
+  width: 100%; height: 30vh;
+  overflow: hidden;
+  background: #fff;
+  aspect-ratio: 4 / 3;
+}
+.publi-img {
+  width: 100%; height: 100%;
+  object-fit: contain;
+  filter: grayscale(60%);
+  transition: transform 0.45s ease, filter 0.45s ease;
+  display: block;
+}
+.publi-item:hover .publi-img {
+  transform: scale(1.04);
+  filter: grayscale(0%);
 }
 
-#navL:hover{
-    text-decoration: underline;
+.publi-body {
+  padding: 1.75rem 1.75rem 1.75rem;
+  display: flex; flex-direction: column; gap: 0.5rem;
+  flex: 1;
+}
+.publi-cta-hint {
+  font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: #4d70a5;
+}
+.publi-titulo {
+  font-family: 'EB Garamond', serif;
+  font-size: 17px; line-height: 1.5;
+  color: var(--text); font-weight: 400;
+  flex: 1;
+}
+.publi-ref {
+  font-size: 12px; color: var(--text-3);
+  line-height: 1.55; margin-top: 0.25rem;
+}
+.publi-cta {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--gold); margin-top: 0.75rem;
+  border-bottom: 1px solid rgba(176,141,58,0.3); padding-bottom: 2px;
+  width: fit-content; transition: color 0.2s, border-color 0.2s;
+}
+.publi-item:hover .publi-cta { color: var(--gold-light); border-color: var(--gold-light); }
+
+/* ── CAPÍTULOS DE LIBROS ── */
+.libro-section {
+  background: var(--navy-deep);
+  padding: 6rem 5rem;
+}
+.libro-item {
+  display: flex; gap: 3.5rem; align-items: flex-start;
+  background: rgba(3,28,45,0.9);
+  border: 1.5px solid rgba(255,255,255,0.06);
+  padding: 3rem;
+  position: relative; overflow: hidden;
+}
+.libro-item::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: var(--gold);
+}
+.libro-img-wrap { flex-shrink: 0; }
+.libro-img-wrap img {
+  max-width: 160px; height: auto;
+  filter: grayscale(50%);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  transition: filter 0.4s ease;
+}
+.libro-item:hover .libro-img-wrap img { filter: grayscale(0%); }
+.libro-body { display: flex; flex-direction: column; gap: 0.75rem; }
+.libro-titulo {
+  font-family: 'EB Garamond', serif;
+  font-size: 22px; color: #e8e3d8; line-height: 1.35;
+}
+.libro-capitulo {
+  font-family: 'EB Garamond', serif; font-style: italic;
+  font-size: 17px; color: #8a9baa; line-height: 1.5;
+}
+.libro-autores {
+  font-size: 13px; color: #c9bfa8; font-weight: 500;
+}
+.libro-editorial {
+  font-size: 13px; color: #5a7a90; line-height: 1.6;
+}
+.libro-detalles {
+  font-size: 12px; color: #4a6070;
 }
 
-#iconoT{
-   width: 2rem;
-   height: 2rem;
+/* ── FOOTER ── */
+footer {
+  background: #fff;
+  border-top: 2px solid var(--gold);
+  padding: 4rem 5rem 0;
+}
+.footer-inner {
+  display: grid; grid-template-columns: 1fr auto auto; gap: 5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.footer-name {
+  font-family: 'EB Garamond', serif; font-size: 26px;
+  color: #e2ddd4; margin-bottom: 0.5rem;
+}
+.footer-contact { display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.5rem; }
+.footer-contact a {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 13px; color: #5a7a90; text-decoration: none; transition: color 0.2s;
+}
+.footer-contact a:hover { color: #e2ddd4; }
+.footer-contact i { font-size: 13px; opacity: 0.5; width: 14px; }
+.footer-col h5 {
+  font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 1.2rem; font-weight: 500;
+}
+.footer-col a {
+  display: block; font-size: 13px; color: #4a6070;
+  text-decoration: none; margin-bottom: 0.6rem; transition: color 0.2s;
+}
+.footer-col a:hover { color: #e2ddd4; }
+.footer-col i { margin-right: 6px; font-size: 12px; }
+.footer-bottom {
+  text-align: center; padding: 1.5rem;
+  font-size: 11px; letter-spacing: 0.08em;
+  color: #2a3d4a; text-transform: uppercase;
 }
 
-#iconoT:hover{
-    width: 2.5rem;
-    height: 2.5rem;
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .publi-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-inner { grid-template-columns: 1fr 1fr; gap: 3rem; }
+  .footer-brand { grid-column: 1 / -1; }
 }
 
-#ancla,
-#anclaNav{
-    text-decoration: none;
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    margin-top: 3%;
-    margin-left: 3%;
-}
+@media (max-width: 768px) {
+  #navBarra { padding: 0 1.5rem; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
 
-/* ================= PUBLICACIONES ================= */
+   .nav-logo {font-size: 15px;}
 
-#publicaciones{
-    width: 100%;
-    height: fit-content;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.divTituloPublicaciones{
-    margin: 0;
-    height: 60vh;
-    background-color: #071928;
-    margin-bottom: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tituloPublicacion{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    font-size: 2.3rem;
-    font-weight: bolder;
-    font-variant: small-caps;
-    color: #d3d5d7de;
-}
-
-.divSubtituloPublicaciones{
-    height: fit-content;
-    margin-bottom: 3%;
-    margin-left: 3%;
-}
-
-.subtituloPublicacion{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    font-size: xx-large;
-    font-weight: bolder;
-    color: #071928;
-    margin-bottom: 0;
-    text-align: left;
-}
-
-.divPublicacionesUno,
-.divPublicacionesDos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    height: fit-content;
-    margin-bottom: 5%;
-}
-
-.divPublicacionesTres{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    width: 100%;
-    height: fit-content;
-    margin-bottom: 7%;
-    margin-left: 4%;
-}
-
-.divTarjetaPublicaciones{
-    width: 32%;
-    display: flex;
-    justify-content: center;
-    height: fit-content;
-    padding: 0 10px;
-}
-
-.cardPublicacionesUno{
-    width: 100%;
-    height: fit-content; 
-}
-
-.cardPublicacionesArbitradas{
-    width: fit-content;
-    height: 310px;
-    overflow: hidden;
-}
-
-.cardPublicacionesArbitradas img{
-    width: 30vw;
-    height: 260px;
-    object-fit: contain;
-    background-color: #ffffff;
-    filter: grayscale(70%);
-    transition: transform 0.4s ease, filter 0.4s ease;
-}
-
-.cardPublicacionesArbitradas:hover img{
-    transform: scale(1.05);
-    filter: grayscale(0%);
-}
-
-.cuerpoCard{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.divTituloCardArticulosDos{
-    width: 100%;
-}
-
-.tituloCardArticulo,
-.tituloCardArticuloDos{
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    color: #071928;
-    font-size: 1rem;
-    margin-top: 3%;
-}
-
-.textoCardArticulos,
-.textoCardArticulosDos{
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    color: #071928;
-    font-size: 1rem;
-    margin-bottom: 3%;
-}
-
-.parrafoCard{
-    color: #4d70a5;
-}
-
-.linkPubli{
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-/* ================= LIBRO ================= */
-
-.seccionPublicaciones {
-    margin: 80px 0;
-    margin-top: 0;
-}
-
-.libroPublicacionItem {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-    margin-top: 3%;
-}
-
-.libroImagen img {
-    max-width: 180px;
-    height: auto;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    filter: grayscale(60%);
-    transition: 0.4s ease;
-}
-
-.libroContenido {
-    max-width: 700px;
-}
-
-.libroTitulo {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #071928;
-    margin-bottom: 15px;
-}
-
-.libroCapitulo {
-    font-style: italic;
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-}
-
-.libroAutores {
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.libroEditorial,
-.libroDetalles {
-    font-size: 0.95rem;
-    color: #555;
-    margin-bottom: 8px;
-}
-
-/* ================= FOOTER ================= */
-
-.divFooter{
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-
-.liFooter:hover{
-    text-decoration: underline;
-}
-
-.aFooter{
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-}
-
-.aFooter:hover{
-    text-decoration: underline;
-}
-
-/* ================= RESPONSIVE ================= */
-
-@media screen and (min-width: 0px) and (max-width: 768px){ 
-
-    body{ width: 100%; margin: 0%; padding: 0%; overflow-x: hidden; } 
-    .row { width: 100%; height: fit-content; margin: 0%; padding: 0%; flex-direction: row; } 
-    .mainPubli{ width: 100%; height: fit-content; } 
-    .contenedorIcono { margin: 0%; padding: 0%; width: 50%; } 
-    .contenedorNav { margin: 0%; padding: 0%; width: 50%; } 
-    .navbar-collapse { position: fixed; top: 10vh; left: 0; width: 100%; background: white; z-index: 9999; } 
-    .navbar-toggler{ margin-bottom: 0%; } 
-    #navBarra{ width: fit-content; margin-right: 5%; } 
-    #navL{ display: flex; width: 100%; font-family: 'Poppins', sans-serif; margin-left: 5%; } 
-    #containerNav{ width: fit-content; display: flex; flex-direction: column; align-items: center; background-color: white; }
-    #navL:hover{ text-decoration: underline; } 
-    #iconoT{ width: 2rem; height: 2rem; display: table-cell; vertical-align: middle; } 
-    #iconoT:hover{ width: 2.5rem; height: 2.5rem; } 
-    #anclaNav{ text-decoration-line: none; display: flex; width: fit-content; height: 100%; margin: 0%; margin-left: 10%; display: table; } .row { width: 100%; height: fit-content; margin: 0%; padding: 0%; flex-direction: row; } 
-    #navL:hover{ text-decoration: underline; } 
-
-    /* PUBLICACIONES */
-
-    #publicaciones{ height: fit-content; width: 100%; } 
-    .linkPubli{ text-decoration: none; width: 100%; } 
-    .divTituloPublicaciones{ width: 100%; height: 35vh; margin-bottom: 20%; margin-top: 5%; color: #071928; } 
-    .divSubtituloPublicaciones{ display: flex; flex-direction: row; justify-content: center; text-align: center; height: fit-content; margin-bottom: 10%; margin-top: 10%; } 
-    .tituloPublicacion{ height: fit-content; margin: 0%; padding: 0%; font-family: Georgia,'Times New Roman', Times, serif; font-size: 2.3rem; font-weight: bolder; font-variant: small-caps; margin-top: 0; } 
-    .subtituloPublicacion{ font-family: Georgia,'Times New Roman', Times, serif; font-size: 1.8rem; font-weight: bolder; color: #071928; margin-bottom: 2%; } 
-    .divPublicacionesUno{ display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; height: fit-content; } 
-    .divPublicacionesDos{ width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; margin: 0%; height: fit-content; } 
-    .divPublicacionesTres{ width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; margin: 0%; height: fit-content; } 
-    .cuerpoCard{ display: flex; flex-direction: column; align-items: center; text-align: center; width: 99%; } 
-    .cardPublicacionesUno{ width: 95vw; height: auto; } 
-    .cardPublicacionesArbitradas{ width: 95vw; height: fit-content; } 
-    .cardPublicacionesArbitradas img{ width: 90vw; height: auto; } 
-    .cardPublicacionesArbitradas img:hover{ width: 90vw; height: auto; } 
-    .divTarjetaPublicaciones{ width: 95vw; height: fit-content; display: flex; justify-content: center; margin-bottom: 15%; } 
-    .divTituloCardArticulosDos{ width: 100%; } 
-    .tituloCardArticulo{ font-family: Georgia,'Times New Roman', Times, serif; color: #071928; font-size: 1rem; margin-top: 3%; } 
-    .tituloCardArticuloDos{ font-family: Georgia,'Times New Roman', Times, serif; color: #071928; font-size: 1rem; margin-top: 3%; } 
-    .parrafoCard{ color: #4d70a5; } 
-    
-    /* LIBRO */ 
-    .libroPublicacionItem { flex-direction: column; } 
-    .libroImagen img { max-width: 140px; margin-left: 2%; margin-top: 20%; } 
-    
-    /* FOOTER */ 
-    #divFooters{ display: flex; flex-direction: column; align-items: first baseline; } 
-    #listFooter{ display: flex; flex-direction: column; align-items: center; } 
-    .divFooter{ font-family: 'Poppins', sans-serif; display: flex; flex-direction: column; align-items: first baseline; } 
-    .liFooter:hover{ text-decoration: underline; } 
-    .aFooter{ text-decoration: none; } 
+  .page-hero-inner { padding: 0 2rem 3rem; }
+  .publi-section, .libro-section { padding: 4rem 2rem; }
+  .publi-grid { grid-template-columns: 1fr; }
+  .libro-item { flex-direction: column; gap: 2rem; padding: 2rem; }
+  .libro-img-wrap img { max-width: 120px; }
+  .footer-inner { grid-template-columns: 1fr; gap: 2rem; padding-bottom: 2rem; }
+  footer { padding: 3rem 2rem 0; }
 }

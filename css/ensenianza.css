@@ -1,518 +1,342 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap');
 
-
-body{
-    width: 100vw;
-    height: fit-content;
-    margin: 0%;
-    padding: 0%;
-    overflow-x: hidden;
-}
-.buttonTraductor{
-    font-family: "Poppins", sans-serif;
-    border: #071928, 1px, solid;
-    margin-left: 1%;
-    margin-right: 1%;
-}
-
-.navbar{
-    height: 10vh;
-}
-.sectionNav {
-    width: 100%;
-    height: fit-content;
-    margin: 0%;
-    padding: 0%;
-    flex-direction: row;
+/* ── VARIABLES ── */
+:root {
+  --navy: #071928;
+  --navy-deep: #031c2d;
+  --cream: #f5f1ea;
+  --cream-2: #ede8df;
+  --gold: #b08d3a;
+  --gold-light: #c9a84c;
+  --text: #1a1814;
+  --text-2: #3d3a34;
+  --text-3: #6b6760;
+  --border: rgba(7, 25, 40, 0.12);
 }
 
-.contenedorIcono {
-    margin: 0%;
-    padding: 0%;
-    width: 50%;
+/* ── RESET ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  overflow-x: hidden;
 }
 
-.contenedorNav {
-    margin: 0%;
-    padding: 0%;
-    width: 50%;
-    
+/* ── NAV ── */
+#navBarra {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 3.5rem; height: 64px;
+  background: rgba(3, 28, 45, 0.93);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
-#navBarra{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: fit-content;
+.nav-logo {
+  font-family: 'EB Garamond', serif;
+  font-size: 17px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: #e2ddd4; white-space: nowrap; text-decoration: none;
 }
-#navL{
-    font-family: 'Poppins', sans-serif;
-    font-size: large;
+.nav-links { display: flex; gap: 2.2rem; }
+.nav-links a {
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: #8a9baa; text-decoration: none; transition: color 0.2s;
 }
-#navL:hover{
-    text-decoration: underline;
+.nav-links a:hover { color: #e2ddd4; }
+.nav-links a.active { color: var(--gold-light); }
+.nav-right { display: flex; align-items: center; gap: 1.5rem; }
+.nav-lang { display: flex; gap: 0.5rem; align-items: center; }
+.nav-lang span {
+  font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: #4a6070; cursor: pointer; transition: color 0.2s;
 }
-#iconoT{
-   width: 2rem;
-   height: 2rem;
+.nav-lang span:hover { color: var(--gold-light); }
+.nav-lang span.active { color: var(--gold-light); }
+.nav-lang .sep { color: #2a3d4a; }
+.nav-twitter { font-size: 18px; color: #4a6070; transition: color 0.2s; }
+.nav-twitter:hover { color: #e2ddd4; }
+#anclaNav { display: flex; align-items: center; }
+
+/* Hamburguesa */
+.hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: none; cursor: pointer; padding: 4px;
 }
-#iconoT:hover{
-    width: 2.5rem;
-    height: 2.5rem;
-}
-#ancla{
-    text-decoration-line: none;
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    margin-top: 2%;
-    margin-left: 2%;
+.hamburger span {
+  display: block; width: 22px; height: 2px;
+  background: #8a9baa; border-radius: 2px;
 }
 
-.divTituloEnseñanza{
-    width: 100vw;
-    margin: 0%;
-    height: 60vh;
-    background-color: #071928;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
-.tituloEnseñanza{
-    font-family: Georgia,'Times New Roman', Times, serif;
-    font-size: 2.3rem;
-    font-weight: bolder;
-    font-variant: small-caps;
-    color: #d3d5d7de;
+/* Menú mobile */
+.mobile-menu {
+  display: none; flex-direction: column;
+  position: fixed; top: 64px; left: 0; right: 0; z-index: 999;
+  background: rgba(3, 28, 45, 0.97);
+  padding: 1.5rem 2rem; gap: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
 }
-.subtituloEnseñanzaUno{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    font-weight: bolder;
-    color: #071928;
-    font-style: italic;
-    height: fit-content;
-    display: table-cell;
-    vertical-align: middle;
-    justify-content: center;
-    text-align: center;
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: #8a9baa; text-decoration: none; padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05); transition: color 0.2s;
 }
-.subtituloEnseñanzaDos{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    font-weight: bolder;
-    color: #071928;
-    font-style: italic;
-    display: table-cell;
-    vertical-align: middle;
-    justify-content: center;
-    text-align: center;
+.mobile-menu a:hover { color: #e2ddd4; }
+.mobile-lang { display: flex; gap: 1rem; margin-top: 0.5rem; }
+.mobile-lang span {
+  font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: #4a6070; cursor: pointer; transition: color 0.2s;
 }
-.subtituloEnseñanzaTres{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    font-weight: bolder;
-    color: #071928;
-    font-style: italic;
-    display: table-cell;
-    vertical-align: middle;
-    justify-content: center;
-    text-align: center;
+.mobile-lang span:hover { color: var(--gold-light); }
+
+/* ── PAGE HERO ── */
+.page-hero {
+  padding-top: 64px;
+  background: var(--navy-deep);
+  min-height: 260px;
+  display: flex; align-items: flex-end;
+  position: relative; overflow: hidden;
+}
+.page-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(176,141,58,0.06) 0%, transparent 60%);
+}
+.page-hero::after {
+  content: '';
+  position: absolute; top: 0; right: 0;
+  width: 40%; height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 60px,
+    rgba(255,255,255,0.015) 60px,
+    rgba(255,255,255,0.015) 61px
+  );
+}
+.page-hero-inner {
+  position: relative; z-index: 2;
+  padding: 0 5rem 3.5rem;
+  width: 100%;
+}
+.page-eyebrow {
+  display: flex; align-items: center; gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+.page-eyebrow-line {
+  width: 32px; height: 1px; background: var(--gold);
+}
+.page-eyebrow span {
+  font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--gold); font-weight: 500;
+}
+.page-title {
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(40px, 5.5vw, 68px);
+  line-height: 0.95;
+  color: #f0ece3;
+  font-weight: 400;
 }
 
-.contenidoUno{
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
+/* ── SECTION LABEL ── */
+.section-label {
+  display: flex; align-items: center; gap: 1rem; margin-bottom: 3.5rem;
 }
-.contenidoDos{
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    margin-top: 7%;
-    margin-bottom: 5%;
+.section-label-line { flex: 1; height: 1px; background: var(--border); }
+.section-label-line.dark { background: rgba(255,255,255,0.08); }
+.section-label-title {
+  font-family: 'EB Garamond', serif; font-size: 13px;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-3);
 }
-.contenidoTres{
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    margin-top: 5%;
-    margin-bottom: 5%;
+.section-label-title.dark { color: rgba(255,255,255,0.3); }
+
+/* ── CURSOS ── */
+.cursos-section {
+  background: #fff;
+  padding: 6rem 5rem;
+  border-top: 1px solid var(--border);
 }
-.divParrafoEnseñanzaUno{
-    width: 60%;
-    margin-right: 3%;
-    margin-top: 3%;
+.cursos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5px;
+  background: var(--border);
+  border: 1.5px solid var(--border);
 }
-.sectionEnseñanza{
-    width: 100vw;
+.curso-item {
+  background: #fff;
+  padding: 2.5rem 2.5rem;
+  display: flex; flex-direction: column; gap: 0.75rem;
+  position: relative; overflow: hidden;
+  transition: background 0.25s;
+  text-decoration: none; color: inherit;
 }
-.divSubtituloEnseñanzaUno{
-    width: 40%;
-    display: table;
+.curso-item::before {
+  content: ''; position: absolute; top: 0; left: 0; bottom: 0; width: 2px;
+  background: var(--gold); transform: scaleY(0); transform-origin: top;
+  transition: transform 0.3s ease;
 }
-.divParrafoEnseñanzaDos{
-    width: 60%;
-    margin-right: 3%;
+.curso-item:hover { background: var(--cream); }
+.curso-item:hover::before { transform: scaleY(1); }
+
+.curso-badge {
+  display: inline-flex;
+  font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--gold); font-weight: 500;
+  border: 1px solid rgba(176,141,58,0.3);
+  padding: 4px 10px; border-radius: 2px;
+  width: fit-content;
 }
-.divSubtituloEnseñanzaDos{
-    width: 40%;
-    display: table;
-    
+.curso-name {
+  font-family: 'EB Garamond', serif;
+  font-size: 22px; line-height: 1.3;
+  color: var(--text);
 }
-.divParrafoEnseñanzaTres{
-    width: 60%;
-    margin-right: 3%;
-    margin-top: 2%;
+.curso-detail {
+  font-size: 13px; color: var(--text-3); line-height: 1.65;
 }
-.divSubtituloEnseñanzaTres{
-    width: 40%;
-    display: table;
+.curso-link-cta {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--gold); margin-top: auto; padding-top: 1rem;
+  border-bottom: 1px solid rgba(176,141,58,0.3); padding-bottom: 2px;
+  width: fit-content;
+  transition: color 0.2s;
 }
-.parrafoEnseñanzaUno{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    font-style: italic;
-    text-align: left;
+.curso-link-cta:hover { color: var(--gold-light); }
+
+
+/* ── TESIS ── */
+.tesis-section {
+  background: var(--navy-deep);
+  padding: 6rem 5rem;
+}
+.tesis-list {
+  display: flex; flex-direction: column;
+  gap: 1.5px; background: rgba(255,255,255,0.06);
+  border: 1.5px solid rgba(255,255,255,0.06);
+}
+.tesis-item {
+  background: rgba(3,28,45,0.9);
+  padding: 2.5rem 2.5rem;
+  display: grid; grid-template-columns: 180px 1fr;
+  gap: 2.5rem; align-items: start;
+  position: relative; overflow: hidden;
+  transition: background 0.25s;
+}
+.tesis-item::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+  background: var(--gold); transform: scaleX(0); transform-origin: left;
+  transition: transform 0.35s ease;
+}
+.tesis-item:hover { background: rgba(7,25,40,0.95); }
+.tesis-item:hover::before { transform: scaleX(1); }
+.tesis-meta { display: flex; flex-direction: column; gap: 0.5rem; }
+.tesis-type {
+  font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--gold); font-weight: 500;
+}
+.tesis-year {
+  font-family: 'EB Garamond', serif; font-style: italic;
+  font-size: 15px; color: #4a6070;
+}
+.tesis-body { display: flex; flex-direction: column; gap: 0.6rem; }
+.tesis-name {
+  font-family: 'EB Garamond', serif;
+  font-size: 20px; color: #e8e3d8; line-height: 1.35;
+}
+.tesis-detail {
+  font-size: 13px; color: #5a7a90; line-height: 1.65;
+}
+.tesis-collab {
+  font-size: 11px; color: #4a6070; margin-top: 0.25rem;
 }
 
-.parrafoEnseñanzaDos{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.3rem;
-    font-style: italic;
-    text-align: left;
-    margin-bottom: 5%;
+/* ── PREVIAMENTE ── */
+.previos-section {
+  background: #fff;
+  padding: 6rem 5rem;
+  border-top: 1px solid var(--border);
 }
-.parrafoEnseñanzaDosDos{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.3rem;
-    font-style: italic;
-    text-align: left;
-    margin-bottom: 0%;
-    margin-top: 5%;
+.previos-inner { max-width: 800px; }
+.tags-wrap {
+  display: flex; flex-wrap: wrap; gap: 0.75rem;
 }
-.parrafoEnseñanzaTres{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.3rem;
-    font-style: italic;
-    text-align: left;
+.tag {
+  font-family: 'EB Garamond', serif; font-style: italic;
+  font-size: 18px; color: var(--text-2);
+  padding: 10px 22px;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 2px;
+  transition: border-color 0.2s, background 0.2s;
 }
-.subtituloChicoEnseñanzaTres{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.3rem;
-    font-style: italic;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
-.anclaEnsenianza{
-    color: black;
-    text-decoration: none;
-}
-.anclaEnsenianza:hover{
-    color: black;
-    text-decoration: underline;
-}
-.contenedorIcono {
-    margin: 0%;
-    padding: 0%;
-    width: 50%;
+.tag:hover {
+  border-color: var(--gold);
+  background: var(--cream);
 }
 
-.contenedorNav {
-    margin: 0%;
-    padding: 0%;
-    width: 50%;
+/* ── FOOTER ── */
+footer {
+  background: #fff;
+  border-top: 2px solid var(--gold);
+  padding: 4rem 5rem 0;
+}
+.footer-inner {
+  display: grid; grid-template-columns: 1fr auto auto; gap: 5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.footer-name {
+  font-family: 'EB Garamond', serif; font-size: 26px;
+  color: #e2ddd4; margin-bottom: 0.5rem;
+}
+.footer-contact { display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.5rem; }
+.footer-contact a {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 13px; color: #5a7a90; text-decoration: none; transition: color 0.2s;
+}
+.footer-contact a:hover { color: #e2ddd4; }
+.footer-contact i { font-size: 13px; opacity: 0.5; width: 14px; }
+.footer-col h5 {
+  font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 1.2rem; font-weight: 500;
+}
+.footer-col a {
+  display: block; font-size: 13px; color: #4a6070;
+  text-decoration: none; margin-bottom: 0.6rem; transition: color 0.2s;
+}
+.footer-col a:hover { color: #e2ddd4; }
+.footer-col i { margin-right: 6px; font-size: 12px; }
+.footer-bottom {
+  text-align: center; padding: 1.5rem;
+  font-size: 11px; letter-spacing: 0.08em;
+  color: #2a3d4a; text-transform: uppercase;
 }
 
-#navLF{
-    display: flex;
-    margin-left: 3%;
-    font-family: 'Poppins', sans-serif;
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .cursos-grid { grid-template-columns: 1fr; }
+  .curso-item.featured { flex-direction: column; gap: 1.5rem; }
+  .tesis-item { grid-template-columns: 1fr; gap: 1rem; }
+  .footer-inner { grid-template-columns: 1fr 1fr; gap: 3rem; }
+  .footer-brand { grid-column: 1 / -1; }
 }
-#navLF:hover{
-    text-decoration: underline;
-}
-#iconoT{
-   width: 2rem;
-   height: 2rem;
-}
-#iconoT:hover{
-    width: 2.5rem;
-   height: 2.5rem;
-}
-#ancla{
-    text-decoration-line: none;
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    margin-top: 3%;
-    margin-left: 3%;
-}
-#anclaNav{
-    text-decoration-line: none;
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    margin-top: 3%;
-    margin-left: 3%;
-}
-.divFooter{
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-.liFooter:hover{
-    text-decoration: underline;
-}
-.aFooter{
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-}
-.aFooter:hover{
-    text-decoration: underline;
-}
-@media screen and (min-width: 0px) and (max-width: 768px){
-    body{
-        width: 100vw;
-        height: fit-content;
-        margin: 0%;
-        padding: 0%;
-        overflow-x: hidden;
-    }
-    .sectionEnseñanza{
-        width: 100vw;
-    }
-    .mainEnsenianza{
-        width: 100vw;
-    }
-    .fondo{
-        width: 100vw;
-    }
-    .contenedorIcono {
-        margin: 0%;
-        padding: 0%;
-        width: 50%;
-    }
-    
-    .contenedorNav {
-        margin: 0%;
-        padding: 0%;
-        width: 50%;
-        height: 5rem;
-    }
-    .navbar-collapse {
-        position: fixed;
-        top: 10vh;
-        left: 0;
-        width: 100%;
-        background: white;
-        z-index: 9999;
-    }
-    .navbar-toggler{
-        margin-bottom: 0%;
-    }
-    #navBarra{
-        width: fit-content;
-        margin-right: 5%;
-        height: 5rem;
-    }
-    #navL{
-        display: flex;
-        width: 100%;
-        font-family: 'Poppins', sans-serif;
-        margin-left: 5%;
-    }
-    #containerNav{
-        width: fit-content;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: white;
-    }
-    #navL:hover{
-        text-decoration: underline;
-    }
-    #iconoT{
-       width: 2rem;
-       height: 2rem;
-       margin-top: 3%;
-       display: table-cell;
-       vertical-align: middle;
-    }
-    #iconoT:hover{
-        width: 2.5rem;
-       height: 2.5rem;
-    }
-    #anclaNav{
-        text-decoration-line: none;
-        display: flex;
-        width: fit-content;
-        height: 100%;
-        margin: 0%;
-        margin-left: 10%;
-        display: table;
-    }
 
-    .divTituloEnseñanza{
-        width: 100vw;
-        height: 35vh;
-        margin-bottom: 20%;
-        margin-top: 5%;
-        background-color: #071928;
-        padding: 0%;
-    }
-    .tituloEnseñanza{
-        height: fit-content;
-        margin: 0%;
-        padding: 0%;
-        font-family: Georgia,'Times New Roman', Times, serif;
-        font-size: 2.5rem;
-        font-weight: bolder;
-        font-variant: small-caps;
-    }
-    .subtituloEnseñanzaUno{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 2rem;
-        font-weight: bolder;
-        color: #071928;
-        margin: 0%;
-        font-style: italic;
-    }
-    .subtituloEnseñanzaDos{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 2rem;
-        font-weight: bolder;
-        color: #071928;
-        margin-top: 7%;
-        font-style: italic;
-    }
-    .subtituloEnseñanzaDosDos{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 2rem;
-        font-weight: bolder;
-        color: #071928;
-        font-style: italic;
-        margin-bottom: 7%;
-    }
-    .subtituloEnseñanzaTres{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 2rem;
-        font-weight: bolder;
-        color: #071928;
-        margin-top: 5%;
-        font-style: italic;
-    }
-    .subtituloChicoEnseñanzaTres{
-        font-family: 'Poppins', sans-serif;
-        font-size: 1rem;
-        font-style: italic;
-        margin-bottom: 7%;
-    }
-    .contenidoUno{
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .contenidoDos{
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 5%;
-    }
-    .contenidoTres{
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 5%;
-    }
-    .divParrafoEnseñanzaUno{
-        width: 99%;
-        margin: 0%;
-    }
-    .divSubtituloEnseñanzaUno{
-        width: 90%;
-    }
-    .divParrafoEnseñanzaDos{
-        width: 99%;
-        margin: 0%;
-    }
-    .divSubtituloEnseñanzaDos{
-        width: 99%;
-    }
-    .divParrafoEnseñanzaTres{
-        width: 99%;
-        margin: 0%;
-        margin-top: 2%;
-    }
-    .divSubtituloEnseñanzaTres{
-        width: 99%;
-    }
-    .parrafoEnseñanzaUno{
-        font-family: 'Poppins', sans-serif;
-        font-size: 1rem;
-        font-style: italic;
-        text-align: center;
-        margin-bottom: 15%;
-        margin-top: 5%;
-    }
-    .parrafoEnseñanzaDos{
-        font-family: 'Poppins', sans-serif;
-        font-size: 1rem;
-        font-style: italic;
-        text-align: center;
-        margin-top: 5%;
-    }
-    .parrafoEnseñanzaDosDos{
-        font-family: 'Poppins', sans-serif;
-        font-size: 1rem;
-        font-style: italic;
-        text-align: center;
-        margin-top: 0;
-    }
-    .parrafoEnseñanzaTres{
-        font-family: 'Poppins', sans-serif;
-        font-size: 1rem;
-        font-style: italic;
-        text-align: center;
-        margin-top: 5%;
-    }
-    
-    #navL:hover{
-        text-decoration: underline;
-    }
-    #ancla{
-        display: flex;
-        width: fit-content;
-        height: fit-content;
-        margin-top: 5%;
-        margin-left: 10%;
-    }
-    #divFooters{
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
-    #listFooter{
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
-    .divFooter{
-        font-family: 'Poppins', sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
-    .liFooter:hover{
-        text-decoration: underline;
-    }
-    .aFooter{
-        text-decoration: none;
-    }
+@media (max-width: 768px) {
+  #navBarra { padding: 0 1.5rem; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+
+   .nav-logo {font-size: 15px;}
+
+  .page-hero-inner { padding: 0 2rem 3rem; }
+  .cursos-section,
+  .tesis-section,
+  .previos-section { padding: 4rem 2rem; }
+  .curso-item { padding: 2rem 1.5rem; }
+  .tesis-item { padding: 2rem 1.5rem; }
+  .footer-inner { grid-template-columns: 1fr; gap: 2rem; padding-bottom: 2rem; }
+  footer { padding: 3rem 2rem 0; }
 }

@@ -16,6 +16,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function cambiarIdioma(idioma) {
+
+  document.querySelectorAll(".nav-lang span")
+  .forEach(el => el.classList.remove("active"));
+
+  const idiomaActivo = document.querySelector(
+    `[onclick="cambiarIdioma('${idioma}')"]`
+  );
+
+  if (idiomaActivo) {
+    idiomaActivo.classList.add("active");
+  }
+
   // Guardar idioma en localStorage
   localStorage.setItem("idioma", idioma);
 
@@ -34,9 +46,11 @@ function cambiarIdioma(idioma) {
         'Divulgación': 'Divulgación',
         'Toca para ir al contenido':'Toca para ir al contenido',
         'Aparición en medios':'Aparición en medios',
+        'Aparición en':'Aparición en',
         'Prensa escrita': 'Prensa escrita',
         'Ir a Youtube':'Ir a Youtube',
-        '2024. Todos los derechos reservados.':'2024. Todos los derechos reservados.',
+        'Redes':'Redes',
+        '© 2024 · Todos los derechos reservados':'© 2024 · Todos los derechos reservados',
       },
       'en': {
         'Mauricio De Rosa | Prensa':'Mauricio De Rosa | Press',
@@ -50,9 +64,11 @@ function cambiarIdioma(idioma) {
         'Divulgación': 'Outreach',
         'Toca para ir al contenido':'Tap to go to content',
         'Aparición en medios':'Media appearences',
+        'Aparición en':'Appearences',
         'Prensa escrita': 'Written press',
         'Ir a Youtube':'Go to Youtube',
-        '2024. Todos los derechos reservados.':'2024. All rights reserved.',
+        'Redes':'Networks',
+        '© 2024 · Todos los derechos reservados':'© 2024 · All rights reserved',
       }
   };
 

@@ -16,6 +16,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function cambiarIdioma(idioma) {
+
+  document.querySelectorAll(".nav-lang span")
+  .forEach(el => el.classList.remove("active"));
+
+  const idiomaActivo = document.querySelector(
+    `[onclick="cambiarIdioma('${idioma}')"]`
+  );
+
+  if (idiomaActivo) {
+    idiomaActivo.classList.add("active");
+  }
+
   // Guardar idioma en localStorage
   localStorage.setItem("idioma", idioma);
 
@@ -32,21 +44,46 @@ function cambiarIdioma(idioma) {
         'Prensa': 'Prensa',
         'Medios': 'Medios',
         'Divulgación': 'Divulgación',
-        'ACTIVIDADES DE ENSEÑANZA':'ACTIVIDADES DE ENSEÑANZA',
+
+        'Actividades de':'Actividades de',
+
         'Cursos dictados':'Cursos dictados',
-        'Profesor invitado para la Bogotá Summer School, en la Universidad de Los Andes (Colombia-2024)':'Profesor invitado para la Bogotá Summer School, en la Universidad de Los Andes (Colombia-2024)',
-        'Historia del Pensamiento Económico. Curso obligatorio del séptimo semestre de la Licenciatura en Economía (Encargado del curso). 2021-2024.':'Historia del Pensamiento Económico. Curso obligatorio del séptimo semestre de la Licenciatura en Economía (Encargado del curso).',
-        'Economía Descriptiva. Curso obligatorio del segundo semestre de la Licenciatura en Economía. 2022-2024.':'Economía Descriptiva. Curso obligatorio del segundo semestre de la Licenciatura en Economía. 2021-2024.',
-        'Tópicos de Distribución del Ingreso de la Maestría en Economía de la Facultad de Ciencias Económicas y de Administración.':'Tópicos de Distribución del Ingreso de la Maestría en Economía de la Facultad de Ciencias Económicas y de Administración.',
-        'Colaboración en curso de Tópicos de Desigualdad, Pobreza y Políticas Públicas de la Maestría en Políticas Públicas de las Facultades de Ciencias Sociales.':'Colaboración en curso de Tópicos de Desigualdad, Pobreza y Políticas Públicas de la Maestría en Políticas Públicas de las Facultades de Ciencias Sociales.',
-        'Dirección de Tesis:':'Dirección de Tesis:',
-        'grado y posgrado':'grado y posgrado:',
-        'Dirección de Trabajo Final de Grado (FCEA) de Julieta Pessina y Carolina Ardoguein. Finalizada. 2021-2022.':'Dirección de Trabajo Final de Grado (FCEA) de Julieta Pessina y Carolina Ardoguein. Finalizada. 2021-2022.',
-        'Co-Dirección (junto a Matías Brum) de Tesis de Maestría de Joaquín Toledo en Maestría de FCEA. 2021-2022.':'Co-Dirección (junto a Matías Brum) de Tesis de Maestría de Joaquín Toledo en Maestría de FCEA. 2021-2022.',
-        'dictado de cursos de grado:':'dictado de cursos de grado:',
-        'Previamente:':'Previamente:',
-        'Desigualdad y Pobreza, Economía del Uruguay, Economía I, Matemática I y Estadística I.':'Desigualdad y Pobreza, Economía del Uruguay, Economía I, Matemática I y Estadística I.',
-        '2024. Todos los derechos reservados.':'2024. Todos los derechos reservados.',
+
+        'Profesor invitado · 2024':'Profesor invitado · 2024',
+        'Universidad de Los Andes, Colombia.':'Universidad de Los Andes, Colombia.',
+        'Historia del Pensamiento Económico':'Historia del Pensamiento Económico.',
+        'Curso obligatorio del séptimo semestre de la Licenciatura en Economía.':'Curso obligatorio del séptimo semestre de la Licenciatura en Economía.',
+        'Encargado del curso':'Encargado del curso',
+
+        'Economía de América Latina':'Economía de América Latina',
+        'Curso obligatorio del quinto semestre de la Licenciatura en Economía.':'Curso obligatorio del quinto semestre de la Licenciatura en Economía.',
+
+        'Tópicos de Distribución del Ingreso':'Tópicos de Distribución del Ingreso',
+        'Maestría en Economía de la Facultad de Ciencias Económicas y de Administración.':'Maestría en Economía de la Facultad de Ciencias Económicas y de Administración.',
+
+        'Colaboración':'Colaboración',
+        'Tópicos de Desigualdad, Pobreza y Políticas Públicas':'Tópicos de Desigualdad, Pobreza y Políticas Públicas',
+        'Maestría en Políticas Públicas de las Facultades de Ciencias Sociales.':'Maestría en Políticas Públicas de las Facultades de Ciencias Sociales.',
+
+        'Dirección de Tesis: grado y posgrado':'Dirección de Tesis: grado y posgrado',
+
+        'Trabajo Final de Grado':'Trabajo Final de Grado',
+        'Dirección de Trabajo Final de Grado (FCEA)':'Dirección de Trabajo Final de Grado (FCEA)',
+        'Julieta Pessina y Carolina Ardoguein. Finalizada.':'Julieta Pessina y Carolina Ardoguein. Finalizada.',
+
+        'Tesis de Maestría':'Tesis de Maestría',
+        'Co-Dirección de Tesis de Maestría (FCEA)':'Co-Dirección de Tesis de Maestría (FCEA)',
+        'Co-Dirección junto a Matías Brum.':'Co-Dirección junto a Matías Brum.',
+
+        'Previamente: dictado de cursos de grado':'Previamente: dictado de cursos de grado',
+        'Desigualdad y Pobreza':'Desigualdad y Pobreza',
+        'Economía del Uruguay':'Economía del Uruguay',
+        'Economía I':'Economía I',
+        'Matemática I':'Matemática I',
+        'Estadística I.':'Estadística I.',
+
+        'Redes':'Redes',
+        '© 2024 · Todos los derechos reservados':'© 2024 · Todos los derechos reservados',
       },
       'en': {
         'Mauricio De Rosa | Enseñanza':'Mauricio De Rosa | Teaching Activities',
@@ -58,21 +95,51 @@ function cambiarIdioma(idioma) {
         'Prensa': 'Press',
         'Medios': 'Media',
         'Divulgación': 'Outreach',
-        'ACTIVIDADES DE ENSEÑANZA':'TEACHING ACTIVITIES',
+
+
+        'Actividades de':'Activities',
+
         'Cursos dictados':'Dictated courses',
-        'Profesor invitado para la Bogotá Summer School, en la Universidad de Los Andes (Colombia-2024)':'Guest professor for the Bogotá Summer School, at the University of Los Andes (Colombia-2024)',
-        'Historia del Pensamiento Económico. Curso obligatorio del séptimo semestre de la Licenciatura en Economía (Encargado del curso). 2021-2024.':'History of economic thought. Mandatory course of the seventh semester of the Bachelors Degree in Economics (Course Manager). 2021-2024.',
-        'Economía Descriptiva. Curso obligatorio del segundo semestre de la Licenciatura en Economía. 2022-2024.':'Descriptive Economics. Mandatory course of the second semester of the Bachelors Degree in Economics. 2022-2024.',
-        'Tópicos de Distribución del Ingreso de la Maestría en Economía de la Facultad de Ciencias Económicas y de Administración.':'Topics of Income Distribution of the Masters Degree in Economics of the Faculty of Economics and Administration.',
-        'Colaboración en curso de Tópicos de Desigualdad, Pobreza y Políticas Públicas de la Maestría en Políticas Públicas de las Facultades de Ciencias Sociales.':'Collaboration on Topics of Inequality, Poverty and Public Policies course of the Masters Degree in Public Policies of the Faculties of Social Sciences.',
-        'Dirección de Tesis:':'Master and Bachelors',
-        'grado y posgrado':'thesis',
-        'Dirección de Trabajo Final de Grado (FCEA) de Julieta Pessina y Carolina Ardoguein. Finalizada. 2021-2022.':'Final Degree Project Direction (FCEA) by Julieta Pessina and Carolina Ardoguein. Finished. 2021-2022.',
-        'Co-Dirección (junto a Matías Brum) de Tesis de Maestría de Joaquín Toledo en Maestría de FCEA. 2021-2022.':'Co-Direction (with Matías Brum) of Joaquín Toledos Masters Thesis in the FCEA Masters Degree. 2021-2022.',
-        'Previamente:':'Previously:',
-        'dictado de cursos de grado':'teaching degree courses',
-        'Desigualdad y Pobreza, Economía del Uruguay, Economía I, Matemática I y Estadística I.':'Inequality and Poverty, Economy of Uruguay, Economics I, Mathematics I and Statistics I.',
-        '2024. Todos los derechos reservados.':'2024. All rights reserved.',
+
+        'Profesor invitado · 2024':'Guest proffesor · 2024',
+        'Universidad de Los Andes, Colombia.':'University of Los Andes, Colombia.',
+        'Historia del Pensamiento Económico':'History of economic thought.',
+
+        'Curso obligatorio del séptimo semestre de la Licenciatura en Economía.':'Mandatory course of the seventh semester of the Bachelors Degree in Economics.',
+        'Encargado del curso':'Course manager',
+
+
+
+        'Economía de América Latina':'Latin American economy',
+        'Curso obligatorio del quinto semestre de la Licenciatura en Economía.':'Mandatory course of the fifth semester of the Bachelors Degree in Economics.',
+
+
+        'Tópicos de Distribución del Ingreso':'Topics of Income Distribution',
+        'Maestría en Economía de la Facultad de Ciencias Económicas y de Administración.':'Masters Degree in Economics of the Faculty of Economics and Administration.',
+
+        'Colaboración':'Collaboration',
+        'Tópicos de Desigualdad, Pobreza y Políticas Públicas':'Topics of Inequality, Poverty and Public Policies',
+        'Maestría en Políticas Públicas de las Facultades de Ciencias Sociales.':'Masters Degree in Public Policies of the Faculties of Social Sciences.',
+
+        'Dirección de Tesis: grado y posgrado':'Master and Bachelors thesis',
+
+        'Trabajo Final de Grado':'Final Degree Project',
+        'Dirección de Trabajo Final de Grado (FCEA)':'Final Degree Project Direction (FCEA)',
+        'Julieta Pessina y Carolina Ardoguein. Finalizada.':'Julieta Pessina and Carolina Ardoguein. Finished.',
+
+        'Tesis de Maestría':'Masters Thesis',
+        'Co-Dirección de Tesis de Maestría (FCEA)':'Masters Thesis Co-Direction (FCEA)',
+        'Co-Dirección junto a Matías Brum.':'Co-Direction with Matías Brum.',
+
+        'Previamente: dictado de cursos de grado':'Previously: teaching degree courses',
+        'Desigualdad y Pobreza':'Inequality and Poverty',
+        'Economía del Uruguay':'Economy of Uruguay',
+        'Economía I':'Economics I',
+        'Matemática I':'Mathematics I',
+        'Estadística I':'Statistics I',
+
+        'Redes':'Networks',
+        '© 2024 · Todos los derechos reservados':'© 2024 · All rights reserved',
       }
   };
 
